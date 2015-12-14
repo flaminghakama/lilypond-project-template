@@ -8,7 +8,7 @@
             "folder_exclude_patterns": ["books", "instruments", "parts", "structures"]
         },
         {
-            "path": "../../../flaming-libs",
+            "path": "../../flaming-libs",
             "name": "Libraries",
             "folder_exclude_patterns": ["none"]
         },
@@ -38,7 +38,7 @@
             "file_exclude_patterns": ["none"]
         },
         {
-            "path": "../../../../../../bin",
+            "path": "../../bin",
             "name": "Scripts",
             "file_exclude_patterns": ["none"]
         }
