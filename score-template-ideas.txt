@@ -1,0 +1,112 @@
+Score template for Lilypond
+
+House Style Includes
+paper
+chords
+fonts
+
+Structures 
+structures: barlines, tempi, rehearsal marks, fermatas, D.C. (learn new segno clef)
+structures: chord changes
+
+Music
+common licks, melodies, rhythms
+part per instrument per structure
+
+Scores/Parts
+include house styles
+include structures (as appropriate--per instrument)
+include music (as appropriate--per instrument)
+score
+
+API for generating part:
+specify score name
+map score name to appropriate structures, music and scores
+produce part file
+run part file
+
+
+
+Converting Single-File to Package
+Create directory for song
+Move all book definitions to books/<part or score>.ily
+Create books/instrument.ily with book for generic instrument
+Create books/staffgroup.ily with book for piano style instrument.
+Move all instrument definitions to instruments/source/<instrument>.ily
+Create directory instruments/built
+Move all structural definitions to structures.ily
+
+
+Modular concept for parts
+
+Have one score file that defines the generic part.  Instead of "fluteGlobalHead", just have "instrumentGlobalHead".
+In the flute file, define these sections.  So, each instrument has an identical-looking file.  Only the file name indicates what the content is.
+
+Then, to print the part, construct a file that has the universal book defintion, imports the structures and imports only the instrument you want.
+
+Concept for scores
+
+Preprocess the lilypond file for includes that have "instruments" in them.
+Look for each instrument file instruments/built/<instrument>.ily.  
+If it is not there, look for instruments/source/<instrument>.ily and then build the built version.
+
+
+
+<h2>Setup of a Song Project</h2>
+
+<h3>Creating the song project by cloning</h3>
+
+This is the quick way, based on the existence of the TEMPLATE files and structure.
+
+Supply the name of the song (preferably without spaces), and then the names of the part files.  
+
+The standard for part file names is the name of the song, plus the name of the instrument, plus the transposition: SONG-INSTRUMNET-TRANSPOSITION.ly  For example, octagon-arbiter-English-Horn-in-F.ly
+
+
+<blockquote><pre><tt>
+export SONG=[your song name]
+cp -R ly/TEMPLATE ly/$SONG
+cp SONG.sublime-project $SONG.sublime-project
+perl -pi -e 's/SONG/$SONG/g' $SONG.sublime-project
+</tt></pre></blockquote>
+
+for each part:
+cp ly/$SONG/parts/PART.ly ly/$SONG/$SONG-$PART.ly
+
+
+<h3>Creating directory structures explicitly</h3>
+
+export SONG=scarlet-rust-blouse
+
+mkdir ly/$SONG
+mkdir ly/$SONG/books
+mkdir ly/$SONG/parts
+mkdir ly/$SONG/structures
+mkdir ly/$SONG/instruments
+mkdir ly/$SONG/instruments/source
+mkdir ly/$SONG/instruments/built
+
+cp ly/TEMPLATE/parts/PART.ily ly/$SONG/parts
+cp ly/TEMPLATE/books/BOOK.ily ly/$SONG/books
+
+
+
+Preprocessor
+
+Python script.  
+Takes as argument the name of the book you want to compile.  
+If the file is books/instrument.ily, preprocess the file.
+    Looks for the file books/<instrument>.ly
+    Parses file for instrument includes.
+    For each included instrument, build the instruments/built/<instrument>.ily file
+Run the commands
+    rm *.pdf 
+    lilypond $1
+    for file in *.pdf ; do op $file ;done
+
+Part builder
+    copy the file instruments/source/<instrument>.ily to instruments/built/<instrument>.ily
+    In instruments/built/<instrument>.ily replace "instrument" with the name of the instrument
+        perl -pi -e 's/instrument/<instrument>/g' instruments/built/<instrument>.ily
+
+        
