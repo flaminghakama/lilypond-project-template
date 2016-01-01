@@ -15,7 +15,7 @@
     }
     \header {
         subtitle = ""
-        poet = "PART"
+        poet = "POET"
     }
     \score {
       <<
