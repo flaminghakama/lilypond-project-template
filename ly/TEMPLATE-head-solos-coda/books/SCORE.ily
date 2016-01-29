@@ -20,35 +20,40 @@
     \score {
         <<
             \new StaffGroup = "winds" << 
-                \new ChordNames \transpose g c { \chordsSongScore \chordsCoda }
+                \new ChordNames \transpose g c { \chordsHeadScore \chordsSolo \chordsCoda }
                 \new Staff = "flute" { 
                     \set Staff.instrumentName = #"Alto Flute in G"
                     \set Staff.shortInstrumentName = #"A.Fl."
                     \accidentalStyle modern-voice-cautionary
                     \keepWithTag #'(OneTime Score) \transpose c c { 
-                        \fluteGlobalSong 
-                        \pageBreak
+                        \fluteGlobalHead 
+                        \override Staff.TimeSignature.stencil = ##f
+                        \fluteGlobalSolos \pageBreak
                         \fluteGlobalCoda
                     }
                 }
-                \new ChordNames \transpose f c { \chordsSongScore \chordsCoda }
+                \new ChordNames \transpose f c { \chordsHeadScore \chordsSolo \chordsCoda }
                 \new Staff = "englishHorn" { 
                     \set Staff.instrumentName = #"English Horn in F"
                     \set Staff.shortInstrumentName = #"E.H."
                     \accidentalStyle modern-voice-cautionary
                     \keepWithTag #'(OneTime Score) \transpose f c { 
-                        \englishHornGlobalSong                 
+                        \englishHornGlobalHead                 
+                        \override Staff.TimeSignature.stencil = ##f
+                        \englishHornGlobalSolos 
                         \englishHornGlobalCoda 
                     }
                 }
-                \new ChordNames \transpose bf c { \chordsSongScore \chordsCoda }
+                \new ChordNames \transpose bf c { \chordsHeadScore \chordsSolo \chordsCoda }
                 \new Staff = "bassClarinet" { 
                     \set Staff.instrumentName = #"Bass Clarinet in Bb"
                     \set Staff.shortInstrumentName = #"B.Cl."
                     \clef treble
                     \accidentalStyle modern-voice-cautionary
                     \keepWithTag #'(OneTime Score) \transpose bf,, c { 
-                        \bassClarinetGlobalSong
+                        \bassClarinetGlobalHead
+                        \override Staff.TimeSignature.stencil = ##f
+                        \bassClarinetGlobalSolos
                         \bassClarinetGlobalCoda
                     }
                 }
@@ -62,7 +67,9 @@
                         \accidentalStyle modern-voice-cautionary
                         \new Voice = "lead" {
                             \keepWithTag #'(OneTime Score) \transpose c c { 
-                                \voiceGlobalSong
+                                \voiceGlobalHead
+                                \override Staff.TimeSignature.stencil = ##f
+                                \voiceGlobalSolos
                                 \voiceGlobalCoda
                             }
                         }
@@ -82,7 +89,9 @@
                     \set DrumStaff.instrumentName = #"Clave"
                     \set DrumStaff.shortInstrumentName = #"C."
                     \keepWithTag #'(OneTime Score) \transpose c c { 
-                        \claveGlobalSong
+                        \claveGlobalHead
+                        \override Staff.TimeSignature.stencil = ##f
+                        \claveGlobalSolos 
                         \claveGlobalCoda
                     }
                 }
@@ -90,13 +99,15 @@
             %}
             
             \new StaffGroup = "strings" << 
-                \new ChordNames \transpose c c { \chordsSongScore \chordsCoda }
+                \new ChordNames \transpose c c { \chordsHeadScore \chordsSolo \chordsCoda }
                 \new Staff = "violin" { 
                     \set Staff.instrumentName = #"Violin"
                     \set Staff.shortInstrumentName = #"V."
                     \accidentalStyle modern-voice-cautionary
                     \keepWithTag #'(OneTime Score) \transpose c c { 
-                        \violinGlobalSong
+                        \violinGlobalHead
+                        \override Staff.TimeSignature.stencil = ##f
+                        \violinGlobalSolos 
                         \violinGlobalCoda
                     }
                 }
@@ -106,7 +117,9 @@
                     \clef bass
                     \accidentalStyle modern-voice-cautionary
                     \keepWithTag #'(OneTime Score) \transpose c c { 
-                        \bassGlobalSong
+                        \bassGlobalHead
+                        \override Staff.TimeSignature.stencil = ##f
+                        \bassGlobalSolos 
                         \bassGlobalCoda
                     }
                 }

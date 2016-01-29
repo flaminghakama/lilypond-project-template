@@ -5,13 +5,16 @@
 \include "ly/SONG/structures/lyrics.ily"
 \include "ly/SONG/instruments/INSTRUMENT.ily"
 
-INSTRUMENTGlobalSong = \globalSong {
-    \key f \major
-    \INSTRUMENTSong
+INSTRUMENTGlobalHead = \globalHead {
+    \key bf \minor
+    \INSTRUMENTHead
 }
-
+INSTRUMENTGlobalSolos = \globalSolos {
+    \key bf \minor
+    \INSTRUMENTSolos
+}
 INSTRUMENTGlobalCoda = \globalCoda {
-    \key f \major
+    \key bf \minor
     \INSTRUMENTCoda
 }
 
