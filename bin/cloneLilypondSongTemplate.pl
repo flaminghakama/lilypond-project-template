@@ -29,6 +29,7 @@
 #
 #  Generally speaking, there are several instruments in a score.
 #    Book File.  There is one Book file for a score, which is based on its own template TEMPLATE/parts/SCORE.ly
+#    MIDI Book File.  There is one Book file for midi, which is based on its own template TEMPLATE/parts/MIDI.ly
 #    Instrument Files.  There are no new instrument files for a score.  Scores uses the same instrument files as the parts.
 #    Part File.  There is one Part file for the score.  It is based on the same part file as the parts.
 #      However, the file is recomposed after all the parts files have been processed:
@@ -76,6 +77,9 @@ sub getPartType {
         if ( $fileName =~ /Score/ ) { 
                 $partType = "Score" ; 
         } 
+        if ( $fileName =~ /Sound/ ) { 
+                $partType = "Sound" ; 
+        } 
         if ( $fileName =~ /Lead/ ) { 
                 $partType = "Score" ; 
         } 
@@ -88,6 +92,11 @@ sub getPartType {
 sub isPart { 
         my ($fileName) = @_ ; 
         return getPartType($fileName) eq "Part" ; 
+}
+
+sub isSound { 
+        my ($fileName) = @_ ; 
+        return getPartType($fileName) eq "Sound" ; 
 }
 
 sub isScore { 
@@ -215,6 +224,9 @@ my $bookPartTemplate = slurpFile($bookPartTemplateFile, "part book template") ;
 my $scoreBookTemplateFile = "ly/$song/books/SCORE.ily" ; 
 my $scoreBookTemplate = slurpFile($scoreBookTemplateFile, "score book template") ; 
 
+my $midiBookTemplateFile = "ly/$song/books/MIDI.ily" ; 
+my $midiBookTemplate = slurpFile($midiBookTemplateFile, "midi book template") ; 
+
 my $instrumentTemplateFile = "ly/$song/instruments/INSTRUMENT.ily" ; 
 my $instrumentTemplate = slurpFile($instrumentTemplateFile, "instrument template") ; 
 
@@ -245,54 +257,69 @@ foreach $partName (@ARGV){
 
         #  Treat parts and scores differently
 
-        if ( isScore($partName) ) {
+        if ( isSound($partName) ) {
 
                 #  Save the name of the part file, which will be created once all the parts have been processed.
                 push(@scoreNames, $partName) ; 
 
                 #  Make the book file
                 $bookFile = "ly/$song/books/$partName.ily" ; 
-                $bookContents = $scoreBookTemplate ; 
+                $bookContents = $midiBookTemplate ; 
                 $bookContents =~ s/PART/$partName/g ; 
                 $bookContents =~ s/POET/$poet/g ;  
-                writeFile($bookFile, "score part file", $bookContents) ; 
+                writeFile($bookFile, "midi part file", $bookContents) ; 
 
         } else { 
 
-                $instrumentName = convertPartNameToInstrumentName($partName) ; 
-                $variableName = convertInstrumentNameToVariable($instrumentName) ; 
+                if ( isScore($partName) ) {
 
-                #  Create the part file and update the part and song names
+                        #  Save the name of the part file, which will be created once all the parts have been processed.
+                        push(@scoreNames, $partName) ; 
 
-                $partFile = "ly/$song/parts/$song-$partName.ly" ; 
-                $partContents = $partTemplate ; 
-                push(@partNames, $partName) ; 
-                $partContents =~ s/PART/$partName/g ; 
-                $partContents =~ s/SONG/$song/g ; 
+                        #  Make the book file
+                        $bookFile = "ly/$song/books/$partName.ily" ; 
+                        $bookContents = $scoreBookTemplate ; 
+                        $bookContents =~ s/PART/$partName/g ; 
+                        $bookContents =~ s/POET/$poet/g ;  
+                        writeFile($bookFile, "score part file", $bookContents) ; 
 
-                #  Update the instrument name and collect the instrument includes
-                $partContents =~ s/INSTRUMENT/$variableName/g ; 
-                push(@instrumentIncludes, getInstrumentIncludesFromPart($partContents)) ; 
-                writeFile($partFile, "part file", $partContents) ; 
+                } else { 
 
-                push(@globalMusicDefinitions, getMusicDefinitionsFromInstrument($partContents)) ; 
+                        $instrumentName = convertPartNameToInstrumentName($partName) ; 
+                        $variableName = convertInstrumentNameToVariable($instrumentName) ; 
 
-        	#  Make the book file
+                        #  Create the part file and update the part and song names
 
-        	$bookFile = "ly/$song/books/$partName.ily" ; 
-                $bookContents = $bookPartTemplate ; 
-                $bookContents =~ s/PART/$partName/g ; 
-                $bookContents =~ s/INSTRUMENT/$variableName/g  ; 
-                $bookContents =~ s/POET/$poet/g ;  
-                writeFile($bookFile, "book file for instrument $instrumentName", $bookContents) ; 
+                        $partFile = "ly/$song/parts/$song-$partName.ly" ; 
+                        $partContents = $partTemplate ; 
+                        push(@partNames, $partName) ; 
+                        $partContents =~ s/PART/$partName/g ; 
+                        $partContents =~ s/SONG/$song/g ; 
 
-		# Make the instrument file
+                        #  Update the instrument name and collect the instrument includes
+                        $partContents =~ s/INSTRUMENT/$variableName/g ; 
+                        push(@instrumentIncludes, getInstrumentIncludesFromPart($partContents)) ; 
+                        writeFile($partFile, "part file", $partContents) ; 
 
-                $instrumentFile = "ly/$song/instruments/$variableName.ily" ;  
-                $instrumentContents = $instrumentTemplate ; 
+                        push(@globalMusicDefinitions, getMusicDefinitionsFromInstrument($partContents)) ; 
 
-                $instrumentContents =~ s/INSTRUMENT/$variableName/g ;
-                writeFile($instrumentFile, "instrument file $instrumentFile", $instrumentContents) ; 
+                	#  Make the book file
+
+                	$bookFile = "ly/$song/books/$partName.ily" ; 
+                        $bookContents = $bookPartTemplate ; 
+                        $bookContents =~ s/PART/$partName/g ; 
+                        $bookContents =~ s/INSTRUMENT/$variableName/g  ; 
+                        $bookContents =~ s/POET/$poet/g ;  
+                        writeFile($bookFile, "book file for instrument $instrumentName", $bookContents) ; 
+
+        		# Make the instrument file
+
+                        $instrumentFile = "ly/$song/instruments/$variableName.ily" ;  
+                        $instrumentContents = $instrumentTemplate ; 
+
+                        $instrumentContents =~ s/INSTRUMENT/$variableName/g ;
+                        writeFile($instrumentFile, "instrument file $instrumentFile", $instrumentContents) ; 
+                }
         }
 }
 
@@ -329,4 +356,5 @@ unlink $projectTemplateFile ;
 unlink $partTemplateFile ; 
 unlink $bookPartTemplateFile ; 
 unlink $scoreBookTemplateFile ; 
+unlink $midiBookTemplateFile ; 
 unlink $instrumentTemplateFile ; 
