@@ -24,8 +24,10 @@ unless ( @ARGV ) {
 }
 else { 
     foreach $songName (@ARGV) {
+    	$songName =~ s/^ly\/// ; 
+    	$songName =~ s/\/$// ; 
     	$archiveName = "files-$songName.tgz" ;
-    	`rm $archiveName` ;
+     	`rm $archiveName` ;
     	`tar -cvzf $archiveName pdf/$songName* midi/$songName* ly/$songName/ html/$songName*` ; 
 	}
 }
