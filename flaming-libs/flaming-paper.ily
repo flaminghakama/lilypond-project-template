@@ -11,6 +11,8 @@ titleKern = "   "
 pageNumberKern = " "
 
 \defineBarLine "||.[|:" #'("||" "[|:" "")
+\defineBarLine ":|].||" #'(":|]" "" "||")
+\defineBarLine ":|].[|:" #'(":|]" "[|:" "")
 
 %#(set-default-paper-size "letter" 'landscape)
 #(set-default-paper-size "letter")
@@ -120,6 +122,8 @@ fermat = \markup { \translate #(cons 1 -4 ) \musicglyph #"scripts.ufermata" }
 dolc = \markup { \raise #2 { dolce } }
 
 codaSign = \markup { \musicglyph #"scripts.coda" }
+toCoda = \markup { \translate #'(-1.6 . 1.75) \huge \bold \musicglyph #"scripts.coda" }
+partCoda = \markup { \translate #'( 7 . 1.75) \huge \bold \musicglyph #"scripts.coda" }
 segnoSign = \markup { \bold \musicglyph #"scripts.segno" }
 
 delSeg = \markup { \bold "D.S." }
@@ -162,6 +166,9 @@ withRepeats = \markup { \bold "(with repeats)" }
 dsRepeats = \markup { \halign #-2 \center-column { \justDs \withRepeats } }
 secondTimeOnly = \markup { \large \bold "2nd X Only" }
 bothTimes = \markup { \large \bold "Both X" }
+roadmap = \markup { \halign #-2 \center-column { \dSolosWithRepeat \dEndCoda } }
+
+
 breakPart = \tag #'Part { \break }
 breakScore = \tag #'Score { \break }
 breakFlute = \tag #'Flute { \break }
@@ -171,6 +178,18 @@ breakCondensed = \tag #'Condensed { \break }
 breakRhythm = \tag #'Rhythm { \break }
 breakMelody = \tag #'Melody { \break }
 breakClave = \tag #'Clave { \break }
+
+pageBreakPart = \tag #'Part { \pageBreak }
+pageBreakScore = \tag #'Score { \pageBreak }
+pageBreakFlute = \tag #'Flute { \pageBreak }
+pageBreakPiccolo = \tag #'Piccolo { \pageBreak }
+pageBreakLead = \tag #'Lead { \pageBreak }
+pageBreakCondensed = \tag #'Condensed { \pageBreak }
+pageBreakRhythm = \tag #'Rhythm { \pageBreak }
+pageBreakMelody = \tag #'Melody { \pageBreak }
+pageBreakClave = \tag #'Clave { \pageBreak }
+
+
 
 mfp = #(make-dynamic-script "mfp")
 fmp = #(make-dynamic-script "fmp")
