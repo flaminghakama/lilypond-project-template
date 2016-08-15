@@ -1,4 +1,3 @@
-
 %% Function to print repeat section with two endings
 %%   with text headers rather than numbers
 
@@ -32,10 +31,10 @@ voltaCustom = #(define-music-function (parser location repMusicCommon repEndingA
   \set Score.repeatCommands = #'(start-repeat)
   $repMusicCommon 
 
-  \set Score.repeatCommands = #(list (list 'volta $repEndingA))
+  \set Score.repeatCommands = #(list (list 'volta repEndingA))
   $repMusicA
 
-  \set Score.repeatCommands = #(list (list 'volta #f) 'end-repeat (list 'volta $repEndingB))
+  \set Score.repeatCommands = #(list (list 'volta #f) 'end-repeat (list 'volta repEndingB))
   $repMusicB
 
   \set Score.repeatCommands = #'((volta #f))
