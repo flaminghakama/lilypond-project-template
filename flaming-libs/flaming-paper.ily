@@ -3,9 +3,10 @@ titleKern = "   "
 pageNumberKern = " "
 
 \defineBarLine "||.[|:" #'("||" "[|:" "")
+\defineBarLine "[|:" #'("||" "[|:" "")
 \defineBarLine ":|].||" #'(":|]" "" "||")
 \defineBarLine ":|].[|:" #'(":|]" "[|:" "")
-\defineBarLine "||.S" #'("||" "S" "")
+\defineBarLine "S-double" #'("||" "S" "||")
 \defineBarLine "||.S[" #'("||" "S[|:" "")
 \defineBarLine ":|].S[" #'(":|]" "S[" "")
 \defineBarLine ":|].S" #'(":|]" "S" "")
@@ -133,10 +134,12 @@ dsAlCoda = \markup { \halign #-2 \center-column { \delSeg \alCoda } }
 dsCoda = \markup { \delSeg \alCoda }
 fineSign = \markup { \huge \bold "Fine" }
 
+toEnd = \markup { \bold \huge "To End:" }
 dfine = \markup { \bold \huge "Fine" }
 dcFine = \markup { \bold \huge "D.C. al Fine" }
 dsFine = \markup { \bold \huge "D.S. al Fine" }
 %dsCoda = \markup { \bold \huge "D.S. al  " \musicglyph #"scripts.coda" }
+dcAlCoda = \markup { \bold \huge "D.C. al " \translate #'(0 . 1) \musicglyph #"scripts.coda" }
 dcCoda = \markup { \bold \huge "D.C. al  " \musicglyph #"scripts.coda" }
 dcCueCoda = \markup { \bold \huge "On Cue: D.C. al " \musicglyph #"scripts.coda" }
 dEndCoda = \markup { \bold \huge "To end: D.C. al " \translate #'(0 . 1) \musicglyph #"scripts.coda" }
