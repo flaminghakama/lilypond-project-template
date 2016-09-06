@@ -1,0 +1,1029 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"inst",
+				"instrumentFile"
+			],
+			[
+				"instrument",
+				"instrumentFile"
+			],
+			[
+				"var",
+				"variableName"
+			],
+			[
+				"convert",
+				"convertInstrumentNameToVariable"
+			],
+			[
+				"instrumen",
+				"instrumentName"
+			],
+			[
+				"Me",
+				"Melissa"
+			],
+			[
+				"Segm",
+				"SegmentCoda"
+			],
+			[
+				"bre",
+				"breakPart"
+			],
+			[
+				"N",
+				"N"
+			],
+			[
+				"fluteIntroLi",
+				"fluteIntroLickMf"
+			],
+			[
+				"fluteInt",
+				"fluteIntroEnding"
+			],
+			[
+				"fluteIntro",
+				"fluteIntroCommon"
+			],
+			[
+				"BASSCLA",
+				"bassClarinetEnd"
+			],
+			[
+				"engi",
+				"englishHornEnd"
+			],
+			[
+				"melodyInt",
+				"melodyIntroLower"
+			],
+			[
+				"melody",
+				"melodyIntroLick"
+			],
+			[
+				"melodyIntroL",
+				"melodyIntroLickMp"
+			],
+			[
+				"open",
+				"openError"
+			],
+			[
+				"proce",
+				"processedEmail"
+			],
+			[
+				"proc",
+				"processedEmail"
+			],
+			[
+				"pro",
+				"processedEmail"
+			],
+			[
+				"SC",
+				"SCORES"
+			],
+			[
+				"PAR",
+				"PART"
+			],
+			[
+				"SCORE",
+				"SCORE_COUNT"
+			],
+			[
+				"PART",
+				"PART_DEFINITIONS_TMP"
+			],
+			[
+				"INST",
+				"INSTRUMENT_FILE"
+			],
+			[
+				"INS",
+				"INSTRUMENT_FILE"
+			],
+			[
+				"instr",
+				"instruments"
+			],
+			[
+				"INSTR",
+				"INSTRUMENT"
+			],
+			[
+				"this",
+				"thisEmail"
+			],
+			[
+				"current",
+				"currentEmails"
+			],
+			[
+				"thisPost",
+				"thisPostEmail"
+			],
+			[
+				"ext",
+				"extract_email_address"
+			],
+			[
+				"subs",
+				"subscriptionsHandle"
+			],
+			[
+				"wor",
+				"wordpressDir"
+			],
+			[
+				"flute",
+				"fluteGermMf"
+			],
+			[
+				"englishHornGermF",
+				"englishHornGermF"
+			],
+			[
+				"f",
+				"f"
+			],
+			[
+				"solosAA",
+				"solosAABA"
+			],
+			[
+				"break",
+				"breakLead"
+			],
+			[
+				"piccoloGl",
+				"piccoloGlobalHead"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"ds",
+				"ds"
+			],
+			[
+				"new",
+				"newEmailDir"
+			],
+			[
+				"back",
+				"backbeat"
+			],
+			[
+				"backbe",
+				"backbeatFour"
+			],
+			[
+				"hal",
+				"halfTimeFeel"
+			],
+			[
+				"trum",
+				"trumpetCTwoNotes"
+			],
+			[
+				"lyrc",
+				"lyricsMelodyCTwo"
+			],
+			[
+				"lyrics",
+				"lyricsMelodyCTwo"
+			],
+			[
+				"lyr",
+				"lyricsMelodyCOne"
+			],
+			[
+				"meod",
+				"melodyCLyricsOne"
+			],
+			[
+				"Engli",
+				"EnglishHorn"
+			],
+			[
+				"Eng",
+				"EnglishHorn"
+			],
+			[
+				"myChor",
+				"myChordExceptions"
+			],
+			[
+				"folder",
+				"folder_exclude_patterns"
+			],
+			[
+				"clave",
+				"claveVamp"
+			],
+			[
+				"No",
+				"NoShift"
+			],
+			[
+				"brea",
+				"breakPart"
+			],
+			[
+				"solo",
+				"soloFills"
+			],
+			[
+				"bassoo",
+				"bassoonA"
+			],
+			[
+				"clarinet",
+				"clarinetAInA"
+			],
+			[
+				"Cod",
+				"codaChordsInA"
+			],
+			[
+				"repeat",
+				"repeatTie"
+			],
+			[
+				"chr",
+				"chorusChords"
+			],
+			[
+				"incl",
+				"includes"
+			],
+			[
+				"staff",
+				"staffGroupName"
+			],
+			[
+				"instru",
+				"instrument"
+			],
+			[
+				"ins",
+				"instrumentsRef"
+			],
+			[
+				"clon",
+				"cloneArrayRef"
+			],
+			[
+				"it",
+				"itemsRef"
+			],
+			[
+				"innerT",
+				"innerThings"
+			],
+			[
+				"mus",
+				"musicSuffix"
+			],
+			[
+				"chord",
+				"chordDefinitions"
+			],
+			[
+				"funct",
+				"functions"
+			],
+			[
+				"staffG",
+				"StaffGroup"
+			],
+			[
+				"condi",
+				"conditionalLily"
+			],
+			[
+				"lily",
+				"lilypond"
+			],
+			[
+				"lil",
+				"lilyond"
+			],
+			[
+				"staf",
+				"staffGroupName"
+			],
+			[
+				"staffGrou",
+				"staffGroupName"
+			],
+			[
+				"these",
+				"theseScores"
+			],
+			[
+				"score",
+				"scoresRef"
+			],
+			[
+				"newS",
+				"newStaffGroups"
+			],
+			[
+				"staffGroups",
+				"staffGroupsRef"
+			],
+			[
+				"sec",
+				"sectionsRef"
+			],
+			[
+				"const",
+				"constructorFunctionRef"
+			],
+			[
+				"section",
+				"sections"
+			],
+			[
+				"parts",
+				"partScore"
+			],
+			[
+				"rehear",
+				"rehearsalMarksInclude"
+			],
+			[
+				"rehe",
+				"rehearsalMarksFilename"
+			],
+			[
+				"sta",
+				"staffGroupIncludes"
+			],
+			[
+				"instrum",
+				"instruments"
+			],
+			[
+				"staffGr",
+				"staffGroups"
+			],
+			[
+				"sco",
+				"score"
+			],
+			[
+				"tran",
+				"transposition"
+			],
+			[
+				"lilyp",
+				"lilypush"
+			],
+			[
+				"con",
+				"conditionalLily"
+			],
+			[
+				"defa",
+				"defaultMusic"
+			],
+			[
+				"rehearsalMar",
+				"rehearsalMarksInvocations"
+			],
+			[
+				"reh",
+				"rehearsalMarksFunction"
+			],
+			[
+				"music",
+				"musicDefinitions"
+			],
+			[
+				"musi",
+				"musicDefinitions"
+			],
+			[
+				"command",
+				"commandBegin"
+			],
+			[
+				"rehearsa",
+				"rehearsalMarks"
+			],
+			[
+				"se",
+				"sections"
+			],
+			[
+				"comm",
+				"commandEnd"
+			],
+			[
+				"re",
+				"rehearsalMarks"
+			],
+			[
+				"arg",
+				"argumentTypeList"
+			],
+			[
+				"bw",
+				"betweenTopOfPageAndHeader"
+			],
+			[
+				"bet",
+				"betweenSystems"
+			],
+			[
+				"after",
+				"afterHeaderNextPage"
+			],
+			[
+				"ragg",
+				"raggedRight"
+			],
+			[
+				"chor",
+				"chordSequence"
+			],
+			[
+				"ch",
+				"chordSequence"
+			],
+			[
+				"stav",
+				"stavesRef"
+			],
+			[
+				"head",
+				"header"
+			],
+			[
+				"title",
+				"titleSplitRight"
+			],
+			[
+				"Staff",
+				"StaffGroup"
+			],
+			[
+				"paperspa",
+				"paperSpacingBlock"
+			],
+			[
+				"papersp",
+				"paperSpacingBlock"
+			],
+			[
+				"paperSpa",
+				"paperSpacingBlock"
+			],
+			[
+				"paperSp",
+				"paperSpacingBlock"
+			],
+			[
+				"paper",
+				"paperSpacing"
+			],
+			[
+				"page",
+				"pageNumberFirst"
+			],
+			[
+				"betwe",
+				"betweenTopOfPageAndHeader"
+			],
+			[
+				"betwee",
+				"betweenTopOfPageAndHeader"
+			],
+			[
+				"PAPER",
+				"PAPER"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-strings/instruments/INSTRUMENT.ily",
+		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-strings/structures/chords.ily",
+		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-strings/books/SCORE.ily",
+		"/Users/elaine/Documents/sheet-music/scores/strings/ly/you-dont-know-what-love-is/instruments/cello.ily",
+		"/Users/elaine/Documents/sheet-music/scores/strings/ly/you-dont-know-what-love-is/parts/you-dont-know-what-love-is-Cello.ly",
+		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-strings/books/BOOK.ily",
+		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-strings/books/MIDI.ily",
+		"/Users/elaine/git/lilypond-project-template/bin/cloneLilypondSongTemplate.pl",
+		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-strings/parts/PART.ly",
+		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-strings/structures/header.ily",
+		"/Users/elaine/Documents/sheet-music/scores/strings/ly/you-dont-know-what-love-is/books/Cello.ily",
+		"/Users/elaine/Documents/sheet-music/scores/strings/ly/have-you-met-miss-jones/books/Cello.ily",
+		"/Users/elaine/Documents/sheet-music/scores/collaborations/steve-rice/ly/licorice-shtick/books/Rhythm.ily",
+		"/Users/elaine/Documents/sheet-music/scores/collaborations/steve-rice/ly/licorice-shtick/structures/chords.ily",
+		"/Users/elaine/Documents/sheet-music/scores/collaborations/steve-rice/ly/licorice-shtick/instruments/bariSax.ily",
+		"/Users/elaine/Documents/sheet-music/scores/collaborations/steve-rice/ly/licorice-shtick/instruments/bass.ily",
+		"/Users/elaine/Documents/sheet-music/scores/collaborations/steve-rice/ly/licorice-shtick/structures/forms.ily",
+		"/Users/elaine/Documents/sheet-music/scores/collaborations/steve-rice/ly/licorice-shtick/instruments/clarinet.ily",
+		"/Users/elaine/Documents/sheet-music/scores/collaborations/steve-rice/ly/licorice-shtick/parts/licorice-shtick-Clarinet-in-Bb.ly",
+		"/Users/elaine/Documents/sheet-music/scores/collaborations/steve-rice/ly/licorice-shtick/books/Clarinet-in-Bb.ily",
+		"/Users/elaine/Documents/sheet-music/scores/collaborations/steve-rice/ly/licorice-shtick/parts/licorice-shtick-Lead-Sheet.ly",
+		"/Users/elaine/Documents/sheet-music/scores/collaborations/steve-rice/ly/licorice-shtick/parts/licorice-shtick-Melody.ly",
+		"/Users/elaine/Documents/sheet-music/scores/collaborations/steve-rice/ly/licorice-shtick/books/Melody.ily",
+		"/Users/elaine/Documents/sheet-music/scores/collaborations/steve-rice/ly/licorice-shtick/books/Lead-Sheet.ily",
+		"/Users/elaine/Documents/sheet-music/scores/collaborations/steve-rice/ly/licorice-shtick/parts/licorice-shtick-Rhythm.ly",
+		"/Users/elaine/Documents/sheet-music/scores/collaborations/steve-rice/ly/licorice-shtick/buildParts.sh",
+		"/Users/elaine/Documents/sheet-music/scores/piano-trio/ly/swampy/structures/chords.ily",
+		"/Users/elaine/Documents/sheet-music/scores/piano-trio/ly/swampy/books/Lead-Sheet.ily",
+		"/Users/elaine/Documents/sheet-music/scores/woodwind-arrangements/ly/dont-wait-for-me/structures/header.ily",
+		"/Users/elaine/Documents/sheet-music/scores/collaborations/steve-rice/ly/licorice-shtick/parts/licorice-shtick-Bass.ly",
+		"/Users/elaine/Documents/sheet-music/scores/collaborations/steve-rice/ly/licorice-shtick/structures/header.ily",
+		"/Users/elaine/Documents/sheet-music/scores/collaborations/steve-rice/ly/licorice-shtick/licorice-shtick.sublime-project",
+		"/Users/elaine/Documents/sheet-music/scores/collaborations/steve-rice/ly/licorice-shtick/books/Bass.ily",
+		"/Users/elaine/Documents/sheet-music/scores/collaborations/steve-rice/ly/licorice-shtick/instruments/trumpet.ily",
+		"/Users/elaine/Documents/sheet-music/scores/collaborations/steve-rice/ly/licorice-shtick/books/Transposed-Score.ily",
+		"/Users/elaine/Documents/sheet-music/scores/collaborations/steve-rice/ly/licorice-shtick/books/Sound.ily",
+		"/Users/elaine/Documents/sheet-music/scores/collaborations/steve-rice/ly/licorice-shtick/books/Bb-Lead-Sheet.ily",
+		"/Users/elaine/Documents/sheet-music/scores/collaborations/steve-rice/ly/licorice-shtick.ly",
+		"/Users/elaine/Documents/sheet-music/scores/collaborations/steve-rice/ly/licorice-shtick/books/Eb-Lead-Sheet.ily",
+		"/Users/elaine/Documents/sheet-music/scores/collaborations/paula-mcmath/ly/taken-all-my-life/taken-all-my-life.sublime-project",
+		"/Users/elaine/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/Users/elaine/Documents/sheet-music/scores/Lissa/ly/lissa/books/LeadWhere.ily",
+		"/Users/elaine/Documents/sheet-music/scores/Lissa/ly/lissa/structures/headerWhere.ily",
+		"/Users/elaine/Documents/sheet-music/scores/Lissa/ly/lissa/structures/chords.ily",
+		"/Users/elaine/Documents/sheet-music/scores/Lissa/ly/lissa/structures/headerThank.ily",
+		"/Users/elaine/Documents/sheet-music/scores/Lissa/ly/lissa/books/LeadThank.ily",
+		"/Users/elaine/Documents/sheet-music/scores/Lissa/ly/lissa/parts/thank-you-god-for-everything-Lead.ly",
+		"/Users/elaine/Documents/sheet-music/scores/Lissa/ly/lissa/parts/where-is-the-you-for-me-Lead.ly",
+		"/Users/elaine/Documents/sheet-music/scores/Lissa/ly/lissa/buildParts.sh",
+		"/Users/elaine/Documents/sheet-music/scores/Lissa/ly/lissa/parts/a-heros-tale-Lead.ly",
+		"/Users/elaine/Documents/sheet-music/scores/Lissa/ly/lissa/books/LeadHero.ily",
+		"/Users/elaine/Documents/sheet-music/scores/Lissa/ly/lissa/structures/headerHero.ily",
+		"/Users/elaine/Documents/sheet-music/scores/Lissa/ly/lissa/structures/lyrics.ily",
+		"/Users/elaine/Documents/sheet-music/scores/Lissa/ly/lissa/instruments/melody.ily",
+		"/Users/elaine/Documents/sheet-music/scores/Lissa/ly/lissa/structures/forms.ily",
+		"/Users/elaine/Documents/sheet-music/scores/Lissa/ly/where-is-the-you-for-me/structures/headerWhere.ily",
+		"/Users/elaine/Documents/sheet-music/scores/Lissa/ly/where-is-the-you-for-me/structures/headerThank.ily",
+		"/Users/elaine/Documents/sheet-music/scores/Lissa/ly/where-is-the-you-for-me/structures/lyrics.ily",
+		"/Users/elaine/Documents/sheet-music/scores/Lissa/ly/where-is-the-you-for-me/books/LeadWhere.ily",
+		"/Users/elaine/Documents/sheet-music/scores/Lissa/ly/where-is-the-you-for-me/books/LeadThank.ily",
+		"/Users/elaine/Documents/sheet-music/scores/Lissa/ly/where-is-the-you-for-me/instruments/melody.ily",
+		"/Users/elaine/Documents/sheet-music/scores/Lissa/ly/where-is-the-you-for-me/parts/where-is-the-you-for-me-Lead.ly",
+		"/Users/elaine/Documents/sheet-music/scores/Lissa/ly/where-is-the-you-for-me/parts/thank-you-god-for-everything-Lead.ly",
+		"/Users/elaine/Documents/sheet-music/scores/Lissa/ly/where-is-the-you-for-me/structures/forms.ily",
+		"/Users/elaine/Documents/sheet-music/scores/Lissa/ly/where-is-the-you-for-me/structures/chords.ily",
+		"/Users/elaine/Documents/sheet-music/scores/Lissa/ly/where-is-the-you-for-me/lissa.sublime-project",
+		"/Users/elaine/Documents/sheet-music/scores/Lissa/ly/thank-you-god-for-everything/parts/thank-you-god-for-everything-Lead.ly",
+		"/Users/elaine/Documents/sheet-music/scores/Lissa/ly/thank-you-god-for-everything/books/Lead.ily",
+		"/Users/elaine/Documents/sheet-music/scores/Lissa/ly/thank-you-god-for-everything/instruments/melody.ily",
+		"/Users/elaine/Documents/sheet-music/scores/Lissa/ly/thank-you-god-for-everything/structures/lyrics.ily",
+		"/Users/elaine/Documents/sheet-music/scores/Lissa/ly/thank-you-god-for-everything/structures/header.ily",
+		"/Users/elaine/Documents/sheet-music/scores/Lissa/ly/thank-you-god-for-everything/structures/chords.ily",
+		"/Users/elaine/Documents/sheet-music/scores/Lissa/ly/thank-you-god-for-everything/structures/forms.ily",
+		"/Users/elaine/Documents/sheet-music/scores/Lissa/ly/where-is-the-you-for-me/structures/header.ily",
+		"/Users/elaine/Documents/sheet-music/scores/Lissa/contract-negotiation.txt",
+		"/Users/elaine/Documents/sheet-music/scores/Lissa/ly/where-is-the-you-for-me/buildParts.sh",
+		"/Users/elaine/Documents/sheet-music/scores/Lissa/ly/where-is-the-you-for-me/books/Lead.ily",
+		"/Users/elaine/Documents/sheet-music/scores/Lilypond/lily-list-roundup-april-2016.txt",
+		"/Users/elaine/Documents/sheet-music/scores/piano-trio/ly/wag-that-tail/parts/wag-that-tail-Lead.ly",
+		"/Users/elaine/Documents/sheet-music/scores/piano-trio/ly/wag-that-tail/books/Lead.ily",
+		"/Users/elaine/Documents/sheet-music/scores/piano-trio/ly/wag-that-tail/buildParts.sh",
+		"/Users/elaine/Documents/sheet-music/scores/woodwind-arrangements/ly/octagon-arbiter/instruments/source/bass.ily",
+		"/Users/elaine/Documents/sheet-music/scores/woodwind-arrangements/ly/octagon-arbiter/structures/forms.ily",
+		"/Users/elaine/Documents/sheet-music/scores/woodwind-arrangements/ly/octagon-arbiter/parts/octagon-arbiter-Lead-Sheet.ly",
+		"/Users/elaine/Documents/sheet-music/scores/piano-trio/ly/wag-that-tail/books/Bass.ily",
+		"/Users/elaine/Documents/sheet-music/scores/piano-trio/ly/wag-that-tail/books/Harmony-in-Bb.ily",
+		"/Users/elaine/Documents/sheet-music/scores/piano-trio/ly/wag-that-tail/books/Harmony-in-Eb.ily",
+		"/Users/elaine/Documents/sheet-music/scores/piano-trio/ly/wag-that-tail/books/Melody-in-Bb.ily",
+		"/Users/elaine/Documents/sheet-music/scores/piano-trio/ly/wag-that-tail/books/Melody-in-Eb.ily",
+		"/Users/elaine/Documents/sheet-music/scores/piano-trio/ly/wag-that-tail/books/Score.ily",
+		"/Users/elaine/Documents/sheet-music/scores/piano-trio/ly/wag-that-tail/books/Score-Sound.ily",
+		"/Users/elaine/Documents/sheet-music/scores/woodwind-arrangements/ly/octagon-arbiter/books/lead.ily",
+		"/Users/elaine/Documents/sheet-music/scores/piano-trio/ly/thick-as-a-nickle/books/Score.ily",
+		"/Users/elaine/Documents/sheet-music/scores/piano-trio/ly/wag-that-tail/parts/wag-that-tail-Bass.ly",
+		"/Users/elaine/Documents/sheet-music/scores/piano-trio/ly/wag-that-tail/parts/wag-that-tail-Melody-in-Bb.ly",
+		"/Users/elaine/Documents/sheet-music/scores/piano-trio/ly/wag-that-tail/books/Melody-in-C.ily",
+		"/Users/elaine/Documents/sheet-music/scores/piano-trio/ly/wag-that-tail/parts/wag-that-tail-Melody-in-C.ly",
+		"/Users/elaine/Documents/sheet-music/scores/piano-trio/ly/wag-that-tail/parts/wag-that-tail-Melody-in-Eb.ly",
+		"/Users/elaine/Documents/sheet-music/scores/piano-trio/ly/wag-that-tail/parts/wag-that-tail-Harmony-in-Eb.ly",
+		"/Users/elaine/Documents/sheet-music/scores/piano-trio/ly/wag-that-tail/structures/forms.ily",
+		"/Users/elaine/Documents/sheet-music/scores/piano-trio/ly/wag-that-tail/parts/wag-that-tail-Score-Sound.ly",
+		"/Users/elaine/Documents/sheet-music/scores/piano-trio/ly/wag-that-tail/instruments/bass.ily",
+		"/Users/elaine/Documents/sheet-music/scores/piano-trio/ly/wag-that-tail/structures/chords.ily",
+		"/Users/elaine/Documents/sheet-music/scores/piano-trio/ly/wag-that-tail/wag-that-tail.sublime-project",
+		"/Users/elaine/Documents/sheet-music/scores/flaming-libs/flaming-paper.ily",
+		"/Users/elaine/Documents/sheet-music/scores/piano-trio/ly/wag-that-tail/parts/wag-that-tail-Harmony-in-Bb.ly",
+		"/Users/elaine/Documents/sheet-music/scores/piano-trio/ly/kickin-the-can/instruments/bass.ily",
+		"/Users/elaine/Documents/sheet-music/scores/piano-trio/ly/kickin-the-can/books/Rhythm.ily",
+		"/Users/elaine/Documents/sheet-music/scores/piano-trio/ly/kickin-the-can/buildParts.sh",
+		"/Users/elaine/Documents/sheet-music/scores/piano-trio/ly/kickin-the-can/instruments/melody.ily",
+		"/Users/elaine/Documents/sheet-music/scores/piano-trio/ly/kickin-the-can/instruments/harmony.ily",
+		"/Users/elaine/Documents/sheet-music/scores/piano-trio/ly/kickin-the-can/instruments/melodyPiano.ily",
+		"/Users/elaine/Documents/sheet-music/scores/piano-trio/ly/kickin-the-can/structures/forms.ily",
+		"/Users/elaine/Documents/sheet-music/scores/piano-trio/ly/kickin-the-can/books/Harmony-in-Eb.ily",
+		"/Users/elaine/Documents/sheet-music/scores/piano-trio/ly/kickin-the-can/books/Harmony-in-Bb.ily",
+		"/Users/elaine/Documents/git/lilypond-project-template/ly/TEMPLATE/structures/chords.ily",
+		"/Users/elaine/Documents/git/lilypond-project-template/ly/TEMPLATE/structures/forms.ily",
+		"/Users/elaine/Documents/git/lilypond-project-template/ly/TEMPLATE/structures/header.ily",
+		"/Users/elaine/Documents/git/lilypond-project-template/ly/TEMPLATE/structures/lyrics.ily",
+		"/Users/elaine/Documents/sheet-music/scores/piano-trio/ly/kickin-the-can/books/Lead.ily",
+		"/Users/elaine/Documents/sheet-music/scores/piano-trio/ly/kickin-the-can/parts/kickin-the-can-Lead.ly",
+		"/Users/elaine/Documents/sheet-music/scores/piano-trio/ly/kickin-the-can/parts/kickin-the-can-Rhythm.ly",
+		"/Users/elaine/Documents/sheet-music/scores/piano-trio/ly/kickin-the-can/books/Bass.ily",
+		"/Users/elaine/Documents/sheet-music/scores/piano-trio/ly/kickin-the-can/structures/lyrics.ily",
+		"/Users/elaine/Documents/sheet-music/scores/piano-trio/ly/kickin-the-can/structures/chords.ily",
+		"/Users/elaine/Documents/sheet-music/scores/piano-trio/ly/kickin-the-can/books/Melody-in-Bb.ily",
+		"/Users/elaine/Documents/sheet-music/scores/piano-trio/ly/kickin-the-can/books/Melody-in-C.ily",
+		"/Users/elaine/Documents/sheet-music/scores/piano-trio/ly/kickin-the-can/books/Score.ily"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"/Users/elaine/Documents/sheet-music/scores/"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"composer",
+			"cello",
+			"\" {",
+			"	new file:   ",
+			" 	new file:   ",
+			"convertInstrumentNameToVariable",
+			"	new file:   ",
+			"	",
+			"	new file:   ",
+			" 	new file:   ",
+			"	deleted:    ",
+			"	new file:   ",
+			"\\set Staff.shortInstrumentName = #\"\"\n                        \\accidentalStyle modern-voice-cautionary",
+			"                        \\accidentalStyle modern-voice-cautionary\n",
+			"OneTime Score",
+			"violin",
+			"iolin",
+			"flute",
+			"\\set",
+			"viola",
+			"nII",
+			"hTag #'(OneTime Score) \\transpose c c { \n                        \\violinII",
+			"iolin",
+			"\\once \\once",
+			"\\override ",
+			"-7 ",
+			"\\break",
+			"\\bar \"||\"",
+			"bass",
+			"\\bar \"||\"",
+			"\\tempo ",
+			"\\mark \\markup { \\box ",
+			"\\bar \"||\" \\break",
+			"\" }",
+			"\\mark \\markup { \\box \"",
+			"\\break",
+			"\\bar \"||\"",
+			"\\mark \\markup { \\box ",
+			"\\break",
+			"\\bar \"||\"",
+			"\\mark \\markup { ",
+			"\\mark \\markup { \\box ",
+			"lissan",
+			"glissand",
+			"lilypond ly/taken-all-my-life/parts/taken-all-my-life-",
+			"GlobalCoda",
+			"g\n                        \\clave",
+			"chordsCoda",
+			"\\pageBreak",
+			"pageBreak",
+			"\\bassGlobalCoda",
+			"before",
+			"taken",
+			"s1",
+			"\\time ",
+			"\\tempo ",
+			"\\bar \"||\"",
+			"\\mark \\markup \\box",
+			"\n",
+			"where-is-the-you-for-me",
+			"Thank",
+			"/where-is-the-you-for-me/",
+			"/thank-you-god-for-everything/",
+			"/where-is-the-you-for-me/",
+			"where-is-the-you-for-me",
+			"kickin-the-can",
+			"Slur",
+			"d4-. r8 d8 8 4-. ef8 ",
+			"f4.\\mp\\> ",
+			"bf4-. r4 ",
+			"df4.-> ",
+			"f4-.\\p r4",
+			"g'4.\\mp\\>",
+			"a4-. r4",
+			"c4.",
+			"d4-.\\p",
+			" c ",
+			"cf",
+			"bf",
+			"b",
+			"cf",
+			"bf",
+			"b8-> ( c )",
+			"b->\\p ( c )",
+			"b->\\f r c",
+			"b-> ( | c )",
+			"b-> ( c )",
+			"\\breakLead",
+			"<",
+			"<< { ",
+			"1 1 1 1",
+			"dcCoda",
+			"c af",
+			"harmony",
+			"Harmony",
+			"16",
+			") }   ",
+			"4. c16 ( a ) ",
+			"4. a8--\\< ~ a bf c d->\\f ~",
+			"16",
+			"4. c16 ( g ) ",
+			"4. c16 ( a ) ",
+			"4. 16 ( g ) ",
+			"4. 16 ( a ) ",
+			"\\bar \"||\"",
+			"\\bar \"||\" \\breakLead",
+			"\\breakLead",
+			"bf4'",
+			"r8 bf8\\mf ( c ) d ~",
+			"2\\> ~ 8 bf",
+			"s1*4 ",
+			"4.\\< c16 ( d ) ",
+			"4. c16\\> ( a ) ",
+			"}   ",
+			"4. c16 ( a )  ",
+			"4. c16 ( g )  ",
+			"4. c16 ( a )  ",
+			"4 c8 ( g )",
+			"4 c8 ( a )",
+			"4 c8\\> ( a )",
+			"4 c8 ( a )",
+			"4 c8 ( g )",
+			"4 c8 ( a ) ",
+			"melody",
+			"\\bar \"||\"",
+			"melody",
+			" op ",
+			"a r8 g r e r d"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"where-is-the-you-for-me",
+			"f4:m7 r8 f8:m7 8 4 bf8:7 ",
+			"c4.:9.11+",
+			"g4:m7 r4 ",
+			"ef4.:7 ",
+			"bf4:7 r4",
+			"f4.:7",
+			"f4:7 r4",
+			"bf4.:9",
+			"f4:13",
+			" <c a> ",
+			"<cf af>",
+			"<bf g>",
+			"<b af>",
+			"a",
+			"af",
+			"af8-> ( a )",
+			"af->\\p ( a )",
+			"af->\\f r a",
+			"af-> ( | a )",
+			"af-> ( a )",
+			"\\breakLead \\breakPart",
+			"melody",
+			"Melody",
+			") } ",
+			"4 ~ \\tuplet 3/2 { 8 c ( a ) } ",
+			"2 r4 r8 d'->\\f ~",
+			"4 ~ \\tuplet 3/2 { 8 c ( g ) } ",
+			"4 ~ \\tuplet 3/2 { 8 c ( a ) } ",
+			"4. c16 ( g ) ",
+			"4. c16 ( a ) ",
+			"",
+			"\\bar \"||\" \\break",
+			"\\break",
+			"bf'4",
+			"r8 bf8\\mf ( c ) [ d ] ~",
+			"2\\> r8 bf8",
+			"s1*4 \\breakLead",
+			"4\\< ~ \\tuplet 3/2 { 8 c ( d ) } ",
+			"4 ~ \\tuplet 3/2 { 8 c\\> ( a ) } ",
+			"} ",
+			"4 ~ \\tuplet 3/2 { 8 c ( a ) }   ",
+			"4 ~ \\tuplet 3/2 { 8 c ( g ) }   ",
+			"4 ~ \\tuplet 3/2 { 8 c ( a ) }   ",
+			"4. 16 ( g )",
+			"4. 16 ( a )",
+			"4. c16\\> ( a )",
+			"4. c16 ( a ) ",
+			"4. c16 ( g ) ",
+			"4. c16 ( a ) ",
+			"melodyPiano",
+			"\\bar \"||\" \\breakLead",
+			"harmony",
+			" open -a Preview ",
+			"a r8 g r e r ds",
+			"Rhythm",
+			"r4 <bf g>8 <a fs>",
+			"r4 g8 fs",
+			"g'4->-.\\mf 8 8 r4 g4->-. | af8 8 r4 af4->-.\\< af8 a8 ",
+			"df4->-.\\mf 8 8 r4 df4->-. | b8 8 r4 b4->-.\\< b8 c8 ",
+			"df4->-.\\mf 8 8 r4 df4->-. | b8 8 r4 b4->-.\\< b8 c8",
+			"<g' df>4->-.\\mf 8 8 r4 <g df>4->-. | <af b,>8 8 r4 <af b,>4->-.\\< <af b,>8 <a c,>8",
+			"Lead-down-fifth",
+			"Sound-down-fifth",
+			"b:7",
+			"r8 ef",
+			"d",
+			"df4-.",
+			"d4-.",
+			"kickin-the-can",
+			"bf8",
+			"a r8 a r e ~ | e d ",
+			"SONG",
+			"INSTRUMENT",
+			"homage-to-brahms-original",
+			"violinI",
+			"InstrumentViolinI",
+			"Violin I",
+			"music",
+			"tag ",
+			"Global",
+			"SegmentTop",
+			"%Seg",
+			"Se",
+			"#'Se",
+			"#'S",
+			"S",
+			"SegmentA",
+			"%Segment",
+			"violinII",
+			"",
+			"en",
+			"bass",
+			"cello",
+			"viola",
+			"violinII",
+			"Coda",
+			"] )",
+			"extra-dynamic",
+			"\\noBreakPart ",
+			" | \\noBreakPart",
+			"%Segment",
+			"SegmentTop",
+			"R2.*",
+			"R2.",
+			"Violin I",
+			"violinI",
+			"violinII",
+			"violinI",
+			"Segment",
+			"INSTRUMENT",
+			"r2.",
+			"flute",
+			" ",
+			".com,",
+			"restChordsSolosII",
+			"2.",
+			"chordsSolosII",
+			"estChords",
+			"chordsSolosII",
+			"clave",
+			"drummode",
+			"bass",
+			"bassClarinet",
+			"SolosII",
+			"Two",
+			"pageBreak",
+			"soloChords"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 401.0,
+	"status_bar_visible": true
+}
