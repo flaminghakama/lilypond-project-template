@@ -18,12 +18,11 @@
 #    Part File.  This is a lilypond file that you can invoke and it will produce a pdf.  
 #      References the standard libraries.
 #      References the instrument file and the book file.  
+#    Book File.  This is a lilypond fragment that defines the lilypond book.
+#      References music variables, which are defined in the instruent file before including the book file.
+#    Instrument File.
 #      Defines the music variables used in the book file, typically out of combinations of 
 #      the music variables contained in the instrument file combined with the global functions. 
-#    Book File.  This is a lilypond fragment that defines the lilypond book.
-#      References music variables, which are defined in the part file before including the book file.
-#    Instrument File.
-#      Contains music definitions used in the part file, after including the instrument file.
 #
 #  SCORES
 #
@@ -55,38 +54,38 @@ use File::Copy ;
 use File::Slurp ; 
 
 sub slurpFile {
-        my ($fileName, $fileDescription) = @_ ; 
-        local $/ = undef;
-        open(FILE, "$fileName") or die "Couldn't open $fileDescription '$fileName': $!";
-        binmode FILE;
-        my $contents = <FILE>;
-        close FILE;
-        return $contents ; 
+    my ($fileName, $fileDescription) = @_ ; 
+    local $/ = undef;
+    open(FILE, "$fileName") or die "Couldn't open $fileDescription '$fileName': $!";
+    binmode FILE;
+    my $contents = <FILE>;
+    close FILE;
+    return $contents ; 
 }
 
 sub writeFile {
-        my ($fileName, $fileDescription, $fileContents) = @_ ; 
-        open(my $fh, '>', $fileName) or die "Could not open $fileDescription '$fileName' $!";
-        print $fh $fileContents ; 
-        close $fh;
+    my ($fileName, $fileDescription, $fileContents) = @_ ; 
+    open(my $fh, '>', $fileName) or die "Could not open $fileDescription '$fileName' $!";
+    print $fh $fileContents ; 
+    close $fh;
 }
 
 sub getPartType {
-        my ($fileName) = @_;
-        my $partType = "Part" ; 
-        if ( $fileName =~ /Score/ ) { 
-                $partType = "Score" ; 
-        } 
-        if ( $fileName =~ /Sound/ ) { 
-                $partType = "Sound" ; 
-        } 
-        if ( $fileName =~ /Lead/ ) { 
-                $partType = "Score" ; 
-        } 
-        if ( $fileName =~ /Rhythm/ ) { 
-                $partType = "Score" ; 
-        } 
-        return $partType ; 
+    my ($fileName) = @_;
+    my $partType = "Part" ; 
+    if ( $fileName =~ /Score/ ) { 
+        $partType = "Score" ; 
+    } 
+    if ( $fileName =~ /Sound/ ) { 
+        $partType = "Sound" ; 
+    } 
+    if ( $fileName =~ /Lead/ ) { 
+        $partType = "Score" ; 
+    } 
+    if ( $fileName =~ /Rhythm/ ) { 
+        $partType = "Score" ; 
+    } 
+    return $partType ; 
 }
 
 sub isPart { 
@@ -95,103 +94,103 @@ sub isPart {
 }
 
 sub isSound { 
-        my ($fileName) = @_ ; 
-        return getPartType($fileName) eq "Sound" ; 
+    my ($fileName) = @_ ; 
+    return getPartType($fileName) eq "Sound" ; 
 }
 
 sub isScore { 
-        my ($fileName) = @_ ; 
-        return getPartType($fileName) eq "Score" ; 
+    my ($fileName) = @_ ; 
+    return getPartType($fileName) eq "Score" ; 
 }
 
 sub convertPartNameToInstrumentName {
-        my ($partName) = @_ ; 
-        my $instrumentName ; 
-        my $transposition ; 
-        if ( $partName =~ /\-in\-\w*/ ) {
-                ( $instrumentName, $transposition ) = ( $partName =~ /(.*)(\-in\-\w*)/ ) ;
-        } else { 
-                $instrumentName = $partName ;
-        }
-        return $instrumentName ; 
+    my ($partName) = @_ ; 
+    my $instrumentName ; 
+    my $transposition ; 
+    if ( $partName =~ /\-in\-\w*/ ) {
+        ( $instrumentName, $transposition ) = ( $partName =~ /(.*)(\-in\-\w*)/ ) ;
+    } else { 
+        $instrumentName = $partName ;
+    }
+    return $instrumentName ; 
 }
 
 sub convertInstrumentNameToVariable {
-        my ($instrumentName) = @_ ; 
-        my @words = split('-', $instrumentName) ;
-        my $word ;
-        my $variableName = '' ;   
-        foreach $word (@words) {
-                if ($variableName eq '') {
-                        $variableName = lc($word) ;  
-                } else {
-                        $variableName = $variableName . $word ; 
-                }
+    my ($instrumentName) = @_ ; 
+    my @words = split('-', $instrumentName) ;
+    my $word ;
+    my $variableName = '' ;   
+    foreach $word (@words) {
+        if ($variableName eq '') {
+            $variableName = lc($word) ;  
+        } else {
+            $variableName = $variableName . $word ; 
         }
-        return $variableName ; 
+    }
+    return $variableName ; 
 }
 
 sub convertPartNameToPoet {
-        my ($partName) = @_ ; 
-        $partName =~ s/\-/ /g ;
-        return $partName ; 
+    my ($partName) = @_ ; 
+    $partName =~ s/\-/ /g ;
+    return $partName ; 
 }
 
 sub getMusicDefinitionsFromInstrument {
-        my ($instrumentContents) = @_ ; 
-        my $line ;
-        my @globalMusicDefinitions ;  
-        foreach $line ( split("\n", $instrumentContents) ) {
-                next if $line =~ /include|version/ ; 
-                push(@globalMusicDefinitions, $line) ; 
-        }
-        return @globalMusicDefinitions ; 
+    my ($instrumentContents) = @_ ; 
+    my $line ;
+    my @globalMusicDefinitions ;  
+    foreach $line ( split("\n", $instrumentContents) ) {
+        next if $line =~ /include|version/ ; 
+        push(@globalMusicDefinitions, $line) ; 
+    }
+    return @globalMusicDefinitions ; 
 }
 
 sub getVersionLineFromPart {
-        my ($partContents) = @_ ; 
-        my $line ;
-        foreach $line ( split("\n", $partContents) ) {
-                if ( $line =~ /version/ ) { 
-                        return $line ; 
-                }
+    my ($partContents) = @_ ; 
+    my $line ;
+    foreach $line ( split("\n", $partContents) ) {
+        if ( $line =~ /version/ ) { 
+            return $line ; 
         }
-        return '' ;
+    }
+    return '' ;
 }
 
 sub getInstrumentIncludesFromPart {
-        my ($partContents) = @_ ; 
-        my $line ;
-        my @instrumentIncludes ;  
-        foreach $line ( split("\n", $partContents) ) {
-                if ( ( $line =~ /include/ ) && ( $line =~ /instrument/ ) ) { 
-                        push(@instrumentIncludes, $line) ; 
-                }
+    my ($partContents) = @_ ; 
+    my $line ;
+    my @instrumentIncludes ;  
+    foreach $line ( split("\n", $partContents) ) {
+        if ( ( $line =~ /include/ ) && ( $line =~ /instrument/ ) ) { 
+            push(@instrumentIncludes, $line) ; 
         }
-        return @instrumentIncludes ; 
+    }
+    return @instrumentIncludes ; 
 }
 
 sub getStructuresFromPart {
-        my ($partContents) = @_ ; 
-        my $line ;
-        my @structureIncludes ;  
-        foreach $line ( split("\n", $partContents) ) {
-                if ( ( $line =~ /include/ ) && ( $line =~ /structure/ ) ) { 
-                        push(@structureIncludes, $line) ; 
-                }
+    my ($partContents) = @_ ; 
+    my $line ;
+    my @structureIncludes ;  
+    foreach $line ( split("\n", $partContents) ) {
+        if ( ( $line =~ /include/ ) && ( $line =~ /structure/ ) ) { 
+            push(@structureIncludes, $line) ; 
         }
-        return @structureIncludes ; 
+    }
+    return @structureIncludes ; 
 }
 
 sub getBookLineFromPart {
-        my ($partContents) = @_ ; 
-        my $line ;
-        foreach $line ( split("\n", $partContents) ) {
-                if ( $line =~ /\/books\// ) { 
-                        return $line ; 
-                }
+    my ($partContents) = @_ ; 
+    my $line ;
+    foreach $line ( split("\n", $partContents) ) {
+        if ( $line =~ /\/books\// ) { 
+            return $line ; 
         }
-        return '' ;
+    }
+    return '' ;
 }
 
 #  Get the song name
@@ -250,77 +249,77 @@ my @instrumentIncludes ;
 my @scoreContents ; 
 foreach $partName (@ARGV){
 
-        #  Prepare the invocation of the part file.
-        push(@lilypondPartInvocation, "lilypond ly/$song/parts/$song-$partName.ly") ; 
+    #  Prepare the invocation of the part file.
+    push(@lilypondPartInvocation, "rm $song-$partName.pdf ; lilypond ly/$song/parts/$song-$partName.ly ; open -a Preview $song-$partName.pdf") ; 
 
-        $poet = convertPartNameToPoet($partName) ; 
+    $poet = convertPartNameToPoet($partName) ; 
 
-        #  Treat parts and scores differently
+    #  Treat parts and scores differently
 
-        if ( isSound($partName) ) {
+    if ( isSound($partName) ) {
 
-                #  Save the name of the part file, which will be created once all the parts have been processed.
-                push(@scoreNames, $partName) ; 
+        #  Save the name of the part file, which will be created once all the parts have been processed.
+        push(@scoreNames, $partName) ; 
 
-                #  Make the book file
-                $bookFile = "ly/$song/books/$partName.ily" ; 
-                $bookContents = $midiBookTemplate ; 
-                $bookContents =~ s/PART/$partName/g ; 
-                $bookContents =~ s/POET/$poet/g ;  
-                writeFile($bookFile, "midi part file", $bookContents) ; 
+        #  Make the book file
+        $bookFile = "ly/$song/books/$partName.ily" ; 
+        $bookContents = $midiBookTemplate ; 
+        $bookContents =~ s/PART/$partName/g ; 
+        $bookContents =~ s/POET/$poet/g ;  
+        writeFile($bookFile, "midi part file", $bookContents) ; 
+
+    } else { 
+
+        if ( isScore($partName) ) {
+
+            #  Save the name of the part file, which will be created once all the parts have been processed.
+            push(@scoreNames, $partName) ; 
+
+            #  Make the book file
+            $bookFile = "ly/$song/books/$partName.ily" ; 
+            $bookContents = $scoreBookTemplate ; 
+            $bookContents =~ s/PART/$partName/g ; 
+            $bookContents =~ s/POET/$poet/g ;  
+            writeFile($bookFile, "score part file", $bookContents) ; 
 
         } else { 
 
-                if ( isScore($partName) ) {
+            $instrumentName = convertPartNameToInstrumentName($partName) ; 
+            $variableName = convertInstrumentNameToVariable($instrumentName) ; 
 
-                        #  Save the name of the part file, which will be created once all the parts have been processed.
-                        push(@scoreNames, $partName) ; 
+            #  Create the part file and update the part and song names
 
-                        #  Make the book file
-                        $bookFile = "ly/$song/books/$partName.ily" ; 
-                        $bookContents = $scoreBookTemplate ; 
-                        $bookContents =~ s/PART/$partName/g ; 
-                        $bookContents =~ s/POET/$poet/g ;  
-                        writeFile($bookFile, "score part file", $bookContents) ; 
+            $partFile = "ly/$song/parts/$song-$partName.ly" ; 
+            $partContents = $partTemplate ; 
+            push(@partNames, $partName) ; 
+            $partContents =~ s/PART/$partName/g ; 
+            $partContents =~ s/SONG/$song/g ; 
 
-                } else { 
+            #  Update the instrument name and collect the instrument includes
+            $partContents =~ s/INSTRUMENT/$variableName/g ; 
+            push(@instrumentIncludes, getInstrumentIncludesFromPart($partContents)) ; 
+            writeFile($partFile, "part file", $partContents) ; 
 
-                        $instrumentName = convertPartNameToInstrumentName($partName) ; 
-                        $variableName = convertInstrumentNameToVariable($instrumentName) ; 
+            push(@globalMusicDefinitions, getMusicDefinitionsFromInstrument($partContents)) ; 
 
-                        #  Create the part file and update the part and song names
+        	#  Make the book file
 
-                        $partFile = "ly/$song/parts/$song-$partName.ly" ; 
-                        $partContents = $partTemplate ; 
-                        push(@partNames, $partName) ; 
-                        $partContents =~ s/PART/$partName/g ; 
-                        $partContents =~ s/SONG/$song/g ; 
+        	$bookFile = "ly/$song/books/$partName.ily" ; 
+                $bookContents = $bookPartTemplate ; 
+                $bookContents =~ s/PART/$partName/g ; 
+                $bookContents =~ s/INSTRUMENT/$variableName/g  ; 
+                $bookContents =~ s/POET/$poet/g ;  
+                writeFile($bookFile, "book file for instrument $instrumentName", $bookContents) ; 
 
-                        #  Update the instrument name and collect the instrument includes
-                        $partContents =~ s/INSTRUMENT/$variableName/g ; 
-                        push(@instrumentIncludes, getInstrumentIncludesFromPart($partContents)) ; 
-                        writeFile($partFile, "part file", $partContents) ; 
+    		# Make the instrument file
 
-                        push(@globalMusicDefinitions, getMusicDefinitionsFromInstrument($partContents)) ; 
+            $instrumentFile = "ly/$song/instruments/$variableName.ily" ;  
+            $instrumentContents = $instrumentTemplate ; 
 
-                	#  Make the book file
-
-                	$bookFile = "ly/$song/books/$partName.ily" ; 
-                        $bookContents = $bookPartTemplate ; 
-                        $bookContents =~ s/PART/$partName/g ; 
-                        $bookContents =~ s/INSTRUMENT/$variableName/g  ; 
-                        $bookContents =~ s/POET/$poet/g ;  
-                        writeFile($bookFile, "book file for instrument $instrumentName", $bookContents) ; 
-
-        		# Make the instrument file
-
-                        $instrumentFile = "ly/$song/instruments/$variableName.ily" ;  
-                        $instrumentContents = $instrumentTemplate ; 
-
-                        $instrumentContents =~ s/INSTRUMENT/$variableName/g ;
-                        writeFile($instrumentFile, "instrument file $instrumentFile", $instrumentContents) ; 
-                }
+            $instrumentContents =~ s/INSTRUMENT/$variableName/g ;
+            writeFile($instrumentFile, "instrument file $instrumentFile", $instrumentContents) ; 
         }
+    }
 }
 
 
@@ -328,22 +327,22 @@ foreach $partName (@ARGV){
 
 foreach $partName (@scoreNames){
 
-        $partFile = "ly/$song/parts/$song-$partName.ly" ; 
-        $partContents = $partTemplate ; 
-        $partContents =~ s/PART/$partName/g ; 
-        $partContents =~ s/SONG/$song/g ; 
+    $partFile = "ly/$song/parts/$song-$partName.ly" ; 
+    $partContents = $partTemplate ; 
+    $partContents =~ s/PART/$partName/g ; 
+    $partContents =~ s/SONG/$song/g ; 
 
-        writeFile(
-                $partFile, 
-                "part file", 
-                join("\n", 
-                        getVersionLineFromPart($partContents),  
-                        getStructuresFromPart($partContents), 
-                        @instrumentIncludes,
-                        @globalMusicDefinitions,
-                        getBookLineFromPart($partContents)
-                )
-        ) ;  
+    writeFile(
+        $partFile, 
+        "part file", 
+        join("\n", 
+            getVersionLineFromPart($partContents),  
+            getStructuresFromPart($partContents), 
+            @instrumentIncludes,
+            @globalMusicDefinitions,
+            getBookLineFromPart($partContents)
+        )
+    ) ;  
 }
 
 #  Create the invocation script

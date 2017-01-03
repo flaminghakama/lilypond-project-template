@@ -1,0 +1,73 @@
+read instrument name (and number) 
+
+determine staff group 
+	Woodwinds
+	Brass
+	Percussion
+	Voices
+	Strings
+
+determine staff order
+
+	Piccolo
+	Flute
+	Alto Flute in F
+	Oboe
+	English Horn in F
+	Clarinet in Bb
+	Clarinet in A
+	Bass Clarinet in Bb
+	Bassoon 
+	Contrabassoon
+	Soprano Saxophone
+	Alto Saxophone
+	Tenor Saxophone
+	Bari Saxophone
+
+	Horn in F
+	Trumpet in Bb
+	Trombone
+	Bass Trombone
+	Tuba
+
+	Clave
+	Drums
+	Piano
+
+	Guitar
+	Violin
+	Viola
+	Cello
+	Bass
+
+For each staff group with instruments, make two versions, one for concert and one for transposed.
+Read the staff group include ly/SONG/staffgroups/STAFFGROUP.ily
+Replace STAVES with includes of the ly/SONG/staves/scores/INSTRUMENT.ily, with INSTRUMENT being of the format instruentNameInKey.
+For example, ly/SONG/staffgroups/transposed/Woodwinds.ily:
+    \new StaffGroup = "Woodwinds" << 
+		\include "ly/SONG/staves/scores/flute.ily"
+		\include "ly/SONG/staves/scores/englishHornInF.ily"
+		\include "ly/SONG/staves/scores/bassClarinetInBb.ily"
+    >>
+And for concert, ly/SONG/staffgroups/concert/Woodwinds.ily:
+    \new StaffGroup = "Woodwinds" << 
+		\include "ly/SONG/staves/scores/flute.ily"
+		\include "ly/SONG/staves/scores/englishHorn.ily"
+		\include "ly/SONG/staves/scores/bassClarinet.ily"
+    >>
+
+In the parts for scores, include the staff group, one of the following:
+
+    \include "ly/SONG/staffgroups/concert/STAFFGROUP.ily"
+    \include "ly/SONG/staffgroups/transposed/STAFFGROUP.ily"
+
+Take the generic staff group and insert the staves.
+
+For each instrument ther are three or four staves;  any instrument with a transposition will have a concert version in scores.  
+    staves/parts
+    staves/scores/concert
+    staves/scores/transposed
+    staves/sound
+
+   
+
