@@ -1,0 +1,3 @@
+            \new StaffGroup = "Percussion" << 
+                STAVES
+            >>

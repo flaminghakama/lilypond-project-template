@@ -1,0 +1,8 @@
+\book {
+    \score {
+        <<
+            STAVES
+        >>
+        \midi { }
+    }
+}

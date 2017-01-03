@@ -1,0 +1,3 @@
+            \new ChoirStaff = "Voices" << 
+            	STAVES
+            >>

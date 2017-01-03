@@ -1,0 +1,3 @@
+            \new StaffGroup = "Woodwinds" << 
+                STAVES
+            >>
