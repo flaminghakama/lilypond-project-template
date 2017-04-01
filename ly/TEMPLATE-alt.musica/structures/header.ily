@@ -2,23 +2,21 @@
 \include "english.ly"
 \include "articulate.ly"
 
-titleLeft = "Left"
+titleLeft = "Left "
 titleRight = " Right"
 instrumentName = ""
 composerName = "D. Elaine Alt"
-arrangerName = "D. Elaine Alt"
 
 \include "../flaming-libs/flaming-paper.ily"
 
 \header {
     source = ""
     style = ""
-    copyright = \markup { \tiny "copyright © 2017 D. Elaine Alt" } 
+    copyright = \markup { \tiny "copyright © 2016 D. Elaine Alt" } 
     lastupdated = ""
     title = \markup { \italic \fontsize #4 \bold { \titleLeft \titleRight }  }
     poet = ""
-    composer = \markup \italic { "Composed by " \composerName }
-    arranger = \markup \italic { "Arranged by " \arrangerName }
+    composer = \markup \italic \composerName
     tagline = ""
 }
 
@@ -48,3 +46,9 @@ arrangerName = "D. Elaine Alt"
                            (/ myStaffSize 20)))
 }
 \include "../flaming-libs/flaming-fonts.ily"
+
+toCoda = \markup { \translate #'(-1.6 . 1.75) \huge \bold \musicglyph #"scripts.coda" }
+roadmap = \markup { \halign #-2 \center-column { \dSolosWithRepeat \dEndCoda } }
+
+
+

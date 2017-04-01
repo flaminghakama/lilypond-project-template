@@ -1,3 +1,0 @@
-            \new StaffGroup = "Brass" << 
-                STAVES
-            >>

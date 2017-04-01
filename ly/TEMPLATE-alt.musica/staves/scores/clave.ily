@@ -5,6 +5,6 @@
                 \set DrumStaff.instrumentName = #"Clave"
                 \set DrumStaff.shortInstrumentName = #"Cv."
                 \keepWithTag #'(PDF Score Percussion Clave) \transpose c c { 
-                    \claveGlobalHead
+                    \claveGlobal
                 }
             }

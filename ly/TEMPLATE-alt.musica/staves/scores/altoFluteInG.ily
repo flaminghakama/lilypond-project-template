@@ -8,5 +8,5 @@
             \set Staff.shortInstrumentName = #"A.Fl."
             \accidentalStyle modern-voice-cautionary
             \clef treble
-            \keepWithTag #'(PDF Score Woodwinds AltoFlute) \transpose g, c { \altoFluteGlobalHead }
+            \keepWithTag #'(PDF Score Woodwinds AltoFlute) \transpose g, c { \altoFluteGlobal }
         }

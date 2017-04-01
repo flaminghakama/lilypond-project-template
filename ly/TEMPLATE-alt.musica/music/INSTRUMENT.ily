@@ -1,16 +1,10 @@
-
-structureSong = \relative c { 
-    \override Score.RehearsalMark.self-alignment-X = #LEFT
-    \override Score.RehearsalMark #'extra-offset = #'( -3.2 . 0.3 )
-    \numericTimeSignature 
-
-
+INSTRUMENTSong = \relative c { 
     \tag SegmentIntro { 
         R1*6 
         R2.        
     }
     \tag SegmentFunk { 
-        % m8
+    	% m8
         R1
         R1*16
         R1*4
@@ -37,7 +31,5 @@ structureSong = \relative c {
         R1*4 ||
         R1*4 ||
         R1*4 ||
-    }}
-
-globalSong = #(define-music-function (parser location mus) (ly:music?) #{ << \structureSong \relative { $mus } >> #})
-
+    }
+}

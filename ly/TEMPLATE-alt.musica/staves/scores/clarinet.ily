@@ -3,5 +3,5 @@
             \set Staff.shortInstrumentName = #"Cl."
             \accidentalStyle modern-voice-cautionary
             \clef treble
-            \keepWithTag #'(PDF Score Woodwinds Clarinet) \transpose c c { \clarinetGlobalHead }
+            \keepWithTag #'(PDF Score Woodwinds Clarinet) \transpose c c { \clarinetGlobal }
         }

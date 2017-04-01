@@ -1,3 +1,5 @@
             \new StaffGroup = "Woodwinds" << 
-                STAVES
+				\include "ly/SONG/staves/scores/flute.ily"
+				\include "ly/SONG/staves/scores/englishHorn.ily"
+				\include "ly/SONG/staves/scores/bassClarinet.ily"
             >>

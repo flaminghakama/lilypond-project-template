@@ -6,5 +6,5 @@
             \override DynamicLineSpanner #'staff-padding = #3.0
             \accidentalStyle modern-voice-cautionary
             \clef treble
-            \keepWithTag #'(PDF Part Woodwinds Oboe) \transpose c c { \oboeGlobalHead }
+            \keepWithTag #'(PDF Part Woodwinds Oboe) \transpose c c { \oboeGlobal }
         }

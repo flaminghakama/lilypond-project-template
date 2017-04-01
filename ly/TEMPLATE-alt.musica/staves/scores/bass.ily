@@ -3,5 +3,5 @@
             \set Staff.shortInstrumentName = #"Cb."
             \accidentalStyle modern-voice-cautionary
             \clef bass
-            \keepWithTag #'(PDF Score Strings Bass) \transpose c c { \bassGlobalHead }
+            \keepWithTag #'(PDF Score Strings Bass) \transpose c c { \bassGlobal }
         }

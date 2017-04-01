@@ -226,7 +226,7 @@ my $scoreBookTemplate = slurpFile($scoreBookTemplateFile, "score book template")
 my $midiBookTemplateFile = "ly/$song/books/MIDI.ily" ; 
 my $midiBookTemplate = slurpFile($midiBookTemplateFile, "midi book template") ; 
 
-my $instrumentTemplateFile = "ly/$song/instruments/INSTRUMENT.ily" ; 
+my $instrumentTemplateFile = "ly/$song/music/INSTRUMENT.ily" ; 
 my $instrumentTemplate = slurpFile($instrumentTemplateFile, "instrument template") ; 
 
 #  Process each part/score
@@ -313,7 +313,7 @@ foreach $partName (@ARGV){
 
     		# Make the instrument file
 
-            $instrumentFile = "ly/$song/instruments/$variableName.ily" ;  
+            $instrumentFile = "ly/$song/music/$variableName.ily" ;  
             $instrumentContents = $instrumentTemplate ; 
 
             $instrumentContents =~ s/INSTRUMENT/$variableName/g ;

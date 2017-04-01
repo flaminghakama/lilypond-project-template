@@ -5,7 +5,7 @@
             "path": ".",
             "name": "Song",
             "file_exclude_patterns": ["*workspace", "*ideas*"],
-            "folder_exclude_patterns": ["books", "instruments", "parts", "structures", "staffgroups", "staves"]
+            "folder_exclude_patterns": ["books", "instruments", "parts", "structures", "music", "staffgroups", "staves"]
         },
         {
             "path": "../../flaming-libs",
@@ -18,8 +18,8 @@
             "folder_exclude_patterns": ["none"]
         },
         {
-            "path": "staffgroups",
-            "name": "Staff Groups",
+            "path": "music",
+            "name": "Music",
             "folder_exclude_patterns": ["none"]
         },
         {
@@ -28,8 +28,8 @@
             "folder_exclude_patterns": ["none"]
         },
         {
-            "path": "instruments",
-            "name": "Instruments",
+            "path": "staffgroups",
+            "name": "Staff Groups",
             "folder_exclude_patterns": ["none"]
         },
         {

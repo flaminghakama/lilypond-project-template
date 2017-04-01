@@ -1,3 +1,3 @@
             \new ChoirStaff = "Voices" << 
-            	STAVES
+				\include "ly/SONG/staves/scores/voice.ily"
             >>

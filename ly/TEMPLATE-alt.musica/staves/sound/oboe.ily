@@ -1,4 +1,4 @@
         \new Staff = "oboe" { 
             \set Staff.instrumentName = "Oboe"
-            \keepWithTag #'(MIDI Score Woodwinds Oboe) \transpose c c { \oboeGlobalHead }
+            \keepWithTag #'(MIDI Score Woodwinds Oboe) \transpose c c { \oboeGlobal }
         }

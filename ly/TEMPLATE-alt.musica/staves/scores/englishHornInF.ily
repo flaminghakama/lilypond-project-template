@@ -8,5 +8,5 @@
             \set Staff.shortInstrumentName = #"E.h."
             \accidentalStyle modern-voice-cautionary
             \clef treble
-            \keepWithTag #'(PDF Score Woodwinds EnglishHorn) \transpose f, c { \englishHornGlobalHead }
+            \keepWithTag #'(PDF Score Woodwinds EnglishHorn) \transpose f, c { \englishHornGlobal }
         }

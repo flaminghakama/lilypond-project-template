@@ -6,5 +6,5 @@
             \override DynamicLineSpanner #'staff-padding = #3.0
             \accidentalStyle modern-voice-cautionary
             \clef alto
-            \keepWithTag #'(PDF Part Strings Viola) \transpose c c { \violaGlobalHead }
+            \keepWithTag #'(PDF Part Strings Viola) \transpose c c { \violaGlobal }
         }

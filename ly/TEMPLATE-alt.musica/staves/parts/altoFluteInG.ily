@@ -6,5 +6,5 @@
             \override DynamicLineSpanner #'staff-padding = #3.0            
             \accidentalStyle modern-voice-cautionary
             \clef treble
-            \keepWithTag #'(PDF Part Woodwinds AltoFlute) \transpose g, c { \altoFluteGlobalHead }
+            \keepWithTag #'(PDF Part Woodwinds AltoFlute) \transpose g, c { \altoFluteGlobal }
         }
