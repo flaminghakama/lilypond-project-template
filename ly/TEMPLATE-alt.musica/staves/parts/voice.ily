@@ -1,4 +1,12 @@
-			\new Staff = "voice" { 
+        \new ChordNames \keepWithTag #'(PDF Part Choir Voice
+                SegmentIntro
+                SegmentFunk
+                SegmentAroCuban
+                SegmentSoloFunk
+                SegmentSoloAfroCuban
+                SegmentDrum
+            ) \transpose c c { \chordsLead }
+        \new Staff = "voice" { 
 	            \compressFullBarRests
 	            \override MultiMeasureRest.expand-limit = #1
 	            \set Staff.instrumentName = ""
@@ -7,14 +15,14 @@
 	            \accidentalStyle modern-voice-cautionary
                 \new Voice = "lead" {
                     \keepWithTag #'(PDF Part Voices Voice
-                        SegmentIntro
-                        SegmentFunk
-                        SegmentAroCuban
-                        SegmentSoloFunk
-                        SegmentSoloAfroCuban
-                        SegmentDrum
-                    ) \transpose c c { 
-                        \voiceGlobalSong
+                    SegmentIntro
+                    SegmentFunk
+                    SegmentAroCuban
+                    SegmentSoloFunk
+                    SegmentSoloAfroCuban
+                    SegmentDrum
+                ) \transpose c c { 
+                        \voiceGlobal
                     }
                 }
             }

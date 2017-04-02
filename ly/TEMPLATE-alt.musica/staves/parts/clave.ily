@@ -1,3 +1,11 @@
+            \new ChordNames \keepWithTag #'(PDF Part Percussion Clave
+                SegmentIntro
+                SegmentFunk
+                SegmentAroCuban
+                SegmentSoloFunk
+                SegmentSoloAfroCuban
+                SegmentDrum
+            ) \transpose c c { \chordsSong }
 			\new DrumStaff = "clave" \with {
                 drumStyleTable = #percussion-style
                 \override StaffSymbol.line-count = #1

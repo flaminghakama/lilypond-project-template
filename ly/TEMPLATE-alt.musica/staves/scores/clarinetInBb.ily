@@ -1,3 +1,11 @@
+        \new ChordNames \keepWithTag #'(PDF Part Woodwinds Clarinet
+                SegmentIntro
+                SegmentFunk
+                SegmentAroCuban
+                SegmentSoloFunk
+                SegmentSoloAfroCuban
+                SegmentDrum
+            ) \transpose bdf c { \chordsPart }
         \new Staff = "clarinet" { 
             \set Staff.instrumentName = \markup {
                 \center-column { 

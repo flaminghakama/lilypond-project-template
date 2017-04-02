@@ -1,3 +1,11 @@
+        \new ChordNames \keepWithTag #'(PDF Part Woodwinds Flute
+                SegmentIntro
+                SegmentFunk
+                SegmentAroCuban
+                SegmentSoloFunk
+                SegmentSoloAfroCuban
+                SegmentDrum
+            ) \transpose g c { \chordsPart }
         \new Staff = "altoFlute" { 
             \set Staff.instrumentName = \markup {
                 \center-column { 
@@ -17,3 +25,4 @@
                 SegmentDrum
             ) \transpose g, c { \altoFluteGlobal }
         }
+ 

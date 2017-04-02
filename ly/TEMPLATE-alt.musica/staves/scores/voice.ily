@@ -12,7 +12,7 @@
                             SegmentSoloAfroCuban
                             SegmentDrum
                         ) \transpose c c { 
-                            \voiceGlobalSong
+                            \voiceGlobal
                         }
                     }
                 }

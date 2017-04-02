@@ -1,3 +1,11 @@
+        \new ChordNames \keepWithTag #'(PDF Part Woodwinds BassClarinet
+                SegmentIntro
+                SegmentFunk
+                SegmentAroCuban
+                SegmentSoloFunk
+                SegmentSoloAfroCuban
+                SegmentDrum
+            ) \transpose bf c { \chordsPart }
         \new Staff = "bassClarinet" { 
             \compressFullBarRests
             \override MultiMeasureRest.expand-limit = #1

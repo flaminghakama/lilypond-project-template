@@ -1,3 +1,11 @@
+        \new ChordNames \keepWithTag #'(PDF Part Woodwinds BassClarinet
+                SegmentIntro
+                SegmentFunk
+                SegmentAroCuban
+                SegmentSoloFunk
+                SegmentSoloAfroCuban
+                SegmentDrum
+            ) \transpose c c { \chordsPart }
         \new Staff = "bassClarinet" { 
             \set Staff.instrumentName = "Bass Clarinet"
             \set Staff.shortInstrumentName = #"B.Cl."

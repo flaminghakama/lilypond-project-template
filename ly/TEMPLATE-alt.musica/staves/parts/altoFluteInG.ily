@@ -1,12 +1,22 @@
+        \new ChordNames \keepWithTag #'(PDF Part Woodwinds Flute
+                SegmentIntro
+                SegmentFunk
+                SegmentAroCuban
+                SegmentSoloFunk
+                SegmentSoloAfroCuban
+                SegmentDrum
+            ) \transpose g c { \chordsPart }
         \new Staff = "altoFlute" { 
-            \compressFullBarRests
-            \override MultiMeasureRest.expand-limit = #1
-            \set Staff.instrumentName = ""
-            \set Staff.shortInstrumentName = #""
-            \override DynamicLineSpanner #'staff-padding = #3.0            
+            \set Staff.instrumentName = \markup {
+                \center-column { 
+                    "Alto Flute"
+                    "in G"
+                }
+            }
+            \set Staff.shortInstrumentName = #"A.Fl."
             \accidentalStyle modern-voice-cautionary
             \clef treble
-            \keepWithTag #'(PDF Part Woodwinds AltoFlute
+            \keepWithTag #'(PDF Score Woodwinds AltoFlute
                 SegmentIntro
                 SegmentFunk
                 SegmentAroCuban
@@ -15,3 +25,4 @@
                 SegmentDrum
             ) \transpose g, c { \altoFluteGlobal }
         }
+ 

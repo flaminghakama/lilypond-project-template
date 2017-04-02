@@ -1,6 +1,14 @@
+        \new ChordNames \keepWithTag #'(PDF Part Percussion Piano
+                SegmentIntro
+                SegmentFunk
+                SegmentAroCuban
+                SegmentSoloFunk
+                SegmentSoloAfroCuban
+                SegmentDrum
+            ) \transpose c c { \chordsSong }
         \new PianoStaff = "piano" \with {
-            instrumentName = "Piano"
-            shortInstrumentName = "P."
+            instrumentName = ""
+            shortInstrumentName = ""
         }
         \keepWithTag #'(PDF Part Percussion Piano
                 SegmentIntro
