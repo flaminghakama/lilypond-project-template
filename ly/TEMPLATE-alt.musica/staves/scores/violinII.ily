@@ -3,5 +3,12 @@
             \set Staff.shortInstrumentName = #"VII."
             \accidentalStyle modern-voice-cautionary
             \clef treble
-            \keepWithTag #'(PDF Score Strings ViolinII) \transpose c c { \violinIIGlobal }
+            \keepWithTag #'(PDF Score Strings ViolinII
+                SegmentIntro
+                SegmentFunk
+                SegmentAroCuban
+                SegmentSoloFunk
+                SegmentSoloAfroCuban
+                SegmentDrum
+            ) \transpose c c { \violinIIGlobal }
         }

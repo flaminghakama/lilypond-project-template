@@ -7,7 +7,14 @@
                 \set Staff.instrumentName = ""
                 \set Staff.shortInstrumentName = #""
                 \override DynamicLineSpanner #'staff-padding = #3.0
-                \keepWithTag #'(PDF Part Percussion Clave) \transpose c c { 
+                \keepWithTag #'(PDF Part Percussion Clave
+                    SegmentIntro
+                    SegmentFunk
+                    SegmentAroCuban
+                    SegmentSoloFunk
+                    SegmentSoloAfroCuban
+                    SegmentDrum
+                ) \transpose c c { 
                     \claveGlobal
                 }
             }

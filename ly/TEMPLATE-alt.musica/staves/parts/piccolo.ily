@@ -6,5 +6,12 @@
             \override DynamicLineSpanner #'staff-padding = #3.0
             \accidentalStyle modern-voice-cautionary
             \clef treble
-            \keepWithTag #'(PDF Part Woodwinds Piccolo) \transpose c c { \piccoloGlobal }
+            \keepWithTag #'(PDF Part Woodwinds Piccolo
+                SegmentIntro
+                SegmentFunk
+                SegmentAroCuban
+                SegmentSoloFunk
+                SegmentSoloAfroCuban
+                SegmentDrum
+            ) \transpose c c { \piccoloGlobal }
         }

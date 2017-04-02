@@ -524,15 +524,24 @@
 	},
 	"file_history":
 	[
-		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-alt.musica/staves/scores/hornInF.ily",
+		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-alt.musica/books/BOOK.ily",
+		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-alt.musica/books/MIDI.ily",
+		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-alt.musica/staves/parts/altoFluteInG.ily",
+		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-alt.musica/staves/parts/voice.ily",
+		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-alt.musica/staves/scores/altoFluteInG.ily",
+		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-alt.musica/staves/sound/altoSaxophone.ily",
+		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-alt.musica/staves/sound/baritoneSaxophone.ily",
 		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-alt.musica/staves/sound/altoFlute.ily",
+		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-alt.musica/staves/scores/clarinetInBb.ily",
+		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-alt.musica/staves/scores/clarinet.ily",
+		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-alt.musica/music/INSTRUMENT.ily",
+		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-alt.musica/staves/CHOIR.ily",
+		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-alt.musica/staves/RHYTHM.ily",
+		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-alt.musica/staves/scores/hornInF.ily",
 		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-alt.musica/staves/scores/bassClarinetInBb.ily",
 		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-alt.musica/staves/parts/cello.ily",
 		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-alt.musica/staves/parts/piccolo.ily",
-		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-alt.musica/books/BOOK.ily",
-		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-alt.musica/books/MIDI.ily",
 		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-alt.musica/books/SCORE.ily",
-		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-alt.musica/music/INSTRUMENT.ily",
 		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-alt.musica/structures/forms.ily",
 		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-alt.musica/structures/chords.ily",
 		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-alt.musica/staffgroups/concert/Brass.ily",
@@ -642,16 +651,7 @@
 		"/Users/elaine/Documents/sheet-music/scores/woodwind-arrangements/ly/bluesy-jump/instruments/source/flute.ily",
 		"/Users/elaine/Documents/sheet-music/scores/woodwind-arrangements/ly/bluesy-jump/instruments/source/violin.ily",
 		"/Users/elaine/Documents/sheet-music/scores/woodwind-arrangements/ly/bluesy-jump/books/Score-Concert.ily",
-		"/Users/elaine/Documents/sheet-music/scores/woodwind-arrangements/ly/bluesy-jump/books/Score-Transposed.ily",
-		"/Users/elaine/Documents/sheet-music/scores/woodwind-arrangements/ly/bluesy-jump/parts/bluesy-jump-Score-Transposed.ly",
-		"/Users/elaine/Documents/sheet-music/scores/woodwind-arrangements/ly/bluesy-jump/parts/bluesy-jump-Score-Concert.ly",
-		"/Users/elaine/Documents/sheet-music/scores/woodwind-arrangements/ly/bluesy-jump/instruments/source/clarinet.ily",
-		"/Users/elaine/Documents/sheet-music/scores/woodwind-arrangements/ly/bluesy-jump/parts/bluesy-jump-Clarinet-in-Bb.ly",
-		"/Users/elaine/Documents/sheet-music/scores/woodwind-arrangements/ly/bluesy-jump/parts/bluesy-jump-English-Horn-in-F.ly",
-		"/Users/elaine/Documents/sheet-music/scores/woodwind-arrangements/ly/dusk-in-the-courtyard/structures/forms.ily",
-		"/Users/elaine/Documents/sheet-music/scores/woodwind-arrangements/ly/bluesy-jump/books/englishHorn.ily",
-		"/Users/elaine/Documents/sheet-music/scores/woodwind-arrangements/ly/bluesy-jump/instruments/source/englishHorn.ily",
-		"/Users/elaine/Documents/sheet-music/scores/woodwind-arrangements/ly/bluesy-jump/books/Flute.ily"
+		"/Users/elaine/Documents/sheet-music/scores/woodwind-arrangements/ly/bluesy-jump/books/Score-Transposed.ily"
 	],
 	"find":
 	{
@@ -669,6 +669,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"tag ",
 			"self-immolation",
 			"/parts/",
 			"self-immolation",
@@ -795,8 +796,7 @@
 			"hords",
 			"valen",
 			"tamaraill",
-			"todd@",
-			"comkev"
+			"todd@"
 		],
 		"highlight": true,
 		"in_selection": false,

@@ -4,7 +4,14 @@
                     \accidentalStyle modern-voice-cautionary
                     \clef treble
                     \new Voice = "lead" {
-                        \keepWithTag #'(PDF Part Voices Voice) \transpose c c { 
+                        \keepWithTag #'(PDF Part Voices Voice
+                            SegmentIntro
+                            SegmentFunk
+                            SegmentAroCuban
+                            SegmentSoloFunk
+                            SegmentSoloAfroCuban
+                            SegmentDrum
+                        ) \transpose c c { 
                             \voiceGlobalSong
                         }
                     }

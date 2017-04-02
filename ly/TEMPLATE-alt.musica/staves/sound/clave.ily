@@ -1,4 +1,11 @@
 			\new DrumStaff = "clave" {
                 \set DrumStaff.instrumentName = #"Clave"
-                \keepWithTag #'(MIDI Score Percussion Clave) \transpose c c { \claveGlobal }
+                \keepWithTag #'(MIDI Score Percussion Clave
+	                SegmentIntro
+	                SegmentFunk
+	                SegmentAroCuban
+	                SegmentSoloFunk
+	                SegmentSoloAfroCuban
+	                SegmentDrum
+	            ) \transpose c c { \claveGlobal }
             }

@@ -6,5 +6,12 @@
             \override DynamicLineSpanner #'staff-padding = #3.0
             \accidentalStyle modern-voice-cautionary
             \clef treble
-            \keepWithTag #'(PDF Part Strings ViolinII) \transpose c c { \violinIIGlobal }
+            \keepWithTag #'(PDF Part Strings ViolinII
+                SegmentIntro
+                SegmentFunk
+                SegmentAroCuban
+                SegmentSoloFunk
+                SegmentSoloAfroCuban
+                SegmentDrum
+            ) \transpose c c { \violinIIGlobal }
         }

@@ -20,13 +20,14 @@
         \keepWithTag #'(Part PDF
             InstrumentINSTRUMENT
             SectionSECTION
+            SegmentIntro
             SegmentFunk
             SegmentAroCuban
             SegmentSoloFunk
             SegmentSoloAfroCuban
             SegmentDrum
         ) <<
-            \include "ly/SONG/staves/INSTRUMENT.ily"
+            \include "ly/SONG/staves/parts/INSTRUMENT.ily"
         >>
         \layout {
             indent = 1.25\cm

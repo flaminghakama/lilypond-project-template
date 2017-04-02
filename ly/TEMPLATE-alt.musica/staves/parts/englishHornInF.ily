@@ -6,5 +6,12 @@
             \override DynamicLineSpanner #'staff-padding = #3.0
             \accidentalStyle modern-voice-cautionary
             \clef treble
-            \keepWithTag #'(PDF Part Woodwinds EnglishHorn) \transpose f, c { \englishHornGlobal }
+            \keepWithTag #'(PDF Part Woodwinds EnglishHorn
+                SegmentIntro
+                SegmentFunk
+                SegmentAroCuban
+                SegmentSoloFunk
+                SegmentSoloAfroCuban
+                SegmentDrum
+            ) \transpose f, c { \englishHornGlobal }
         }

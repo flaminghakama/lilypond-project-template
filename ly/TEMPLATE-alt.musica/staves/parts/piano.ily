@@ -2,7 +2,14 @@
             instrumentName = "Piano"
             shortInstrumentName = "P."
         }
-        \keepWithTag #'(PDF Part Percussion Piano) <<
+        \keepWithTag #'(PDF Part Percussion Piano
+                SegmentIntro
+                SegmentFunk
+                SegmentAroCuban
+                SegmentSoloFunk
+                SegmentSoloAfroCuban
+                SegmentDrum
+            ) <<
             \compressFullBarRests
             \override MultiMeasureRest.expand-limit = #1
             \override DynamicLineSpanner #'staff-padding = #3.0

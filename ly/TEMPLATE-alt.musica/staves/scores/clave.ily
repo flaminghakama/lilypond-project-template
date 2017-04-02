@@ -4,7 +4,14 @@
              } {
                 \set DrumStaff.instrumentName = #"Clave"
                 \set DrumStaff.shortInstrumentName = #"Cv."
-                \keepWithTag #'(PDF Score Percussion Clave) \transpose c c { 
+                \keepWithTag #'(PDF Score Percussion Clave
+                    SegmentIntro
+                    SegmentFunk
+                    SegmentAroCuban
+                    SegmentSoloFunk
+                    SegmentSoloAfroCuban
+                    SegmentDrum
+                ) \transpose c c { 
                     \claveGlobal
                 }
             }

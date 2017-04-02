@@ -6,7 +6,14 @@
 	            \override DynamicLineSpanner #'staff-padding = #3.0
 	            \accidentalStyle modern-voice-cautionary
                 \new Voice = "lead" {
-                    \keepWithTag #'(PDF Part Voices Voice) \transpose c c { 
+                    \keepWithTag #'(PDF Part Voices Voice
+                        SegmentIntro
+                        SegmentFunk
+                        SegmentAroCuban
+                        SegmentSoloFunk
+                        SegmentSoloAfroCuban
+                        SegmentDrum
+                    ) \transpose c c { 
                         \voiceGlobalSong
                     }
                 }

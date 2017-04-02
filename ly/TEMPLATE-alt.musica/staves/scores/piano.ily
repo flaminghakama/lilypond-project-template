@@ -2,7 +2,14 @@
             instrumentName = "Piano"
             shortInstrumentName = "P."
         }
-        \keepWithTag #'(PDF Score Percussion Piano) <<
+        \keepWithTag #'(PDF Score Percussion Piano
+                SegmentIntro
+                SegmentFunk
+                SegmentAroCuban
+                SegmentSoloFunk
+                SegmentSoloAfroCuban
+                SegmentDrum
+            ) <<
             \accidentalStyle modern-voice-cautionary
             \new Staff = "upper" <<
                 \clef treble

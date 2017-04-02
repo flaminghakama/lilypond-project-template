@@ -3,7 +3,14 @@
                     \set Staff.shortInstrumentName = #""
                     \accidentalStyle modern-voice-cautionary
                     \new Voice = "lead" {
-                        \keepWithTag #'(OneTime Score) \transpose c c { 
+                        \keepWithTag #'(Score Choir Voice
+                            SegmentIntro
+                            SegmentFunk
+                            SegmentAroCuban
+                            SegmentSoloFunk
+                            SegmentSoloAfroCuban
+                            SegmentDrum
+                        ) \transpose c c { 
                             \INSTRUMENTGlobalSEGMENT
                         }
                     }

@@ -6,5 +6,12 @@
             \override DynamicLineSpanner #'staff-padding = #3.0
             \accidentalStyle modern-voice-cautionary
             \clef bass
-            \keepWithTag #'(PDF Part Strings Bass) \transpose c c { \bassGlobal }
+            \keepWithTag #'(PDF Part Strings Bass
+                SegmentIntro
+                SegmentFunk
+                SegmentAroCuban
+                SegmentSoloFunk
+                SegmentSoloAfroCuban
+                SegmentDrum
+            ) \transpose c c { \bassGlobal }
         }
