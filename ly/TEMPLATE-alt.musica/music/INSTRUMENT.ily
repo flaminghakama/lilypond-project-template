@@ -33,3 +33,5 @@ INSTRUMENTSong = \relative c {
         R1*4 ||
     }
 }
+
+INSTRUMENTGlobal = \globalSong \INSTRUMENTSong
