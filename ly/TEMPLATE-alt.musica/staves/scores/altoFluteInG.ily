@@ -1,11 +1,4 @@
-        \new ChordNames \keepWithTag #'(PDF Part Woodwinds Flute
-                SegmentIntro
-                SegmentFunk
-                SegmentAroCuban
-                SegmentSoloFunk
-                SegmentSoloAfroCuban
-                SegmentDrum
-            ) \transpose g c { \chordsPart }
+        \new ChordNames \transpose g c { \chordsPart }
         \new Staff = "altoFlute" { 
             \set Staff.instrumentName = \markup {
                 \center-column { 
@@ -16,13 +9,6 @@
             \set Staff.shortInstrumentName = #"A.Fl."
             \accidentalStyle modern-voice-cautionary
             \clef treble
-            \keepWithTag #'(PDF Score Woodwinds AltoFlute
-                SegmentIntro
-                SegmentFunk
-                SegmentAroCuban
-                SegmentSoloFunk
-                SegmentSoloAfroCuban
-                SegmentDrum
-            ) \transpose g, c { \altoFluteGlobal }
+            \transpose g, c { \altoFluteGlobal }
         }
  

@@ -18,8 +18,8 @@
     %%%%% SONG %%%%%
     \score {
         \keepWithTag #'(Part PDF
-            InstrumentINSTRUMENT
-            SectionSECTION
+            INSTRUMENT
+            SECTION
             SegmentIntro
             SegmentFunk
             SegmentAroCuban
