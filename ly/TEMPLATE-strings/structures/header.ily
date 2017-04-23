@@ -6,6 +6,7 @@ titleLeft = "Left "
 titleRight = " Right"
 instrumentName = ""
 composerName = "D. Elaine Alt"
+arrangerName = "D. Elaine Alt"
 
 \include "../flaming-libs/flaming-paper.ily"
 
@@ -16,7 +17,8 @@ composerName = "D. Elaine Alt"
     lastupdated = ""
     title = \markup { \italic \fontsize #4 \bold { \titleLeft \titleRight }  }
     poet = ""
-    composer = \markup \italic \composerName
+    composer = \markup \italic { "Composed by " \composerName }
+    arranger = \markup \italic { "Arranged by " \arrangerName }
     tagline = ""
 }
 

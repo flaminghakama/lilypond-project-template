@@ -544,6 +544,13 @@
 	},
 	"file_history":
 	[
+		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-editions/books/SCORE.ily",
+		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-editions/books/BOOK.ily",
+		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-editions/books/MIDI.ily",
+		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-editions/instruments/INSTRUMENT.ily",
+		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-editions/structures/chords.ily",
+		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-editions/structures/forms.ily",
+		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-editions/structures/header.ily",
 		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-strings/instruments/INSTRUMENT.ily",
 		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-strings/structures/chords.ily",
 		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-strings/books/SCORE.ily",
@@ -664,14 +671,7 @@
 		"/Users/elaine/Documents/git/lilypond-project-template/ly/TEMPLATE/structures/header.ily",
 		"/Users/elaine/Documents/git/lilypond-project-template/ly/TEMPLATE/structures/lyrics.ily",
 		"/Users/elaine/Documents/sheet-music/scores/piano-trio/ly/kickin-the-can/books/Lead.ily",
-		"/Users/elaine/Documents/sheet-music/scores/piano-trio/ly/kickin-the-can/parts/kickin-the-can-Lead.ly",
-		"/Users/elaine/Documents/sheet-music/scores/piano-trio/ly/kickin-the-can/parts/kickin-the-can-Rhythm.ly",
-		"/Users/elaine/Documents/sheet-music/scores/piano-trio/ly/kickin-the-can/books/Bass.ily",
-		"/Users/elaine/Documents/sheet-music/scores/piano-trio/ly/kickin-the-can/structures/lyrics.ily",
-		"/Users/elaine/Documents/sheet-music/scores/piano-trio/ly/kickin-the-can/structures/chords.ily",
-		"/Users/elaine/Documents/sheet-music/scores/piano-trio/ly/kickin-the-can/books/Melody-in-Bb.ily",
-		"/Users/elaine/Documents/sheet-music/scores/piano-trio/ly/kickin-the-can/books/Melody-in-C.ily",
-		"/Users/elaine/Documents/sheet-music/scores/piano-trio/ly/kickin-the-can/books/Score.ily"
+		"/Users/elaine/Documents/sheet-music/scores/piano-trio/ly/kickin-the-can/parts/kickin-the-can-Lead.ly"
 	],
 	"find":
 	{
@@ -690,6 +690,16 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"Transcription\n                    QuartetFeature\n                    QuartetAccompaniment\n                    %Orchesteration",
+			"SegmentTwo",
+			"SegmentOne",
+			"viola",
+			"SegmentOne",
+			"OneTime ",
+			"QuartetAccompaniment",
+			"QuartetFeature",
+			"Transcription",
+			"violinI",
 			"composer",
 			"cello",
 			"\" {",
@@ -807,17 +817,7 @@
 			"4. c16 ( a )  ",
 			"4. c16 ( g )  ",
 			"4. c16 ( a )  ",
-			"4 c8 ( g )",
-			"4 c8 ( a )",
-			"4 c8\\> ( a )",
-			"4 c8 ( a )",
-			"4 c8 ( g )",
-			"4 c8 ( a ) ",
-			"melody",
-			"\\bar \"||\"",
-			"melody",
-			" op ",
-			"a r8 g r e r d"
+			"4 c8 ( g )"
 		],
 		"highlight": true,
 		"in_selection": false,

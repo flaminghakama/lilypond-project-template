@@ -1,0 +1,178 @@
+Where we are at with the Lilypond template.
+
+One question is how to facilitate a segmented approach to scores.  
+In order to speed compilation, it is desirable to have the following fragments of the work:
+    by instrumental section: woodwinds, brass, voice, percussion, strings
+    for any individual parts, instrumental sections or scores, by section of the work: head, solos, coda, etc.
+
+Defining the Instrumentation
+
+For each instrument, we need a staff definition:  Everything that needs to go into the staff.
+We currently use a template with placeholders and swap them out for each book based on the part file name.
+These are incomplete, for example not specifying transposition or clef.  
+
+So, we need a way to expand the definition.
+Then, we would read these definitions and create staff blocks for each instrument and save them as files staffs/<instrument>.ily
+To create the part book, we have the part template with a placeholder for the staff then inject the staff.
+
+We also need instrumental section staffgroup definitions.
+We need to define what is needed for the staff group, plus which instruments are part of the staff
+Then, we would read these definitions and create staff group blocks for each section and save them as files staffgroups/<section>.ily
+
+Then a score would be defined as a collection of staff groups and/or staves.
+
+
+
+Woodwinds
+
+Piccolo
+FluteI
+FluteII
+OboeI
+OboeII
+EnglishHorn-in-F
+ClarinetI-in-Bb
+ClarinetII-in-Bb
+BassClarinet-in-Bb
+BassoonI
+BassoonII
+ContraBassoon
+
+Brass
+
+TrumpetI-in-Bb
+TrumpetII-in-Bb
+TrumpetIII-in-Bb
+HornI-in-F
+HornII-in-F
+HornIII-in-F
+HornIV-in-F
+TromboneI
+TromboneII
+BassTrombone
+Tuba
+
+Percussion
+
+Snare
+BassDrum
+Cymbals
+Tympani
+Xylophone
+
+Strings
+
+ViolinI
+ViolinII
+Viola
+Cello
+Bass
+
+
+To embark on a scoring project, you need to create the template files:
+
+ly/TEMPLATE/structures/header.ily
+Fill out the project name, composer, etc. 
+Also choose fonts
+
+ly/TEMPLATE/structures/forms.ily
+Define score segments
+Each segment has its own score strcutrure and function for merging the structure with music
+Enclose each structure in a tag named for the segment.
+
+ly/TEMPLATE/structures/chords.ily
+Chords for each score segment
+Enclose each segment in a tag named for the segment.
+Arrangements for each distinct format (no chords on head, chords on solos, no chords on coda VS chords everywhere) and transposition break
+
+ly/TEMPLATE/structures/lyrics.ily
+lyrics for each score segment
+Enclose each segment in a tag named for the segment.
+
+Books
+The book file typically has a paper section, header section, then for each score segment, a score with layout or midi sections.
+ly/TEMPLATE/books/BOOK.ily - template for an individual part.  
+ly/TEMPLATE/books/MIDI.ily - template for multi-instrument midi block.
+ly/TEMPLATE/books/SCORE.ily - template for multi-instrument layout block.  
+
+A copy of the SCORE template is made for each part that has the word "score" or "lead" in it.
+It should account for all instruments in the full score.
+
+Once the SCORE tempalte is copied and processed for the specified parts, you are left with the task of removing or commenting out unnecessary instruments or staff groups for sub-scores.  Could this be done using tags?  Each score segment is wrapped in a tag
+
+
+For all these books, we want versions for each score segment.
+
+One approach would be using tags. 
+Enclose each structure in a tag named for the structure.
+In the full score book, each music element would use the tag for the score segment.
+For partial scores, to remove a score segment, change the tag to something else.  Or change from include to exclude.
+
+
+Likewise, 
+
+ly/TEMPLATE/instruments
+ly/TEMPLATE/instruments/INSTRUMENT.ily
+ly/TEMPLATE/parts
+ly/TEMPLATE/parts/PART.ly
+ly/TEMPLATE/SONG.sublime-project
+ly/TEMPLATE/structures
+[02:01 PM] ~/Documents/git/lilypond-project-template $ 
+
+
+
+Improvements related to tweaking layout of markup.
+
+The structure is done by way of tags, named by segments of the piece.
+You might need MIDI tags for repeats. 
+
+Copy these tags into the structures, like 
+structureHead = \relative c { 
+    \tag SegmentOne { 
+        \mark \markup "Head"
+    	s1
+    }
+    \tag SegmentTwo { 
+    	s1
+    }
+    ...
+}
+
+When you set up your structure, you will need to do it for forms, chords, and then also for markup tweaks. 
+
+The global defintions combine the markup tweaks, for the Parts version of the global.
+
+The other place these tags need to be is in the books, the BOOK.ily and SCORE.ily template files.
+In addition to the segments, you should have appropriate tags for instruments, sections, as well as PDF/MIDI and Part/Score.  Scores should have all the instruments necessary.
+
+        \keepWithTag #'(Part PDF
+            ViolinI
+            Strings
+            SegmentOne
+            SegmentTwo
+        ) <<
+
+        \keepWithTag #'(Score PDF
+            Woodwinds
+            Choir
+            Percussion
+            Strings
+            Piccolo
+            EnglishHorn
+            BassClarinet
+            Voice
+            Drums
+            ViolinI
+            ViolinII
+            Viola
+            Cello
+            Bass
+            SegmentIntro
+            SegmentFunk
+            SegmentAfroCuban
+            SegmentSoloFunk
+            SegmentSoloAfroCuban
+            SegmentDrum
+        ) <<
+
+

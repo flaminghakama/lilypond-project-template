@@ -1,0 +1,15 @@
+Using Lilypond Project Template
+
+Starting from scratch
+
+Assuming you have a template in use
+Invoke clone with the name of the piece and the list of part (and score) names
+Edit the structures: header, form, chords & lyrics
+
+
+
+Adding an instrument
+
+Adding a section of music
+
+Adding another score (like a coda)
