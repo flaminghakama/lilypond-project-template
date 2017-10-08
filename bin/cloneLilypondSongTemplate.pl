@@ -19,7 +19,10 @@
 #      References the standard libraries.
 #      References the instrument file and the book file.  
 #    Book File.  This is a lilypond fragment that defines the lilypond book.
-#      References music variables, which are defined in the instruent file before including the book file.
+#      References either a staff file, or a staffgroup file
+#    Staffgroup File.  This contains references to staff files, wrapped in a staffgroup 
+#    Staff File.  This uses the music variables, which are defined in the music file 
+#      before including the book file.
 #    Instrument File.
 #      Defines the music variables used in the book file, typically out of combinations of 
 #      the music variables contained in the instrument file combined with the global functions. 
@@ -39,7 +42,10 @@
 #        Save any book include lines 
 #      
 
-#  For each PART specified ( <INSTRUMENT-TRANSPOSITION> ), three files are created: Part file, Book file and Instrument file.
+#  For each PART specified ( <INSTRUMENT-TRANSPOSITION> ), 
+#      three files are created: Part file, Book file and Instrument file.
+#      plus two more:  staves/scores/<INSTRUMENT>.ily and staves/parts/<INSTRUMENT>.ily
+
 #  Names
 #  Part file <SONG>-<INSTRUMENT-TRANSPOSITION>.ly like octagon-arbiter-English-Horn-in-F.ly
 #  Book file <INSTRUMENT-TRANSPOSITION>.ily like English-Horn-in-F.ily
@@ -163,7 +169,7 @@ sub getInstrumentIncludesFromPart {
     my $line ;
     my @instrumentIncludes ;  
     foreach $line ( split("\n", $partContents) ) {
-        if ( ( $line =~ /include/ ) && ( $line =~ /instrument/ ) ) { 
+        if ( ($line =~ /include/) && (($line =~ /instrument/) || ($line =~ /music/)) ) { 
             push(@instrumentIncludes, $line) ; 
         }
     }
@@ -229,6 +235,13 @@ my $midiBookTemplate = slurpFile($midiBookTemplateFile, "midi book template") ;
 my $instrumentTemplateFile = "ly/$song/music/INSTRUMENT.ily" ; 
 my $instrumentTemplate = slurpFile($instrumentTemplateFile, "instrument template") ; 
 
+my $staffScoresTemplateFile = "ly/$song/staves/scores/INSTRUMENT.ily" ; 
+my $staffScoresTemplate = slurpFile($staffScoresTemplateFile, "staff scores template") ; 
+
+my $staffPartsTemplateFile = "ly/$song/staves/parts/INSTRUMENT.ily" ; 
+my $staffPartsTemplate = slurpFile($staffPartsTemplateFile, "staff parts template") ; 
+
+
 #  Process each part/score
 my $partName ;
 my @lilypondPartInvocation ; 
@@ -244,6 +257,10 @@ my $variableName = '' ;
 my $poet ; 
 my $instrumentFile ; 
 my $instrumentContents ; 
+my $staffScoresFile ; 
+my $staffScoresContents ; 
+my $staffPartsFile ; 
+my $staffPartsContents ; 
 my @globalMusicDefinitions ; 
 my @instrumentIncludes ; 
 my @scoreContents ; 
@@ -311,13 +328,27 @@ foreach $partName (@ARGV){
                 $bookContents =~ s/POET/$poet/g ;  
                 writeFile($bookFile, "book file for instrument $instrumentName", $bookContents) ; 
 
-    		# Make the instrument file
+            # Make the instrument file
 
             $instrumentFile = "ly/$song/music/$variableName.ily" ;  
             $instrumentContents = $instrumentTemplate ; 
 
             $instrumentContents =~ s/INSTRUMENT/$variableName/g ;
             writeFile($instrumentFile, "instrument file $instrumentFile", $instrumentContents) ; 
+
+            # Make the staff files
+
+            $staffScoresFile = "ly/$song/staves/scores/$variableName.ily" ;  
+            $staffScoresContents = $staffScoresTemplate ; 
+
+            $staffScoresContents =~ s/INSTRUMENT/$variableName/g ;
+            writeFile($staffScoresFile, "staff file $staffScoresFile", $staffScoresContents) ; 
+
+            $staffPartsFile = "ly/$song/staves/parts/$variableName.ily" ;  
+            $staffPartsContents = $staffPartsTemplate ; 
+
+            $staffPartsContents =~ s/INSTRUMENT/$variableName/g ;
+            writeFile($staffPartsFile, "staff file $staffPartsFile", $staffPartsContents) ; 
         }
     }
 }
@@ -357,3 +388,5 @@ unlink $bookPartTemplateFile ;
 unlink $scoreBookTemplateFile ; 
 unlink $midiBookTemplateFile ; 
 unlink $instrumentTemplateFile ; 
+unlink $staffScoresTemplate ; 
+unlink $staffPartsTemplate ; 
