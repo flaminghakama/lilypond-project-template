@@ -15,17 +15,17 @@
         poet= "POET"
         instrumentName = \poet
     }
-    %%%%% we-declare %%%%%
+
     \score {
         \keepWithTag #'(Part PDF
-            SectionX
-            SectionA
-            SectionB
-            SectionC
-            SectionD
-            SectionE 
+            SegmentX
+            SegmentA
+            SegmentB
+            SegmentC
+            SegmentD
+            SegmentE 
         ) <<
-            \include "ly/we-declare/staves/parts/INSTRUMENT.ily"
+            \include "ly/SONG/staves/parts/INSTRUMENT.ily"
         >>
         \layout {
             indent = 1.25\cm

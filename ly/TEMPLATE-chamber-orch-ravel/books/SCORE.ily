@@ -17,19 +17,18 @@
         instrumentName = \poet
     }
 
-    %%%%% we-declare %%%%%
     \score {
         \keepWithTag #'(Score PDF
-            SectionX
-            SectionA
-            SectionB
-            SectionC
-            SectionD
-            SectionE 
+            SegmentX
+            SegmentA
+            SegmentB
+            SegmentC
+            SegmentD
+            SegmentE 
         ) <<
-            \include "ly/we-declare/staffgroups/transposed/Woodwinds.ily"
-            \include "ly/we-declare/staffgroups/transposed/Brass.ily"
-            \include "ly/we-declare/staffgroups/transposed/Strings.ily"
+            \include "ly/SONG/staffgroups/Woodwinds.ily"
+            \include "ly/SONG/staffgroups/Brass.ily"
+            \include "ly/SONG/staffgroups/Strings.ily"
         >>
         \layout { 
             indent = 3.15\cm

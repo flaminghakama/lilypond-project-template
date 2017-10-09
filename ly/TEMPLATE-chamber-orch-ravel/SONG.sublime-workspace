@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"PE",
+				"POET"
+			],
+			[
 				"bassClarinetCodaAOne",
 				"bassClarinetCodaAOneNotes"
 			],
@@ -510,10 +514,6 @@
 			[
 				"rehearsalMar",
 				"rehearsalMarksInvocations"
-			],
-			[
-				"reh",
-				"rehearsalMarksFunction"
 			]
 		]
 	},
@@ -544,6 +544,19 @@
 	},
 	"file_history":
 	[
+		"/Users/elaine/git/lilypond-project-template/bin/cloneLilypondSongTemplate.pl",
+		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-chamber-orch-ravel/books/BOOK.ily",
+		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-chamber-orch-ravel/books/SCORE.ily",
+		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-chamber-orch-ravel/staves/sound/INSTRUMENT.ily",
+		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-chamber-orch-ravel/structures/forms.ily",
+		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-chamber-orch-ravel/structures/lyrics.ily",
+		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-chamber-orch-ravel/music/INSTRUMENT.ily",
+		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-chamber-orch-ravel/staves/scores/INSTRUMENT.ily",
+		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-chamber-orch-ravel/staves/parts/INSTRUMENT.ily",
+		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-chamber-orch-ravel/staffgroups/Strings.ily",
+		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-chamber-orch-ravel/staffgroups/Woodwinds.ily",
+		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-chamber-orch-ravel/staffgroups/Brass.ily",
+		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-chamber-orch-ravel/books/MIDI.ily",
 		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-song-coda/SONG.sublime-project",
 		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-song-coda/parts/PART.ly",
 		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-song-coda/books/SCORE.ily",
@@ -658,20 +671,7 @@
 		"/Users/elaine/git/scores/alt.musica/ly/we-declare/music/clave.ily",
 		"/Users/elaine/git/scores/alt.musica/ly/we-declare/music/flute.ily",
 		"/Users/elaine/git/scores/alt.musica/ly/we-declare/music/englishHorn.ily",
-		"/Users/elaine/git/scores/alt.musica/ly/we-declare/staves/parts/clave.ily",
-		"/Users/elaine/git/scores/alt.musica/ly/we-declare/music/voice.ily",
-		"/Users/elaine/git/scores/alt.musica/ly/we-declare/music/piano.ily",
-		"/Users/elaine/git/scores/alt.musica/ly/we-declare/staves/parts/bassClarinetInBb.ily",
-		"/Users/elaine/git/scores/alt.musica/ly/we-declare/staves/parts/bassStrings.ily",
-		"/Users/elaine/git/scores/alt.musica/ly/we-declare/staves/parts/cello.ily",
-		"/Users/elaine/git/scores/alt.musica/ly/we-declare/staves/parts/englishHornInF.ily",
-		"/Users/elaine/git/scores/alt.musica/ly/we-declare/staves/parts/flute.ily",
-		"/Users/elaine/git/scores/alt.musica/ly/we-declare/staves/parts/piccolo.ily",
-		"/Users/elaine/git/scores/alt.musica/ly/we-declare/staves/parts/viola.ily",
-		"/Users/elaine/git/scores/alt.musica/ly/we-declare/staves/parts/violinII.ily",
-		"/Users/elaine/git/scores/alt.musica/ly/we-declare/staves/parts/voice.ily",
-		"/Users/elaine/git/scores/alt.musica/ly/we-declare/staves/scores/bassClarinetInBb.ily",
-		"/Users/elaine/git/scores/alt.musica/ly/we-declare/staves/scores/cello.ily"
+		"/Users/elaine/git/scores/alt.musica/ly/we-declare/staves/parts/clave.ily"
 	],
 	"find":
 	{
@@ -691,9 +691,32 @@
 	},
 	"find_state":
 	{
-		"case_sensitive": false,
+		"case_sensitive": true,
 		"find_history":
 		[
+			"Section",
+			"Staff",
+			"staffgroup",
+			"declare",
+			"we-declare",
+			"SONG",
+			"songName",
+			"midiBookTemplate",
+			"midiBookTemplateFile",
+			"MIDI",
+			"SCORE",
+			"transposed",
+			"we-declare",
+			"Parts",
+			"parts",
+			"Parts",
+			"instrumentContents",
+			"instrumentTemplate",
+			"Parts",
+			"parts",
+			"Parts",
+			"Names",
+			"we-declare",
 			"g",
 			"\\vio",
 			"\\cresc",
@@ -798,30 +821,7 @@
 			"viola",
 			"violinI",
 			"\n                \\keepWithTag #'(OneTime Part) \\transpose c c { \\violinI",
-			"violinG",
-			"Bass",
-			"Viola",
-			"viola",
-			"violinII",
-			"olinI",
-			"Bass",
-			"bass",
-			" |",
-			"+",
-			"magnify",
-			"f'",
-			"a4",
-			"SONG",
-			"transpose",
-			"SONG",
-			" d ",
-			"s8 s4 \\bar \"||\" ",
-			"\\bar \"||\"",
-			"\" }",
-			"\\mark \\markup \\box { ",
-			"8 8 ",
-			"d8 8 r d8 8",
-			"8"
+			"violinG"
 		],
 		"highlight": true,
 		"in_selection": false,

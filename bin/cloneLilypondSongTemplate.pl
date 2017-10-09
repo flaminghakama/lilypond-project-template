@@ -44,9 +44,12 @@
 
 #  For each PART specified ( <INSTRUMENT-TRANSPOSITION> ), 
 #      three files are created: Part file, Book file and Instrument file.
-#      plus two more:  staves/scores/<INSTRUMENT>.ily and staves/parts/<INSTRUMENT>.ily
+#      plus three more:  
+#          staves/scores/<INSTRUMENT>.ily
+#          staves/parts/<INSTRUMENT>.ily
+#          staves/sound/<INSTRUMENT>.ily
 
-#  Names
+#  
 #  Part file <SONG>-<INSTRUMENT-TRANSPOSITION>.ly like octagon-arbiter-English-Horn-in-F.ly
 #  Book file <INSTRUMENT-TRANSPOSITION>.ily like English-Horn-in-F.ily
 #  Instrument variable name is instrumentName like englishHorn
@@ -241,6 +244,9 @@ my $staffScoresTemplate = slurpFile($staffScoresTemplateFile, "staff scores temp
 my $staffPartsTemplateFile = "ly/$song/staves/parts/INSTRUMENT.ily" ; 
 my $staffPartsTemplate = slurpFile($staffPartsTemplateFile, "staff parts template") ; 
 
+my $staffSoundTemplateFile = "ly/$song/staves/sound/INSTRUMENT.ily" ; 
+my $staffSoundTemplate = slurpFile($staffSoundTemplateFile, "staff sound template") ; 
+
 
 #  Process each part/score
 my $partName ;
@@ -261,6 +267,8 @@ my $staffScoresFile ;
 my $staffScoresContents ; 
 my $staffPartsFile ; 
 my $staffPartsContents ; 
+my $staffSoundFile ; 
+my $staffSoundContents ; 
 my @globalMusicDefinitions ; 
 my @instrumentIncludes ; 
 my @scoreContents ; 
@@ -282,6 +290,7 @@ foreach $partName (@ARGV){
         $bookFile = "ly/$song/books/$partName.ily" ; 
         $bookContents = $midiBookTemplate ; 
         $bookContents =~ s/PART/$partName/g ; 
+        $bookContents =~ s/SONG/$song/g ; 
         $bookContents =~ s/POET/$poet/g ;  
         writeFile($bookFile, "midi part file", $bookContents) ; 
 
@@ -296,6 +305,7 @@ foreach $partName (@ARGV){
             $bookFile = "ly/$song/books/$partName.ily" ; 
             $bookContents = $scoreBookTemplate ; 
             $bookContents =~ s/PART/$partName/g ; 
+            $bookContents =~ s/SONG/$song/g ; 
             $bookContents =~ s/POET/$poet/g ;  
             writeFile($bookFile, "score part file", $bookContents) ; 
 
@@ -322,11 +332,12 @@ foreach $partName (@ARGV){
         	#  Make the book file
 
         	$bookFile = "ly/$song/books/$partName.ily" ; 
-                $bookContents = $bookPartTemplate ; 
-                $bookContents =~ s/PART/$partName/g ; 
-                $bookContents =~ s/INSTRUMENT/$variableName/g  ; 
-                $bookContents =~ s/POET/$poet/g ;  
-                writeFile($bookFile, "book file for instrument $instrumentName", $bookContents) ; 
+            $bookContents = $bookPartTemplate ; 
+            $bookContents =~ s/PART/$partName/g ; 
+            $bookContents =~ s/SONG/$song/g ; 
+            $bookContents =~ s/INSTRUMENT/$variableName/g  ; 
+            $bookContents =~ s/POET/$poet/g ;  
+            writeFile($bookFile, "book file for instrument $instrumentName", $bookContents) ; 
 
             # Make the instrument file
 
@@ -342,13 +353,24 @@ foreach $partName (@ARGV){
             $staffScoresContents = $staffScoresTemplate ; 
 
             $staffScoresContents =~ s/INSTRUMENT/$variableName/g ;
+            $staffScoresContents =~ s/PART/$partName/g ;
+            $staffScoresContents =~ s/POET/$poet/g ;
             writeFile($staffScoresFile, "staff file $staffScoresFile", $staffScoresContents) ; 
 
             $staffPartsFile = "ly/$song/staves/parts/$variableName.ily" ;  
             $staffPartsContents = $staffPartsTemplate ; 
 
             $staffPartsContents =~ s/INSTRUMENT/$variableName/g ;
+            $staffPartsContents =~ s/PART/$partName/g ;
+            $staffPartsContents =~ s/POET/$poet/g ;
             writeFile($staffPartsFile, "staff file $staffPartsFile", $staffPartsContents) ; 
+
+            $staffSoundFile = "ly/$song/staves/sound/$variableName.ily" ;  
+            $staffSoundContents = $staffSoundTemplate ; 
+
+            $staffSoundContents =~ s/INSTRUMENT/$variableName/g ;
+            $staffSoundContents =~ s/POET/$poet/g ;
+            writeFile($staffSoundFile, "staff file $staffSoundFile", $staffSoundContents) ; 
         }
     }
 }

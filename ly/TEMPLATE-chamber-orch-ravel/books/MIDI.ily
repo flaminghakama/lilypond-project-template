@@ -8,18 +8,18 @@
             SegmentD
             SegmentE
         ) <<
-            \include "ly/we-declare/staves/sound/flute.ily"
-            \include "ly/we-declare/staves/sound/oboe.ily"
-            \include "ly/we-declare/staves/sound/clarinet.ily"
-            \include "ly/we-declare/staves/sound/bassoon.ily"
-            \include "ly/we-declare/staves/sound/trumpet.ily"
-            \include "ly/we-declare/staves/sound/horn.ily"
-            \include "ly/we-declare/staves/sound/trombone.ily"
-            \include "ly/we-declare/staves/sound/violinI.ily"
-            \include "ly/we-declare/staves/sound/violinII.ily"
-            \include "ly/we-declare/staves/sound/viola.ily"
-            \include "ly/we-declare/staves/sound/cello.ily"
-            \include "ly/we-declare/staves/sound/bass.ily"
+            \include "ly/SONG/staves/sound/flute.ily"
+            \include "ly/SONG/staves/sound/oboe.ily"
+            \include "ly/SONG/staves/sound/clarinet.ily"
+            \include "ly/SONG/staves/sound/bassoon.ily"
+            \include "ly/SONG/staves/sound/trumpet.ily"
+            \include "ly/SONG/staves/sound/horn.ily"
+            \include "ly/SONG/staves/sound/trombone.ily"
+            \include "ly/SONG/staves/sound/violinI.ily"
+            \include "ly/SONG/staves/sound/violinII.ily"
+            \include "ly/SONG/staves/sound/viola.ily"
+            \include "ly/SONG/staves/sound/cello.ily"
+            \include "ly/SONG/staves/sound/bass.ily"
         >>
         \midi { }
     }
