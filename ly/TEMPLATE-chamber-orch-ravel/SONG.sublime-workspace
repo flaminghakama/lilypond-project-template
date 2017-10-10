@@ -521,9 +521,14 @@
 	[
 	],
 	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
 	"command_palette":
 	{
 		"height": 0.0,
+		"last_filter": "",
 		"selected_items":
 		[
 		],
@@ -531,7 +536,10 @@
 	},
 	"console":
 	{
-		"height": 0.0
+		"height": 0.0,
+		"history":
+		[
+		]
 	},
 	"distraction_free":
 	{
@@ -542,8 +550,15 @@
 		"side_bar_visible": false,
 		"status_bar_visible": false
 	},
+	"expanded_folders":
+	[
+		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-chamber-orch-ravel/staves",
+		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-chamber-orch-ravel/staves/scores"
+	],
 	"file_history":
 	[
+		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-chamber-orch-ravel/staves/scores/INSTRUMENT.ily",
+		"/Users/elaine/git/scores/strings/ly/babies-gone-down/books/Score-Transposed.ily",
 		"/Users/elaine/git/lilypond-project-template/bin/cloneLilypondSongTemplate.pl",
 		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-chamber-orch-ravel/books/BOOK.ily",
 		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-chamber-orch-ravel/books/SCORE.ily",
@@ -551,7 +566,6 @@
 		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-chamber-orch-ravel/structures/forms.ily",
 		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-chamber-orch-ravel/structures/lyrics.ily",
 		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-chamber-orch-ravel/music/INSTRUMENT.ily",
-		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-chamber-orch-ravel/staves/scores/INSTRUMENT.ily",
 		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-chamber-orch-ravel/staves/parts/INSTRUMENT.ily",
 		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-chamber-orch-ravel/staffgroups/Strings.ily",
 		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-chamber-orch-ravel/staffgroups/Woodwinds.ily",
@@ -670,16 +684,15 @@
 		"/Users/elaine/git/scores/alt.musica/ly/we-declare/staves/sound/voice.ily",
 		"/Users/elaine/git/scores/alt.musica/ly/we-declare/music/clave.ily",
 		"/Users/elaine/git/scores/alt.musica/ly/we-declare/music/flute.ily",
-		"/Users/elaine/git/scores/alt.musica/ly/we-declare/music/englishHorn.ily",
-		"/Users/elaine/git/scores/alt.musica/ly/we-declare/staves/parts/clave.ily"
+		"/Users/elaine/git/scores/alt.musica/ly/we-declare/music/englishHorn.ily"
 	],
 	"find":
 	{
-		"height": 35.0
+		"height": 23.0
 	},
 	"find_in_files":
 	{
-		"height": 0.0,
+		"height": 101.0,
 		"where_history":
 		[
 			"/Users/elaine/git/scores/strings/ly/",
@@ -694,6 +707,7 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"with",
 			"Section",
 			"Staff",
 			"staffgroup",
@@ -820,8 +834,7 @@
 			"\\bass",
 			"viola",
 			"violinI",
-			"\n                \\keepWithTag #'(OneTime Part) \\transpose c c { \\violinI",
-			"violinG"
+			"\n                \\keepWithTag #'(OneTime Part) \\transpose c c { \\violinI"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -974,7 +987,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 0.0
+		"height": 23.0
 	},
 	"input":
 	{
@@ -1003,14 +1016,21 @@
 		]
 	},
 	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "SONG.sublime-project",
 	"replace":
 	{
-		"height": 64.0
+		"height": 42.0
 	},
 	"save_all_on_build": true,
 	"select_file":
 	{
 		"height": 0.0,
+		"last_filter": "",
 		"selected_items":
 		[
 		],
@@ -1019,15 +1039,32 @@
 	"select_project":
 	{
 		"height": 0.0,
+		"last_filter": "",
 		"selected_items":
 		[
 		],
 		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
 	},
 	"show_minimap": true,
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
 	"side_bar_width": 280.0,
-	"status_bar_visible": true
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
 }

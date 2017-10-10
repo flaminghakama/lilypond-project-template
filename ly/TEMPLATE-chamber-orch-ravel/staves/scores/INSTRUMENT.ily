@@ -1,4 +1,4 @@
-        \new Staff = "INSTRUMENT" { 
+        \new Staff = "INSTRUMENT" \with { \magnifyStaff #6/7 } { 
             \compressFullBarRests
             \override MultiMeasureRest.expand-limit = #1
             \set Staff.instrumentName = "POET"
