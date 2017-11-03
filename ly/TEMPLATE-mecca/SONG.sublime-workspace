@@ -1,0 +1,1035 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"Chor",
+				"ChorusII"
+			],
+			[
+				"inl",
+				"inlineMMRN"
+			],
+			[
+				"Break",
+				"Breakdown"
+			],
+			[
+				"noBrek",
+				"noBreakPart"
+			],
+			[
+				"in",
+				"instrumentName"
+			],
+			[
+				"bassClarinetCodaAOne",
+				"bassClarinetCodaAOneNotes"
+			],
+			[
+				"celloPi",
+				"celloPizzLick"
+			],
+			[
+				"vio",
+				"violinICounterLick"
+			],
+			[
+				"viol",
+				"violinIBuild"
+			],
+			[
+				"vii",
+				"violinILong"
+			],
+			[
+				"mt",
+				"matches"
+			],
+			[
+				"mat",
+				"matches"
+			],
+			[
+				"markT",
+				"markTweaksPart"
+			],
+			[
+				"mark",
+				"markTweaksScore"
+			],
+			[
+				"twe",
+				"markTweaksPart"
+			],
+			[
+				"score",
+				"scoreMarkTweaksSolos"
+			],
+			[
+				"part",
+				"partMarkTweaksSolos"
+			],
+			[
+				"make",
+				"make-two-dynamics"
+			],
+			[
+				"englishHornSolo",
+				"englishHornSolosScore"
+			],
+			[
+				"bassClarinetSolo",
+				"bassClarinetSolosPart"
+			],
+			[
+				"bass",
+				"bassClarinetHead"
+			],
+			[
+				"bassClar",
+				"bassClarinetPart"
+			],
+			[
+				"structu",
+				"structurePart"
+			],
+			[
+				"structureSolo",
+				"structureSolosScore"
+			],
+			[
+				"bassAfroCubanSol",
+				"bassAfroCubanSoloLicks"
+			],
+			[
+				"violinIIS",
+				"violinIISoloAfroCuban"
+			],
+			[
+				"celloso",
+				"celloSoloAfroCuban"
+			],
+			[
+				"ch",
+				"chordsPartStrings"
+			],
+			[
+				"fluteS",
+				"fluteSoloFunk"
+			],
+			[
+				"engli",
+				"englishHornSoloFunk"
+			],
+			[
+				"structureSt",
+				"structureStringsSolos"
+			],
+			[
+				"structureS",
+				"structureSolos"
+			],
+			[
+				"stru",
+				"structureHead"
+			],
+			[
+				"kickA",
+				"kickAfroCubanMidi"
+			],
+			[
+				"snareA",
+				"snareAfroCubanMidi"
+			],
+			[
+				"kickSolo",
+				"kickSoloAfroCuban"
+			],
+			[
+				"snareSol",
+				"snareSoloAfroCuban"
+			],
+			[
+				"drum",
+				"drummode"
+			],
+			[
+				"dynamict",
+				"dynamicThree"
+			],
+			[
+				"bre",
+				"breath"
+			],
+			[
+				"fluteIntroLi",
+				"fluteIntroLickMf"
+			],
+			[
+				"fluteInt",
+				"fluteIntroEnding"
+			],
+			[
+				"fluteIntro",
+				"fluteIntroCommon"
+			],
+			[
+				"BASSCLA",
+				"bassClarinetEnd"
+			],
+			[
+				"engi",
+				"englishHornEnd"
+			],
+			[
+				"melodyInt",
+				"melodyIntroLower"
+			],
+			[
+				"melody",
+				"melodyIntroLick"
+			],
+			[
+				"melodyIntroL",
+				"melodyIntroLickMp"
+			],
+			[
+				"open",
+				"openError"
+			],
+			[
+				"proce",
+				"processedEmail"
+			],
+			[
+				"proc",
+				"processedEmail"
+			],
+			[
+				"pro",
+				"processedEmail"
+			],
+			[
+				"SC",
+				"SCORES"
+			],
+			[
+				"PAR",
+				"PART"
+			],
+			[
+				"SCORE",
+				"SCORE_COUNT"
+			],
+			[
+				"PART",
+				"PART_DEFINITIONS_TMP"
+			],
+			[
+				"INST",
+				"INSTRUMENT_FILE"
+			],
+			[
+				"INS",
+				"INSTRUMENT_FILE"
+			],
+			[
+				"instr",
+				"instruments"
+			],
+			[
+				"INSTR",
+				"INSTRUMENT"
+			],
+			[
+				"this",
+				"thisEmail"
+			],
+			[
+				"current",
+				"currentEmails"
+			],
+			[
+				"thisPost",
+				"thisPostEmail"
+			],
+			[
+				"ext",
+				"extract_email_address"
+			],
+			[
+				"subs",
+				"subscriptionsHandle"
+			],
+			[
+				"wor",
+				"wordpressDir"
+			],
+			[
+				"flute",
+				"fluteGermMf"
+			],
+			[
+				"englishHornGermF",
+				"englishHornGermF"
+			],
+			[
+				"f",
+				"f"
+			],
+			[
+				"solosAA",
+				"solosAABA"
+			],
+			[
+				"break",
+				"breakLead"
+			],
+			[
+				"piccoloGl",
+				"piccoloGlobalHead"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"ds",
+				"ds"
+			],
+			[
+				"new",
+				"newEmailDir"
+			],
+			[
+				"back",
+				"backbeat"
+			],
+			[
+				"backbe",
+				"backbeatFour"
+			],
+			[
+				"hal",
+				"halfTimeFeel"
+			],
+			[
+				"trum",
+				"trumpetCTwoNotes"
+			],
+			[
+				"lyrc",
+				"lyricsMelodyCTwo"
+			],
+			[
+				"lyrics",
+				"lyricsMelodyCTwo"
+			],
+			[
+				"lyr",
+				"lyricsMelodyCOne"
+			],
+			[
+				"meod",
+				"melodyCLyricsOne"
+			],
+			[
+				"Engli",
+				"EnglishHorn"
+			],
+			[
+				"Eng",
+				"EnglishHorn"
+			],
+			[
+				"myChor",
+				"myChordExceptions"
+			],
+			[
+				"folder",
+				"folder_exclude_patterns"
+			],
+			[
+				"clave",
+				"claveVamp"
+			],
+			[
+				"No",
+				"NoShift"
+			],
+			[
+				"brea",
+				"breakPart"
+			],
+			[
+				"solo",
+				"soloFills"
+			],
+			[
+				"bassoo",
+				"bassoonA"
+			],
+			[
+				"clarinet",
+				"clarinetAInA"
+			],
+			[
+				"Cod",
+				"codaChordsInA"
+			],
+			[
+				"repeat",
+				"repeatTie"
+			],
+			[
+				"chr",
+				"chorusChords"
+			],
+			[
+				"incl",
+				"includes"
+			],
+			[
+				"staff",
+				"staffGroupName"
+			],
+			[
+				"instru",
+				"instrument"
+			],
+			[
+				"ins",
+				"instrumentsRef"
+			],
+			[
+				"clon",
+				"cloneArrayRef"
+			],
+			[
+				"it",
+				"itemsRef"
+			],
+			[
+				"innerT",
+				"innerThings"
+			],
+			[
+				"mus",
+				"musicSuffix"
+			],
+			[
+				"chord",
+				"chordDefinitions"
+			],
+			[
+				"funct",
+				"functions"
+			],
+			[
+				"staffG",
+				"StaffGroup"
+			],
+			[
+				"condi",
+				"conditionalLily"
+			],
+			[
+				"lily",
+				"lilypond"
+			],
+			[
+				"lil",
+				"lilyond"
+			],
+			[
+				"staf",
+				"staffGroupName"
+			],
+			[
+				"staffGrou",
+				"staffGroupName"
+			],
+			[
+				"these",
+				"theseScores"
+			],
+			[
+				"newS",
+				"newStaffGroups"
+			],
+			[
+				"staffGroups",
+				"staffGroupsRef"
+			],
+			[
+				"sec",
+				"sectionsRef"
+			],
+			[
+				"const",
+				"constructorFunctionRef"
+			],
+			[
+				"section",
+				"sections"
+			],
+			[
+				"parts",
+				"partScore"
+			],
+			[
+				"inst",
+				"instruments"
+			],
+			[
+				"rehear",
+				"rehearsalMarksInclude"
+			],
+			[
+				"rehe",
+				"rehearsalMarksFilename"
+			],
+			[
+				"sta",
+				"staffGroupIncludes"
+			],
+			[
+				"instrument",
+				"instrumentsRef"
+			],
+			[
+				"instrum",
+				"instruments"
+			],
+			[
+				"staffGr",
+				"staffGroups"
+			],
+			[
+				"sco",
+				"score"
+			],
+			[
+				"tran",
+				"transposition"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-mecca/instruments/INSTRUMENT.ily",
+		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-mecca/books/SCORE.ily",
+		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-mecca/structures/forms.ily",
+		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-mecca/structures/header.ily",
+		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-mecca/books/BOOK.ily",
+		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-mecca/structures/header-ellis.ily",
+		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-mecca/structures/header-tired.ily",
+		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-mecca/structures/header-america.ily",
+		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-mecca/structures/header-overature.ily",
+		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-mecca/structures/header-roof.ily",
+		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-mecca/structures/header-city.ily",
+		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-mecca/structures/header-evicted.ily",
+		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-mecca/structures/header-speculation.ily",
+		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-mecca/structures/header-always.ily",
+		"/Users/elaine/git/lilypond-project-template/flaming-libs/flaming-header.ily",
+		"/Users/elaine/git/lilypond-project-template/flaming-libs/flaming-paper.ily",
+		"/Users/elaine/Documents/sites/altmusica/altmusica-revslider.sql",
+		"/Users/elaine/Documents/sites/altmusica/altmusica-terms.sql",
+		"/Users/elaine/Documents/sites/altmusica/altmusica-options.sql",
+		"/Users/elaine/Documents/sites/altmusica/altmusica-postmeta.sql",
+		"/Users/elaine/Documents/sites/altmusica/altmusica-posts.sql",
+		"/Users/elaine/Documents/sites/altmusica/altmusica-pages.sql",
+		"/Users/elaine/Documents/sites/altmusica/altmusica-wordpress.sql",
+		"/Users/elaine/Documents/sites/wordpress-installs.txt",
+		"/Users/elaine/git/lily examples/slurs.ly",
+		"/Users/elaine/git/scores/alt.musica/ly/a-classic-base/books/English-Horn-in-F.ily",
+		"/Users/elaine/git/scores/flaming-libs/flaming-paper.ily",
+		"/Users/elaine/git/scores/alt.musica/ly/we-declare/music/flute.ily",
+		"/Users/elaine/git/scores/alt.musica/ly/we-declare/buildParts.sh",
+		"/Users/elaine/git/scores/alt.musica/ly/we-declare/music/voice.ily",
+		"/Users/elaine/git/scores/alt.musica/ly/we-declare/staves/parts/voice.ily",
+		"/Users/elaine/git/scores/alt.musica/ly/we-declare/structures/chords.ily",
+		"/Users/elaine/git/scores/alt.musica/ly/we-declare/staves/parts/flute.ily",
+		"/Users/elaine/git/scores/alt.musica/ly/we-declare/books/Voice.ily",
+		"/Users/elaine/git/scores/summer-of-love/header.ily",
+		"/Users/elaine/git/scores/summer-of-love/music.ily",
+		"/Users/elaine/git/scores/summer-of-love/forms.ily",
+		"/Users/elaine/git/scores/summer-of-love/summer-of-love.ly",
+		"/Users/elaine/git/scores/alt.musica/ly/dont-wait-for-me/books/Alto-Flute-in-G.ily",
+		"/Users/elaine/git/scores/alt.musica/ly/dont-wait-for-me/books/Score-Concert-Coda.ily",
+		"/Users/elaine/git/scores/alt.musica/ly/dont-wait-for-me/books/Violin-II.ily",
+		"/Users/elaine/git/scores/alt.musica/ly/dont-wait-for-me/books/Score-Winds-Transposed.ily",
+		"/Users/elaine/git/scores/alt.musica/ly/dont-wait-for-me/books/Score-Concert.ily",
+		"/Users/elaine/git/scores/alt.musica/ly/dont-wait-for-me/buildParts.sh",
+		"/Users/elaine/git/scores/alt.musica/ly/dont-wait-for-me/parts/dont-wait-for-me-Score-Strings.ly",
+		"/Users/elaine/git/scores/alt.musica/ly/dont-wait-for-me/books/Score-Strings.ily",
+		"/Users/elaine/git/scores/alt.musica/ly/dont-wait-for-me/instruments/melody.ily",
+		"/Users/elaine/git/scores/alt.musica/ly/dont-wait-for-me/structures/chords.ily",
+		"/Users/elaine/git/scores/alt.musica/ly/dont-wait-for-me/instruments/cello.ily",
+		"/Users/elaine/git/scores/alt.musica/ly/dont-wait-for-me/instruments/viola.ily",
+		"/Users/elaine/git/scores/alt.musica/ly/dont-wait-for-me/instruments/violinII.ily",
+		"/Users/elaine/git/scores/alt.musica/ly/dont-wait-for-me/instruments/violinI.ily",
+		"/Users/elaine/Documents/sheet-music/scores/Lilypond/chord-semantics.txt",
+		"/Users/elaine/git/scores/alt.musica/ly/dont-wait-for-me/dont-wait-for-me.sublime-project",
+		"/Users/elaine/git/scores/alt.musica/ly/dont-wait-for-me/structures/forms.ily",
+		"/Users/elaine/git/scores/alt.musica/ly/dont-wait-for-me/books/Cello.ily",
+		"/Users/elaine/git/scores/alt.musica/ly/dont-wait-for-me/instruments/flute.ily",
+		"/Users/elaine/git/scores/alt.musica/ly/dont-wait-for-me/instruments/englishHorn.ily",
+		"/Users/elaine/git/scores/alt.musica/ly/dont-wait-for-me/books/Flute.ily",
+		"/Users/elaine/git/scores/alt.musica/ly/dont-wait-for-me/instruments/bassClarinet.ily",
+		"/Users/elaine/git/scores/alt.musica/ly/dont-wait-for-me/books/Bass-Clarinet-in-Bb.ily",
+		"/Users/elaine/git/scores/alt.musica/ly/dont-wait-for-me/books/English-Horn-in-F.ily",
+		"/Users/elaine/git/scores/alt.musica/ly/dont-wait-for-me/instruments/bass.ily",
+		"/Users/elaine/git/scores/alt.musica/ly/dont-wait-for-me/instruments/clarinet.ily",
+		"/Users/elaine/git/scores/alt.musica/ly/dont-wait-for-me/instruments/clave.ily",
+		"/Users/elaine/git/scores/alt.musica/ly/dont-wait-for-me/parts/dont-wait-for-me-Score-Concert-Coda.ly",
+		"/Users/elaine/git/scores/alt.musica/ly/dont-wait-for-me/parts/dont-wait-for-me-Score-Concert-Head.ly",
+		"/Users/elaine/git/scores/alt.musica/ly/dont-wait-for-me/parts/dont-wait-for-me-Score-Concert-SolosI.ly",
+		"/Users/elaine/git/scores/alt.musica/ly/dont-wait-for-me/parts/dont-wait-for-me-Score-Concert-SolosII.ly",
+		"/Users/elaine/git/scores/alt.musica/ly/dont-wait-for-me/parts/dont-wait-for-me-Score-Concert.ly",
+		"/Users/elaine/git/scores/alt.musica/ly/dont-wait-for-me/parts/dont-wait-for-me-Score-Sound.ly",
+		"/Users/elaine/git/scores/alt.musica/ly/dont-wait-for-me/parts/dont-wait-for-me-Score-Transposed.ly",
+		"/Users/elaine/git/scores/alt.musica/ly/dont-wait-for-me/parts/dont-wait-for-me-Score-Winds-Transposed.ly",
+		"/Users/elaine/git/scores/alt.musica/ly/dont-wait-for-me/parts/dont-wait-for-me-Alto-Flute-in-G.ly",
+		"/Users/elaine/git/scores/alt.musica/ly/dont-wait-for-me/books/Score-Concert-Head.ily",
+		"/Users/elaine/git/scores/alt.musica/ly/dont-wait-for-me/books/Score-Concert-SolosI.ily",
+		"/Users/elaine/git/scores/alt.musica/ly/dont-wait-for-me/books/Score-Concert-SolosII.ily",
+		"/Users/elaine/git/scores/alt.musica/ly/dont-wait-for-me/books/Score-Sound.ily",
+		"/Users/elaine/git/scores/alt.musica/ly/dont-wait-for-me/books/Score-Transposed.ily",
+		"/Users/elaine/git/scores/alt.musica/ly/dont-wait-for-me/structures/forms-intermediate.ily",
+		"/Users/elaine/git/scores/alt.musica/ly/dont-wait-for-me/structures/chords-intermediate.ily",
+		"/Users/elaine/git/scores/alt.musica/ly/dont-wait-for-me/books/Viola.ily",
+		"/Users/elaine/git/scores/alt.musica/ly/dont-wait-for-me/books/Violin-I.ily",
+		"/Users/elaine/git/scores/alt.musica/ly/dont-wait-for-me/books/Clave.ily",
+		"/Users/elaine/git/scores/alt.musica/ly/dont-wait-for-me/structures/header.ily",
+		"/Users/elaine/git/scores/jazz-combustion/lead-sheets/ly/invitation/structures/chords.ily",
+		"/Users/elaine/git/scores/jazz-combustion/lead-sheets/ly/invitation/music/voice.ily",
+		"/Users/elaine/git/scores/jazz-combustion/lead-sheets/ly/invitation/structures/header.ily",
+		"/Users/elaine/git/scores/jazz-combustion/lead-sheets/ly/invitation/books/Lead-Sheet-G-minor.ily",
+		"/Users/elaine/git/scores/jazz-combustion/lead-sheets/ly/invitation/books/Lead-Sheet-C-minor.ily",
+		"/Users/elaine/git/scores/jazz-combustion/lead-sheets/ly/invitation/books/Lead-Sheet-Bb-minor.ily",
+		"/Users/elaine/git/scores/jazz-combustion/lead-sheets/ly/invitation/books/Lead-Sheet-B-minor.ily",
+		"/Users/elaine/git/scores/jazz-combustion/lead-sheets/ly/invitation/books/Lead-Sheet-Ab-minor.ily",
+		"/Users/elaine/git/scores/jazz-combustion/lead-sheets/ly/invitation/books/Lead-Sheet-A-minor.ily",
+		"/Users/elaine/git/scores/jazz-combustion/lead-sheets/ly/invitation/buildParts.sh",
+		"/Users/elaine/git/scores/jazz-combustion/lead-sheets/ly/invitation/structures/lyrics.ily",
+		"/Users/elaine/git/scores/jazz-combustion/lead-sheets/ly/invitation/structures/forms.ily",
+		"/Users/elaine/git/scores/jazz-combustion/lead-sheets/ly/invitation/parts/invitation-Lead-Sheet-Ab-minor.ly",
+		"/Users/elaine/git/scores/jazz-combustion/lead-sheets/ly/invitation/invitation.sublime-project",
+		"/Users/elaine/git/scores/strings/ly/babies-gone-down/books/Score-Sound.ily",
+		"/Users/elaine/git/scores/alt.musica/ly/dont-wait-for-me/instruments/melody-original.ily",
+		"/Users/elaine/git/scores/alt.musica/ly/dont-wait-for-me/parts/dont-wait-for-me-Violin-I.ly",
+		"/Users/elaine/git/scores/alt.musica/ly/dont-wait-for-me/parts/dont-wait-for-me-Violin-II.ly",
+		"/Users/elaine/git/scores/alt.musica/ly/dont-wait-for-me/parts/dont-wait-for-me-Cello.ly",
+		"/Users/elaine/git/scores/alt.musica/ly/dont-wait-for-me/parts/dont-wait-for-me-Viola.ly",
+		"/Users/elaine/git/scores/strings/ly/tension-cue/music/viola.ily",
+		"/Users/elaine/git/scores/strings/ly/tension-cue/music/violinII.ily",
+		"/Users/elaine/git/scores/strings/ly/tension-cue/music/cello.ily",
+		"/Users/elaine/git/scores/strings/ly/tension-cue/music/violinI.ily",
+		"/Users/elaine/git/scores/strings/ly/tension-cue/buildParts.sh",
+		"/Users/elaine/git/scores/strings/ly/tension-cue/structures/forms.ily",
+		"/Users/elaine/git/scores/strings/ly/tension-cue/structures/header.ily",
+		"/Users/elaine/git/scores/strings/ly/tension-cue/staves/scores/violinI.ily",
+		"/Users/elaine/git/scores/strings/ly/tension-cue/staves/scores/violinII.ily",
+		"/Users/elaine/git/scores/strings/ly/tension-cue/staves/scores/viola.ily",
+		"/Users/elaine/git/scores/strings/ly/tension-cue/staves/scores/bass.ily",
+		"/Users/elaine/git/scores/strings/ly/tension-cue/books/Viola.ily",
+		"/Users/elaine/git/scores/strings/ly/tension-cue/books/Cello.ily",
+		"/Users/elaine/git/scores/strings/ly/tension-cue/staves/scores/cello.ily",
+		"/Users/elaine/git/scores/strings/ly/tension-cue/staves/sound/viola.ily",
+		"/Users/elaine/git/scores/strings/ly/tension-cue/books/Score-Concert.ily",
+		"/Users/elaine/git/scores/strings/ly/tension-cue/tension-cue.sublime-project",
+		"/Users/elaine/git/scores/strings/ly/tension-cue/staves/parts/cello.ily",
+		"/Users/elaine/git/scores/strings/ly/tension-cue/staves/parts/piano.ily",
+		"/Users/elaine/git/scores/strings/ly/tension-cue/staves/parts/violinII.ily",
+		"/Users/elaine/git/scores/strings/ly/tension-cue/staves/parts/violinI.ily",
+		"/Users/elaine/git/scores/strings/ly/tension-cue/staves/parts/viola.ily",
+		"/Users/elaine/git/scores/strings/ly/tension-cue/structures/chords.ily"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"/Users/elaine/git/scores/",
+			"/Users/elaine/git/scores/alt.musica/ly",
+			"/Users/elaine/git/scores/strings/ly/",
+			"/Users/elaine/git/scores/strings/ly/tension-cue",
+			"/Users/elaine/git/scores/alt.musica/ ",
+			"/Users/elaine/git/scores/alt.musica/ly/we-declare/",
+			"/Users/elaine/git/scores/alt.musica/"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"Compos",
+			"compos",
+			"SegmentOne",
+			"_form",
+			"_wp_page_template",
+			"score",
+			"free",
+			"R1*12",
+			"R1*12 ||",
+			"2. 4",
+			"R1",
+			" Guitar - modal\n	",
+			"s1*4 % \\inlineMMRN R1*4",
+			"\\inlineMMRN R1*4 ||",
+			"\n	",
+			"\\inlineMMRN R1*4 ||",
+			"4 R",
+			"    \n",
+			"4 R",
+			" R",
+			"	deleted:    ",
+			"	new file:   ",
+			"	deleted:    ",
+			"#(define output-suffix \"",
+			"helpless",
+			"Helpless",
+			"4 R",
+			"Your Love",
+			"Sunshine Of",
+			"riders",
+			"The Storm",
+			"Riders On",
+			"The Storm",
+			"Riders On",
+			"Jones",
+			"Casey",
+			"sugar",
+			"Magnolia",
+			"Sugar",
+			"\\time",
+			"\\time 6/4",
+			"It, Black",
+			"Paint",
+			"4 R",
+			"Frog",
+			"Peace",
+			"4 R",
+			" R",
+			"Out Of This Place",
+			"We Gotta Get",
+			"4 R",
+			"We Gotta Get Out Of This Place We G",
+			"No) Satisfaction",
+			"(I Can't Get",
+			" R",
+			"4 R",
+			"Eyed Girl",
+			"Brown",
+			" R",
+			"Somebody",
+			"To Love",
+			" R",
+			"7 R",
+			"Free",
+			"I Feel",
+			"12 R",
+			"2 R",
+			"4 R",
+			"Shade Of Pale",
+			"A Whiter",
+			"4 R",
+			" #'",
+			" \\time",
+			"time",
+			"\\time ",
+			"8 R",
+			"8 r",
+			"8 R",
+			"	R",
+			"\\time 6/4 ",
+			"spacing #'",
+			"spacing",
+			"g #'",
+			"  \"",
+			"\\bar \"||\"\n}",
+			"fermata",
+			"Form",
+			"Rolo",
+			" s",
+			" S",
+			" s",
+			" S",
+			" s",
+			" S",
+			" s",
+			" S",
+			" s",
+			" S",
+			" s",
+			" S",
+			" s",
+			" S",
+			" s",
+			" S",
+			" s",
+			" S",
+			" s",
+			" S",
+			" s",
+			" S",
+			" s",
+			"	s",
+			"	\\time 4/4 \n",
+			"||",
+			"	\\mark \\markup { \\box \"",
+			"%\n\n	\\t",
+			"%%\\mark \\markup { \\box \"",
+			"% ",
+			"2",
+			"\\time 4/4",
+			"\\bar \"||\"",
+			"bassClarinetGlobalCodaForScore",
+			"6/7",
+			"8/8",
+			" #'",
+			"Concert",
+			"	",
+			"\n"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			" ",
+			".com,",
+			"restChordsSolosII",
+			"2.",
+			"chordsSolosII",
+			"estChords",
+			"chordsSolosII",
+			"clave",
+			"drummode",
+			"bass",
+			"bassClarinet",
+			"SolosII",
+			"Two",
+			"pageBreak",
+			"soloChords",
+			"codaChords",
+			"= \\drummode {",
+			"drummode",
+			"clave",
+			"s2.",
+			"",
+			"netCoda",
+			"fluteCoda",
+			"HornCoda",
+			"bassCoda",
+			"\\altoFlute",
+			"bassSolos",
+			"r2 r4",
+			"flute",
+			"bass",
+			"0.15",
+			" ~ 4. r8 ",
+			"c ",
+			"Head",
+			"bass",
+			"flute",
+			"englishHorn",
+			"~ 4\\!",
+			"\\<",
+			"\\mfp",
+			"flute",
+			"bassClarinet",
+			"englishHorn",
+			"bassClarinet",
+			"",
+			"flamingChordExceptions",
+			"melody",
+			"2/3",
+			"AFour",
+			"f \\major",
+			"$emailFile",
+			"email",
+			"getPersonFromEmail",
+			"copy",
+			"",
+			"$partType =",
+			"",
+			"bluesy-jump",
+			"\\tag #'Part { \\noPageBreak } ",
+			" ",
+			"\\clarinetGermMf ",
+			"\\clarinetGermMp ",
+			"\\clarinetGermFf",
+			"\\clarinetGermF",
+			"\\break \\noPageBreak",
+			"\"Bass Fill\" R1*2 |",
+			"s1*4 \\break s1*4 \\break s1*4 ",
+			"bluesy-jump",
+			"songCh",
+			"instruments/source/",
+			"bluesy-jump",
+			"\\bar \"||\" \\break",
+			" \\breakLead | s1*4 \\bar \"||\" \\breakLead",
+			"Condensed",
+			"--",
+			"-.",
+			" b",
+			" e",
+			"Condensed",
+			"$emailFile",
+			"emails",
+			"1",
+			"flamingChordExceptions",
+			"bluesy-jump",
+			"englishHorn",
+			"flute",
+			"s1",
+			"bluesy-jump",
+			"violin",
+			"clarinet",
+			"violix",
+			"violin",
+			"INSTRUMENT",
+			"echo ",
+			"\\tag #'NoCue ",
+			"\\tag #'Cue ",
+			"PART",
+			"SONG",
+			"cs",
+			"ds",
+			"as",
+			"http://flaminghakama.com/collaborations/alt-rice/Stems/Tango/tango-",
+			"http://flaminghakama.com/collaborations/alt-rice/Stems/Swampy/swampy-",
+			"OneTime Part Clave",
+			" \\noBreak \\hook",
+			"%{ \\new StaffGroup = \"voice\" <<",
+			"%{            \\new StaffGroup = \"voice\" <<",
+			"#5",
+			"#6",
+			"-1",
+			"-2",
+			"\\drummode {",
+			"clave",
+			"lead",
+			"voice",
+			"clave",
+			"hook",
+			"-. ",
+			"dont-wait-for-me",
+			"B",
+			"Solos",
+			"melody",
+			"lead",
+			"leadG",
+			"Part Winds BassClarinet",
+			"Part Winds EnglishHorn",
+			"Part Winds Flute",
+			"voice"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 280.0,
+	"status_bar_visible": true
+}
