@@ -19,10 +19,12 @@
         instrumentName = \poet
     }
 
-    \include "ly/SONG/structures/header.ily"
-    \include "ly/SONG/music/INSTRUMENT.ily"
     \score {
-        \keepWithTag #'(PDF Part) <<
+        \keepWithTag #'(PDF Part
+            ChorusI
+            ChorusII
+            ChorusIII
+        ) <<
             \include "ly/SONG/staves/parts/INSTRUMENT.ily"
         >>
         \layout {

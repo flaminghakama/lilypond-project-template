@@ -1,6 +1,10 @@
 \book {
     \score {
-        \keepWithTag #'(MIDI Score) <<
+        \keepWithTag #'(MIDI Score
+                ChorusI
+                ChorusII
+                ChorusIII
+            ) <<
             \include "ly/SONG/staves/sound/clarinet.ily"
             \include "ly/SONG/staves/sound/tenorSaxophone.ily"
             \include "ly/SONG/staves/sound/trumpet.ily"

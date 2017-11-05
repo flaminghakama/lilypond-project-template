@@ -544,9 +544,18 @@
 	},
 	"file_history":
 	[
+		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-mecca/structures/forms-ellis.ily",
+		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-mecca/SONG.sublime-project",
+		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-mecca/structures/forms-evicted.ily",
+		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-mecca/structures/forms-roof.ily",
+		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-mecca/structures/forms-speculation.ily",
+		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-mecca/structures/forms-city.ily",
+		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-mecca/structures/forms-always.ily",
+		"/Users/elaine/git/lilypond-project-template/flaming-libs/flaming-paper.ily",
 		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-mecca/books/BOOK.ily",
 		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-mecca/books/MIDI.ily",
 		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-mecca/books/SCORE.ily",
+		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-mecca/song-invocation.sh",
 		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-mecca/staves/scores/bass.ily",
 		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-mecca/staffgroups/concert/Winds.ily",
 		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-mecca/staffgroups/transposed/Strings.ily",
@@ -586,7 +595,6 @@
 		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-mecca/structures/header-speculation.ily",
 		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-mecca/structures/header-always.ily",
 		"/Users/elaine/git/lilypond-project-template/flaming-libs/flaming-header.ily",
-		"/Users/elaine/git/lilypond-project-template/flaming-libs/flaming-paper.ily",
 		"/Users/elaine/Documents/sites/altmusica/altmusica-revslider.sql",
 		"/Users/elaine/Documents/sites/altmusica/altmusica-terms.sql",
 		"/Users/elaine/Documents/sites/altmusica/altmusica-options.sql",
@@ -663,15 +671,7 @@
 		"/Users/elaine/git/scores/jazz-combustion/lead-sheets/ly/invitation/books/Lead-Sheet-C-minor.ily",
 		"/Users/elaine/git/scores/jazz-combustion/lead-sheets/ly/invitation/books/Lead-Sheet-Bb-minor.ily",
 		"/Users/elaine/git/scores/jazz-combustion/lead-sheets/ly/invitation/books/Lead-Sheet-B-minor.ily",
-		"/Users/elaine/git/scores/jazz-combustion/lead-sheets/ly/invitation/books/Lead-Sheet-Ab-minor.ily",
-		"/Users/elaine/git/scores/jazz-combustion/lead-sheets/ly/invitation/books/Lead-Sheet-A-minor.ily",
-		"/Users/elaine/git/scores/jazz-combustion/lead-sheets/ly/invitation/buildParts.sh",
-		"/Users/elaine/git/scores/jazz-combustion/lead-sheets/ly/invitation/structures/lyrics.ily",
-		"/Users/elaine/git/scores/jazz-combustion/lead-sheets/ly/invitation/structures/forms.ily",
-		"/Users/elaine/git/scores/jazz-combustion/lead-sheets/ly/invitation/parts/invitation-Lead-Sheet-Ab-minor.ly",
-		"/Users/elaine/git/scores/jazz-combustion/lead-sheets/ly/invitation/invitation.sublime-project",
-		"/Users/elaine/git/scores/strings/ly/babies-gone-down/books/Score-Sound.ily",
-		"/Users/elaine/git/scores/alt.musica/ly/dont-wait-for-me/instruments/melody-original.ily"
+		"/Users/elaine/git/scores/jazz-combustion/lead-sheets/ly/invitation/books/Lead-Sheet-Ab-minor.ily"
 	],
 	"find":
 	{
@@ -696,6 +696,11 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"fermat",
+			"ellis",
+			"forms",
+			"song",
+			"forms",
 			"concert",
 			"transposed",
 			"SONG",
@@ -818,12 +823,7 @@
 			" s",
 			" S",
 			" s",
-			" S",
-			" s",
-			" S",
-			" s",
-			" S",
-			" s"
+			" S"
 		],
 		"highlight": true,
 		"in_selection": false,
