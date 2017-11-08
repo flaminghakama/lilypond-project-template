@@ -4,6 +4,8 @@
 
 composerName = "Tommi Avicolli Mecca"
 arrangerName = "D. Elaine Alt"
+titleLeft = ""
+titleRight = ""
 
 \include "../flaming-libs/flaming-paper.ily"
 

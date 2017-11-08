@@ -1,13 +1,13 @@
         \new ChordNames \transpose bf c { \chordsPart }
-        \new Staff = "clarinet" { 
+        \new Staff = "tenorSaxophone" { 
             \set Staff.instrumentName = \markup {
                 \center-column { 
-                    "Clarinet"
+                    "Tenor Saxophone"
                     \line { "in B" \smaller \flat }
                 }
             }
-            \set Staff.shortInstrumentName = #"Cl."
+            \set Staff.shortInstrumentName = #"T.S."
             \accidentalStyle modern-voice-cautionary
             \clef treble
-            \transpose bf, c { \clarinetGlobal }
+            \transpose bf, c { \tenorSaxophoneGlobal }
         }

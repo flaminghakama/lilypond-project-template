@@ -1,3 +1,5 @@
+\include "ly/SONG/structures/header-SONG.ily"
+
 \book {
     \score {
         \keepWithTag #'(MIDI Score

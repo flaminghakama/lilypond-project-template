@@ -238,14 +238,14 @@ my $midiBookTemplate = slurpFile($midiBookTemplateFile, "midi book template") ;
 my $instrumentTemplateFile = "ly/$song/music/INSTRUMENT.ily" ; 
 my $instrumentTemplate = slurpFile($instrumentTemplateFile, "instrument template") ; 
 
-my $staffScoresTemplateFile = "ly/$song/staves/scores/INSTRUMENT.ily" ; 
-my $staffScoresTemplate = slurpFile($staffScoresTemplateFile, "staff scores template") ; 
+#my $staffScoresTemplateFile = "ly/$song/staves/scores/INSTRUMENT.ily" ; 
+#my $staffScoresTemplate = slurpFile($staffScoresTemplateFile, "staff scores template") ; 
 
-my $staffPartsTemplateFile = "ly/$song/staves/parts/INSTRUMENT.ily" ; 
-my $staffPartsTemplate = slurpFile($staffPartsTemplateFile, "staff parts template") ; 
+#my $staffPartsTemplateFile = "ly/$song/staves/parts/INSTRUMENT.ily" ; 
+#my $staffPartsTemplate = slurpFile($staffPartsTemplateFile, "staff parts template") ; 
 
-my $staffSoundTemplateFile = "ly/$song/staves/sound/INSTRUMENT.ily" ; 
-my $staffSoundTemplate = slurpFile($staffSoundTemplateFile, "staff sound template") ; 
+#my $staffSoundTemplateFile = "ly/$song/staves/sound/INSTRUMENT.ily" ; 
+#my $staffSoundTemplate = slurpFile($staffSoundTemplateFile, "staff sound template") ; 
 
 
 #  Process each part/score
@@ -349,28 +349,28 @@ foreach $partName (@ARGV){
 
             # Make the staff files
 
-            $staffScoresFile = "ly/$song/staves/scores/$variableName.ily" ;  
-            $staffScoresContents = $staffScoresTemplate ; 
+            #$staffScoresFile = "ly/$song/staves/scores/$variableName.ily" ;  
+            #$staffScoresContents = $staffScoresTemplate ; 
 
-            $staffScoresContents =~ s/INSTRUMENT/$variableName/g ;
-            $staffScoresContents =~ s/PART/$partName/g ;
-            $staffScoresContents =~ s/POET/$poet/g ;
-            writeFile($staffScoresFile, "staff file $staffScoresFile", $staffScoresContents) ; 
+            #$staffScoresContents =~ s/INSTRUMENT/$variableName/g ;
+            #$staffScoresContents =~ s/PART/$partName/g ;
+            #$staffScoresContents =~ s/POET/$poet/g ;
+            #writeFile($staffScoresFile, "staff file $staffScoresFile", $staffScoresContents) ; 
 
-            $staffPartsFile = "ly/$song/staves/parts/$variableName.ily" ;  
-            $staffPartsContents = $staffPartsTemplate ; 
+            #$staffPartsFile = "ly/$song/staves/parts/$variableName.ily" ;  
+            #$staffPartsContents = $staffPartsTemplate ; 
 
-            $staffPartsContents =~ s/INSTRUMENT/$variableName/g ;
-            $staffPartsContents =~ s/PART/$partName/g ;
-            $staffPartsContents =~ s/POET/$poet/g ;
-            writeFile($staffPartsFile, "staff file $staffPartsFile", $staffPartsContents) ; 
+            #$staffPartsContents =~ s/INSTRUMENT/$variableName/g ;
+            #$staffPartsContents =~ s/PART/$partName/g ;
+            #$staffPartsContents =~ s/POET/$poet/g ;
+            #writeFile($staffPartsFile, "staff file $staffPartsFile", $staffPartsContents) ; 
 
-            $staffSoundFile = "ly/$song/staves/sound/$variableName.ily" ;  
-            $staffSoundContents = $staffSoundTemplate ; 
+            #$staffSoundFile = "ly/$song/staves/sound/$variableName.ily" ;  
+            #$staffSoundContents = $staffSoundTemplate ; 
 
-            $staffSoundContents =~ s/INSTRUMENT/$variableName/g ;
-            $staffSoundContents =~ s/POET/$poet/g ;
-            writeFile($staffSoundFile, "staff file $staffSoundFile", $staffSoundContents) ; 
+            #$staffSoundContents =~ s/INSTRUMENT/$variableName/g ;
+            #$staffSoundContents =~ s/POET/$poet/g ;
+            #writeFile($staffSoundFile, "staff file $staffSoundFile", $staffSoundContents) ; 
         }
     }
 }
@@ -404,11 +404,11 @@ writeFile($invocationFile, "shell script to create parts", join("\n", @lilypondP
 chmod 0755, $invocationFile;
 
 #  Remove the copied template files
-unlink $projectTemplateFile ; 
+#unlink $projectTemplateFile ; 
 unlink $partTemplateFile ; 
 unlink $bookPartTemplateFile ; 
 unlink $scoreBookTemplateFile ; 
 unlink $midiBookTemplateFile ; 
 unlink $instrumentTemplateFile ; 
-unlink $staffScoresTemplate ; 
-unlink $staffPartsTemplate ; 
+#unlink $staffScoresTemplate ; 
+#unlink $staffPartsTemplate ; 

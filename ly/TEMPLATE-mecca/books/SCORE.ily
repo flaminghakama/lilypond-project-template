@@ -1,3 +1,5 @@
+\include "ly/SONG/structures/header-SONG.ily"
+
 \book {
     \paper {
 
@@ -5,13 +7,13 @@
         right-margin = #17
 
         % First page spacing after header
-        markup-system-spacing #'padding = #6
+        markup-system-spacing.padding = #6
 
         % Subsequent page spacing after header
-        top-system-spacing #'minimum-distance = #18
+        top-system-spacing.minimum-distance = #18
 
         % Spacing in between systems
-        system-system-spacing #'minimum-distance = #12
+        system-system-spacing.minimum-distance = #12
     }
     \header {
         subtitle = ""

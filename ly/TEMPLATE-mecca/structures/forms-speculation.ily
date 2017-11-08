@@ -30,4 +30,4 @@ structure = \relative c {
     }
 }
 
-global = #(define-music-function (parser location mus) (ly:music?) #{ << \structure \relative { $mus } >> #})
+globalSong = #(define-music-function (parser location mus) (ly:music?) #{ << \structure \relative { $mus } >> #})

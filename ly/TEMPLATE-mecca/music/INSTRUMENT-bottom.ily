@@ -1,0 +1,4 @@
+
+INSTRUMENTGlobal = \globalSong {
+    \INSTRUMENTSong
+}

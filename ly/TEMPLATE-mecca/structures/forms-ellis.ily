@@ -6,8 +6,7 @@ structure = \relative c {
     \tempo "Shuffle" 4=134
     \numericTimeSignature 
     \time 4/4
-    \partial 4*3 s4 2
-    \bar "||"
+    \partial 4*3 s4 2 \bar "||"
     \tag ChorusI {
         \mark \markup \box "Verse 1"
         s1*8 \bar "||"
@@ -30,4 +29,4 @@ structure = \relative c {
     }
 }
 
-global = #(define-music-function (parser location mus) (ly:music?) #{ << \structure \relative { $mus } >> #})
+globalSong = #(define-music-function (parser location mus) (ly:music?) #{ << \structure \relative { $mus } >> #})
