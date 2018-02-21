@@ -2,6 +2,7 @@
         \new PianoStaff = "piano" \with {
             instrumentName = "Piano"
             shortInstrumentName = "P."
+            magnifyStaff = #4/7
         }
         <<
             \accidentalStyle modern-voice-cautionary

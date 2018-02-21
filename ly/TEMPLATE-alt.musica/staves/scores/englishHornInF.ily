@@ -1,5 +1,5 @@
         \new ChordNames \transpose f c { \chordsPart }
-        \new Staff = "englishHorn" { 
+        \new Staff = "englishHorn" \with { \magnifyStaff #4/7 } {
             \set Staff.instrumentName = \markup {
                 \center-column { 
                     "English Horn"

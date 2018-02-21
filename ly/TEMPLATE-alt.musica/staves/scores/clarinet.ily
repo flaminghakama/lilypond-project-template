@@ -1,5 +1,5 @@
         \new ChordNames \transpose c c { \chordsPart }
-        \new Staff = "clarinet" { 
+        \new Staff = "clarinet" \with { \magnifyStaff #4/7 } {
             \set Staff.instrumentName = "Clarinet"
             \set Staff.shortInstrumentName = #"Cl."
             \accidentalStyle modern-voice-cautionary

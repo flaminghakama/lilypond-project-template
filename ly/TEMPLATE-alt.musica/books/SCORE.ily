@@ -1,14 +1,16 @@
+#(set-default-paper-size "letterlandscape")
+
 \book {
     \paper {
 
         % First page spacing after header
-        markup-system-spacing #'padding = #6
+        markup-system-spacing.padding = #6
 
         % Subsequent page spacing after header
-        top-system-spacing #'minimum-distance = #18
+        top-system-spacing.minimum-distance = #18
 
         % Spacing in between systems
-        system-system-spacing #'minimum-distance = #12
+        system-system-spacing.minimum-distance = #12
     }
     \header {
         subtitle = ""
@@ -19,20 +21,16 @@
     %%%%% SONG %%%%%
     \score {
         \keepWithTag #'(Score PDF
-            SectionWoodwinds
-            SectionChoir
-            SectionPercussion
-            SectionStrings
-            InstrumentPiccolo
-            InstrumentEnglishHorn
-            InstrumentBassClarinet
-            InstrumentVoice
-            InstrumentDrums
-            InstrumentViolinI
-            InstrumentViolinII
-            InstrumentViola
-            InstrumentCello
-            InstrumentBass
+            Piccolo
+            EnglishHorn
+            BassClarinet
+            Voice
+            Drums
+            ViolinI
+            ViolinII
+            Viola
+            Cello
+            Bass
             SegmentIntro
             SegmentFunk
             SegmentAroCuban

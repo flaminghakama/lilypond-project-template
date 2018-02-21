@@ -34,8 +34,4 @@ INSTRUMENTSong = \relative c {
     }
 }
 
-INSTRUMENTPart = \relative c { \INSTRUMENTSong }
-
-
-INSTRUMENTGlobalScore = \globalScore \INSTRUMENTSong
-INSTRUMENTGlobalPart = \globalPart \INSTRUMENTPart
+INSTRUMENTGlobal = \globalSong \INSTRUMENTPart

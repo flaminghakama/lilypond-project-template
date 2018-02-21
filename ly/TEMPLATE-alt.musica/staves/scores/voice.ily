@@ -1,4 +1,4 @@
-	            \new Staff = "voice" { 
+	            \new Staff = "voice" \with { \magnifyStaff #4/7 } {
                     \set Staff.instrumentName = #"Voice"
                     \set Staff.shortInstrumentName = #"V."
                     \accidentalStyle modern-voice-cautionary
