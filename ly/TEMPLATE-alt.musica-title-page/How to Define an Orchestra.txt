@@ -1,0 +1,322 @@
+How to Define an Orchestra
+
+There main complication has to do with multi-instrument chairs.
+We need to define each instrument separately, since each has its own settings (clef, transposition)
+Then we need to define books as containing various instruments.  In most cases, this will be 1-1.
+
+So, many if not most 
+
+The instruments use these several properties
+    INSTRUMENT: "flute",  % used as part of variable names. in camelCase
+    POET: "Flute",        % visible in top of part and as instrumentName in scores
+    ABBREV: "fl."         % shortInstrumentName in scores
+    CLEF: "treble"        % the starting clef
+    TRANSPOSITION: "c c"  % used as the arguments for transpose function
+
+
+{ Instruments: [
+    Flute: {   
+        INSTRUMENT: "flute",
+        POET: "Flute",
+        ABBREV: "fl.",
+        CLEF: "treble",
+        TRANSPOSITION: "c c" 
+    },
+    Oboe: {   
+        INSTRUMENT: "oboe",
+        POET: "Oboe",   
+        ABBREV: "ob.",
+        CLEF: "treble",
+        TRANSPOSITION: "c c"
+    },
+    EnglishHorn: {
+        INSTRUMENT: "englishHorn",
+        POET: "English Horn in F",   
+        ABBREV: "E.h.",
+        CLEF: "treble",
+        TRANSPOSITION: "f, c"
+    },
+    Clarinet: {
+        INSTRUMENT: "clarinet",
+        POET: "Clarinet in Bb", 
+        ABBREV: "cl."       
+        CLEF: "treble",
+        TRANSPOSITION: "bf c"
+    },
+    Bassoon: {
+        INSTRUMENT: "bassoon",
+        POET: "Bassoon", 
+        ABBREV: "bsn."       
+        CLEF: "bass",
+        TRANSPOSITION: "c c"
+    },
+
+    Trumpet: {
+        INSTRUMENT: "trumpet",
+        POET: "Trumpet in Bb",
+        ABBREV: "trp.",
+        CLEF: "treble",
+        TRANSPOSITION: "bf, c"
+    },
+    Horn: {
+        INSTRUMENT: "horn",
+        POET: "Horn in F",   
+        ABBREV: "h.",
+        CLEF: "treble",
+        TRANSPOSITION: "f, c"
+    },
+    Trombone: {
+        INSTRUMENT: "trombone",
+        POET: "Trombone",   
+        ABBREV: "trb.",
+        CLEF: "bass",
+        TRANSPOSITION: "c c"
+    },
+    Tuba: {
+        INSTRUMENT: "tuba",
+        POET: "Tuba", 
+        ABBREV: "tba."       
+        CLEF: "bass",
+        TRANSPOSITION: "c c"
+    },
+
+    ViolinI: {
+        INSTRUMENT: "violinI",
+        POET: "Violin I",
+        ABBREV: "v.I",
+        CLEF: "treble",
+        TRANSPOSITION: "c c"
+    },
+    ViolinII: {
+        INSTRUMENT: "violinII",
+        POET: "Violin II",
+        ABBREV: "v.II",
+        CLEF: "treble",
+        TRANSPOSITION: "c c"
+    },
+    Viola: {
+        INSTRUMENT: "viola",
+        POET: "Viola",
+        ABBREV: "va.",
+        CLEF: "alto",
+        TRANSPOSITION: "c c"
+    },
+    Cello: {
+        INSTRUMENT: "cello",
+        POET: "'Cello", 
+        ABBREV: "c."       
+        CLEF: "bass",
+        TRANSPOSITION: "c c"
+    },
+    Bass: {
+        INSTRUMENT: "bass",
+        POET: "Contrabass", 
+        ABBREV: "b."       
+        CLEF: "bass",
+        TRANSPOSITION: "c c"
+    }
+]}
+
+
+Deine a data structure 
+
+{ sections: [
+ 
+        Woodwinds: [
+            Flute,
+            Oboe,
+            EnglishHorn,
+            Clarinet,
+            Bassoon
+        ],
+
+        Brass: [
+            Trumpet,
+            Horn,
+            Trombone,
+            Tuba
+        ],        
+
+        Strings: [
+            ViolinI,
+            ViolinII,
+            Viola,
+            Cello,
+            Bass
+        ]
+    ]
+}
+
+For multi-instrument parts without specific staff groups, you can just list the instruments.
+For scores that use entire instrumental sections, you can use the section names.
+
+{ books: [
+    Flute: [ Flute ],
+    OboeAndEnglishHorn: [ Oboe, EnglishHorn ],
+    Clarinet: [ Clarinet ],
+    Bassoon: [ Bassoon ]
+    Trumpet: [ Trumpet ],
+    Horn: [ Horn ],
+    Trombone: [ Trombone ],
+    Tuba: [ Tuba ],
+    ViolinI: [ ViolinI ],
+    ViolinII: [ ViolinII ],
+    Viola: [ Viola ],
+    Cello: [ Cello ],
+    Bass: [ Bass ],
+    ConcertScore: [ Woodwinds, Brass, Strings ] 
+]}
+
+
+What we need for each Section
+
+<h3>Create the staff group file<h3>
+
+<ol>
+<li>Get the contents of the staff group template ly/SONG/staffgroups/SECTION.ily
+
+<pre>
+\tag SectionSECTION <<
+    \new StaffGroup = "SECTION" << 
+        STAVES
+    >>
+>>
+</pre>
+</li>
+
+<li>Replace SECTION with the section name.</li>
+
+<li>Replace STAVES with an include line for each instrument in the section.
+
+<pre>
+        \include "ly/SONG/staves/INSTRUMENT.ily    
+</pre>
+</li>
+
+<li>Save this as the staff group file named for the section in ly/SONG/staffgroups/SECTION.ily </li>
+
+</ol>
+
+<h3>Use the Section in book files</h3>
+
+Any score that includes the entire instrumental section, or at least two instruments in the secdtion, will need to use the section staff group.
+Such as full scores, or a score of the section.
+
+The staff groups of instrumental sections are used within scores, which are defined in the book files.  
+The template for the book file, for scores, is ly/SONG/books/SECTION.ly  
+
+<ol>
+<li>You need to use the tag by adding SectionSECTION to the \keepWithTag list.</li>
+
+<li>You need an \include line for the section.  You actually need one include per score, if you are using multiple scores.</li>
+</ol>
+
+It may seem strange to repeat the include twice, once each score, since the scores nominally have distinct content.  It is the tag structure that allows this to work, as long as each score uses distinct Segment tags.   
+
+<pre>
+\book {
+    \paper {
+        %...
+    }
+    \header {
+        %...
+    }
+    \score {
+
+        \keepWithTag #'(Score 
+            SectionSECTION
+            SegmentA
+            SegmentB
+            SegmentC
+            %...
+        ) 
+        <<
+            \include "ly/SONG/staffgroups/SECTION.ily"
+        >>
+        \layout { 
+            %...
+        }
+    }
+
+    \score {
+        \keepWithTag #'(OneTime Score 
+            SectionStrings
+            SegmentCoda
+        ) <<
+            \include "ly/SONG/staffgroups/SECTION.ily"
+        >>
+        \layout { 
+            %...
+        }
+    }
+}
+</pre>
+
+<h3>Create the instrument staff files</h3>
+
+We need to create the files for instrumental staves that we included in the instrumental section staff group file.  
+
+The template file for an instrumental staff is ly/SONG/staves/INSTRUMENT.ily
+
+You need to replace SECTION, INSTRUMENT, POET, ABBREV, CLEF and TRANSPOSITION.
+
+<pre>
+\tag InstrumentINSTRUMENT <<
+    \new Staff = "INSTRUMENT" { 
+        \compressFullBarRests
+        \override MultiMeasureRest.expand-limit = #1
+        \tag Score { 
+            \set Staff.instrumentName = "POET" 
+            \set Staff.shortInstrumentName = #"ABBREV"
+        }
+        \tag Part {
+            \set Staff.instrumentName = "" 
+            \set Staff.shortInstrumentName = #""
+        }
+        \override DynamicLineSpanner #'staff-padding = #3.8
+        %\override DynamicLineSpanner #'Y-extent = #'(-1.5 . 1.5)
+        \accidentalStyle modern-voice-cautionary
+        \clef CLEF
+        \transpose TRANSPOSITION { \INSTRUMENTGlobal }
+    }
+}
+</pre>
+
+The other thing used in this file is the musical variable \INSTRUMENTGlobal.
+
+This needs to be defined in the instrument's music file, ly/SONG/music/INSTRUMENT.ily
+
+
+
+
+
+
+When you encounter a new Section Name line:
+1) Finish up the old section
+  1.1) Replace STAVES with the staves from the parts
+  1.2) Update the staffgroups/SECTION.ily file
+  1.3) Copy the file books/SCORE.ily to books/SECTION.ily
+  1.4) Replace SECTIONS with \include "ly/SONG/staffgroups/SECTION.ily"
+  1.5) Add to build list: 
+       lilypond ly/SONG/parts/SONG-Score-Section-##-SECTION.ly
+  1.6) Create parts/SONG-Score-Section-##-SECTION.ly
+  1.7) 
+
+2) Start a new section
+  2.1) Increment the staffgroup count 
+  2.2) Copy the file staffgroups/MULTI.ily to staffgroups/SECTION.ily
+  2.3) Replace SECTION with the Section Name
+  2.4) staffgroupFile[count] = staffgroups/SECTION.ily
+
+When you are done with all sections
+
+
+
+
+
+
+
+
+
+
+

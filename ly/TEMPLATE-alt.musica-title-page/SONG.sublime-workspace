@@ -536,12 +536,12 @@
 	},
 	"file_history":
 	[
-		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-alt.musica/books/BOOK.ily",
-		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-alt.musica/structures/forms.ily",
-		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-alt.musica/music/INSTRUMENT.ily",
-		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-alt.musica/books/SCORE.ily",
+		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-alt.musica-title-page/books/BOOK.ily",
+		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-alt.musica-title-page/books/SCORE.ily",
+		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-alt.musica-title-page/structures/header.ily",
 		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-alt.musica/structures/header.ily",
-		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-alt.musica/books/MIDI.ily",
+		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-alt.musica/books/BOOK.ily",
+		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-alt.musica/books/SCORE.ily",
 		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-alt.musica/staves/scores/altoFlute.ily",
 		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-alt.musica/staves/scores/altoFluteInG.ily",
 		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-alt.musica/staves/scores/bass.ily",
@@ -561,7 +561,9 @@
 		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-alt.musica/staves/scores/violinI.ily",
 		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-alt.musica/staves/scores/violinII.ily",
 		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-alt.musica/staves/scores/voice.ily",
+		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-alt.musica/music/INSTRUMENT.ily",
 		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-alt.musica/parts/PART.ly",
+		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-alt.musica/structures/forms.ily",
 		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-alt.musica/staves/sound/altoFlute.ily",
 		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-alt.musica/staves/sound/bass.ily",
 		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-alt.musica/staves/sound/bassClarinet.ily",
@@ -589,6 +591,7 @@
 		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-alt.musica/staves/STAFF.ily",
 		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-alt.musica/staffgroups/concert/Percussion.ily",
 		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-alt.musica/structures/chords.ily",
+		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-alt.musica/books/MIDI.ily",
 		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-alt.musica/staves/sound/altoSaxophone.ily",
 		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-alt.musica/staves/sound/baritoneSaxophone.ily",
 		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-alt.musica/staves/scores/hornInF.ily",
@@ -660,10 +663,7 @@
 		"/Users/elaine/Documents/sites/flaminghakama/bin/find-person.pl",
 		"/Users/elaine/Documents/sites/davidelainealt/wp/theme/Total-child/functions.php",
 		"/Users/elaine/Documents/sites/davidelainealt/wp/theme/Total-child/style.css",
-		"/Users/elaine/Documents/sites/davidelainealt/wp/theme/Total-child/theme-settings.txt",
-		"/Users/elaine/Documents/sites/davidelainealt/wp/theme/Total-child/csslist",
-		"/Users/elaine/Documents/business/alt musica/2016-dates",
-		"/Users/elaine/Documents/business/Matrix/day08-notes.txt"
+		"/Users/elaine/Documents/sites/davidelainealt/wp/theme/Total-child/theme-settings.txt"
 	],
 	"find":
 	{
@@ -681,16 +681,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
-			"R2.*",
-			"R1*",
-			"s1*",
-			"R1",
-			"R2",
-			"R1*",
 			" #'",
-			"        \\bar \"||\" \n",
-			"        \\bar \"||\"\n",
-			"        \\time",
 			"Instrument",
 			" #'",
 			"ps/",
@@ -808,7 +799,16 @@
 			"R1",
 			"octagon-arbiter",
 			"SONG",
-			"violix"
+			"violix",
+			"violin",
+			"clarinet",
+			"flute",
+			"#",
+			"\\tag #'Score ",
+			"\\tag #'Part ",
+			"tag",
+			"claveScore",
+			"clave"
 		],
 		"highlight": true,
 		"in_selection": false,

@@ -21,9 +21,9 @@
     %%%%% SONG %%%%%
     \score {
         \keepWithTag #'(Score PDF
-            Flute
-            Clarinet
-            Bassoon
+            Piccolo
+            EnglishHorn
+            BassClarinet
             Voice
             Drums
             ViolinI
@@ -31,17 +31,12 @@
             Viola
             Cello
             Bass
-            SegmentAI
-            SegmentAII 
-            SegmentAIII 
-            SegmentAIV
-            SegmentBI
-            SegmentBII
-            SegmentBIIISegmentBSolo
-            SegmentBIReprise 
-            SegmentBIIReprise
-            SegmentBIIIReprise
-            SegmentCoda
+            SegmentIntro
+            SegmentFunk
+            SegmentAroCuban
+            SegmentSoloFunk
+            SegmentSoloAfroCuban
+            SegmentDrum
         ) <<
             \include "ly/SONG/staffgroups/concert/Woodwinds.ily"
             \include "ly/SONG/staffgroups/concert/Choir.ily"

@@ -19,7 +19,7 @@
 #      References the standard libraries.
 #      References the instrument file and the book file.  
 #    Book File.  This is a lilypond fragment that defines the lilypond book.
-#      References either a staff file, or a staffgroup file
+#      References either a staff file, or staffgroup files
 #    Staffgroup File.  This contains references to staff files, wrapped in a staffgroup 
 #    Staff File.  This uses the music variables, which are defined in the music file 
 #      before including the book file.
@@ -49,6 +49,14 @@
 #          staves/parts/<INSTRUMENT>.ily
 #          staves/sound/<INSTRUMENT>.ily
 
+#  Until a better approach comes into being, instead we are populating the 
+#  staffgroups and staves ahead of time, rather than generating them from a template
+#  However, we still need to update the SONG value in the  
+
+#          staves/*/*.ily
+#          staffgroups/*/*.ily
+
+
 #  
 #  Part file <SONG>-<INSTRUMENT-TRANSPOSITION>.ly like octagon-arbiter-English-Horn-in-F.ly
 #  Book file <INSTRUMENT-TRANSPOSITION>.ily like English-Horn-in-F.ily
@@ -61,6 +69,7 @@ use warnings ;
 # use File::NCopy ;
 use File::Copy ;
 use File::Slurp ; 
+use File::Find;
 
 sub slurpFile {
     my ($fileName, $fileDescription) = @_ ; 
@@ -135,6 +144,17 @@ sub convertInstrumentNameToVariable {
         } else {
             $variableName = $variableName . $word ; 
         }
+    }
+    return $variableName ; 
+}
+
+sub convertInstrumentNameToTagName {
+    my ($instrumentName) = @_ ; 
+    my @words = split('-', $instrumentName) ;
+    my $word ;
+    my $variableName = '' ;   
+    foreach $word (@words) {
+        $variableName = $variableName . $word ;
     }
     return $variableName ; 
 }
@@ -257,6 +277,7 @@ my $partContents ;
 my @scoreNames ; 
 my @parts ; 
 my $instrumentName ; 
+my $tagName ; 
 my $bookFile ; 
 my $bookContents ; 
 my $variableName = '' ; 
@@ -289,7 +310,7 @@ foreach $partName (@ARGV){
         #  Make the book file
         $bookFile = "ly/$song/books/$partName.ily" ; 
         $bookContents = $midiBookTemplate ; 
-        $bookContents =~ s/PART/$partName/g ; 
+        $bookContents =~ s/PART/$variableName/g ; 
         $bookContents =~ s/SONG/$song/g ; 
         $bookContents =~ s/POET/$poet/g ;  
         writeFile($bookFile, "midi part file", $bookContents) ; 
@@ -313,6 +334,7 @@ foreach $partName (@ARGV){
 
             $instrumentName = convertPartNameToInstrumentName($partName) ; 
             $variableName = convertInstrumentNameToVariable($instrumentName) ; 
+            $tagName = convertInstrumentNameToTagName($instrumentName) ; 
 
             #  Create the part file and update the part and song names
 
@@ -333,9 +355,10 @@ foreach $partName (@ARGV){
 
         	$bookFile = "ly/$song/books/$partName.ily" ; 
             $bookContents = $bookPartTemplate ; 
-            $bookContents =~ s/PART/$partName/g ; 
+            $bookContents =~ s/PART/$variableName/g ; 
             $bookContents =~ s/SONG/$song/g ; 
             $bookContents =~ s/INSTRUMENT/$variableName/g  ; 
+            $bookContents =~ s/InstrumentTAGNAME/$tagName/g  ; 
             $bookContents =~ s/POET/$poet/g ;  
             writeFile($bookFile, "book file for instrument $instrumentName", $bookContents) ; 
 
@@ -375,6 +398,21 @@ foreach $partName (@ARGV){
     }
 }
 
+sub updateStavesAndStaffgroups() {
+
+    my @dirs = ( "ly/$song/staves", "ly/$song/staffgroups" ) ;  
+
+    sub process_file {
+        if ( -f $_ ) { 
+            my $contents = slurpFile($_, "staff or staffgroup $_") ; 
+            $contents =~ s/SONG/$song/g ;
+            writeFile($_, "staff or staffgroup $_", $contents) ; 
+        }   
+    }
+
+    find(\&process_file, @dirs);
+}
+updateStavesAndStaffgroups() ; 
 
 #  Now that we've gathered all the instrument parts, build the score parts
 
