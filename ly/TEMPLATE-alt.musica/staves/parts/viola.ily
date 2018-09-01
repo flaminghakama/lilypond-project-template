@@ -1,11 +1,24 @@
-        \new ChordNames \transpose c c { \chordsPart }
-        \new Staff = "viola" { 
-            \compressFullBarRests
-            \override MultiMeasureRest.expand-limit = #1
-            \set Staff.instrumentName = ""
-            \set Staff.shortInstrumentName = #""
-            \override DynamicLineSpanner #'staff-padding = #3.0
-            \accidentalStyle modern-voice-cautionary
-            \clef alto
-            \transpose c c { \violaGlobal }
+        %\new ChordNames \transpose c c { \chordsPart }
+        %{
+        \new RhythmicStaff \with {
+            \override VerticalAxisGroup.staff-staff-spacing.basic-distance = #0.3
+        } {
+            \beatPatternPart
         }
+        %}
+        \new Staff = "viola" \with {
+            \override VerticalAxisGroup.default-staff-staff-spacing.basic-distance = #0
+        } { 
+            \include "ly/rising/staves/parts/staff-defaults.ily"
+            \override DynamicLineSpanner #'staff-padding = #3.0
+            \clef alto
+            \transpose c c <<
+                \autoPageBreaksOff
+                \beatPatternPart 
+                \violaGlobal
+            >>
+        }
+
+
+
+

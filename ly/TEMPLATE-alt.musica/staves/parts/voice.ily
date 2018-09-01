@@ -1,17 +1,15 @@
-        \new ChordNames \transpose c c { \chordsLead }
+        \new ChordNames \transpose c c { \chordsVoice }
+        %\include "ly/rising/staves/parts/beat-pattern.ily"
         \new Staff = "voice" { 
-	            \compressFullBarRests
-	            \override MultiMeasureRest.expand-limit = #1
-	            \set Staff.instrumentName = ""
-	            \set Staff.shortInstrumentName = #""
-	            \override DynamicLineSpanner #'staff-padding = #3.0
-	            \accidentalStyle modern-voice-cautionary
-                \new Voice = "lead" {
-                    \transpose c c { 
-                        \voiceGlobal
-                    }
+            \include "ly/rising/staves/parts/staff-defaults.ily"
+            \override DynamicLineSpanner #'staff-padding = #3.0
+            \new Voice = "lead" {
+                \transpose c c { 
+                    \autoPageBreaksOff
+                    \voiceGlobal
                 }
             }
-            \new Lyrics \with { alignAboveContext = "staff" } {
-                \lyricsto "lead" { \lyricsSong } 
-            }
+        }
+        \new Lyrics \with { alignAboveContext = "staff" } {
+            \lyricsto "lead" { \lyricsSong } 
+        }

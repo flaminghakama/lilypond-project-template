@@ -1,11 +1,18 @@
-        \new ChordNames \transpose a c { \chordsPart }
+        \new ChordNames \transpose a bs { \chordsClarinet }
+        %{
+        \new RhythmicStaff \with {
+            \override VerticalAxisGroup.staff-staff-spacing.basic-distance = #2
+        } {
+            \beatPatternPart
+        }
+        %}
         \new Staff = "clarinet" { 
-            \compressFullBarRests
-            \override MultiMeasureRest.expand-limit = #1
-            \set Staff.instrumentName = ""
-            \set Staff.shortInstrumentName = #""
-            \override DynamicLineSpanner #'staff-padding = #3.0
-            \accidentalStyle modern-voice-cautionary
+            \include "ly/rising/staves/parts/staff-defaults.ily"
+            \override DynamicLineSpanner #'staff-padding = #4.2
             \clef treble
-            \transpose a, c { \clarinetGlobal }
+            \transpose a, bs << 
+                \autoPageBreaksOff
+                \beatPatternPart
+                \clarinetGlobal 
+            >>
         }

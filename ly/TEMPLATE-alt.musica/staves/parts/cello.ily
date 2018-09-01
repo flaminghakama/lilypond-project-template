@@ -1,11 +1,22 @@
-        \new ChordNames \transpose c c { \chordsPart }
-        \new Staff = "cello" { 
-            \compressFullBarRests
-            \override MultiMeasureRest.expand-limit = #1
-            \set Staff.instrumentName = ""
-            \set Staff.shortInstrumentName = #""
-            \override DynamicLineSpanner #'staff-padding = #3.0
-            \accidentalStyle modern-voice-cautionary
-            \clef bass
-            \transpose c c { \celloGlobal }
+        %\new ChordNames \transpose c c { \chordsPart }
+        %{
+        \new RhythmicStaff \with {
+            \override VerticalAxisGroup.staff-staff-spacing.basic-distance = #0.3
+        } {
+            \beatPatternPart
         }
+        %}
+        \new Staff = "cello" { 
+            \include "ly/rising/staves/parts/staff-defaults.ily"
+            \override DynamicLineSpanner #'staff-padding = #3.0
+            \clef bass
+            \transpose c c <<
+                \autoPageBreaksOff
+                \beatPatternPart
+                \celloGlobal 
+            >>
+        }
+
+
+
+
