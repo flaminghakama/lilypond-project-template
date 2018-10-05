@@ -165,6 +165,22 @@ sub convertPartNameToPoet {
     return $partName ; 
 }
 
+sub convertPartNameToStaffFileName {
+    my ($partName) = @_ ; 
+    $partName =~ s/\-in\-/-In-/g ;
+    my @words = split('-', $partName) ;
+    my $word ;
+    my $staffFileName = '' ;   
+    foreach $word (@words) {
+        if ($staffFileName eq '') {
+            $staffFileName = lc($word) ;  
+        } else {
+            $staffFileName = $staffFileName . $word ; 
+        }
+    }
+    return $staffFileName ; 
+}
+
 sub getMusicDefinitionsFromInstrument {
     my ($instrumentContents) = @_ ; 
     my $line ;
@@ -277,6 +293,7 @@ my $partContents ;
 my @scoreNames ; 
 my @parts ; 
 my $instrumentName ; 
+my $staffFileName ; 
 my $tagName ; 
 my $bookFile ; 
 my $bookContents ; 
@@ -333,8 +350,11 @@ foreach $partName (@ARGV){
         } else { 
 
             $instrumentName = convertPartNameToInstrumentName($partName) ; 
+            $staffFileName = convertPartNameToStaffFileName($partName) ; 
             $variableName = convertInstrumentNameToVariable($instrumentName) ; 
             $tagName = convertInstrumentNameToTagName($instrumentName) ; 
+
+            print "staffFileName is $staffFileName\n";
 
             #  Create the part file and update the part and song names
 
@@ -355,7 +375,7 @@ foreach $partName (@ARGV){
 
         	$bookFile = "ly/$song/books/$partName.ily" ; 
             $bookContents = $bookPartTemplate ; 
-            $bookContents =~ s/PART/$variableName/g ; 
+            $bookContents =~ s/PART/$staffFileName/g ; 
             $bookContents =~ s/SONG/$song/g ; 
             $bookContents =~ s/INSTRUMENT/$variableName/g  ; 
             $bookContents =~ s/InstrumentTAGNAME/$tagName/g  ; 
