@@ -221,7 +221,7 @@
 			],
 			[
 				"instr",
-				"instruments"
+				"music"
 			],
 			[
 				"INSTR",
@@ -385,7 +385,7 @@
 			],
 			[
 				"ins",
-				"instrumentsRef"
+				"musicRef"
 			],
 			[
 				"clon",
@@ -465,7 +465,7 @@
 			],
 			[
 				"inst",
-				"instruments"
+				"music"
 			],
 			[
 				"rehear",
@@ -481,11 +481,11 @@
 			],
 			[
 				"instrument",
-				"instrumentsRef"
+				"musicRef"
 			],
 			[
 				"instrum",
-				"instruments"
+				"music"
 			],
 			[
 				"staffGr",
@@ -576,10 +576,10 @@
 		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-song-coda/books/SCORE.ily",
 		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-song-coda/books/MIDI.ily",
 		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-song-coda/music/INSTRUMENT.ily",
-		"/Users/elaine/git/scores/alt.musica/ly/dont-wait-for-me/instruments/bass.ily",
-		"/Users/elaine/git/scores/alt.musica/ly/dont-wait-for-me/instruments/flute.ily",
-		"/Users/elaine/git/scores/alt.musica/ly/dont-wait-for-me/instruments/englishHorn.ily",
-		"/Users/elaine/git/scores/alt.musica/ly/dont-wait-for-me/instruments/bassClarinet.ily",
+		"/Users/elaine/git/scores/alt.musica/ly/dont-wait-for-me/music/bass.ily",
+		"/Users/elaine/git/scores/alt.musica/ly/dont-wait-for-me/music/flute.ily",
+		"/Users/elaine/git/scores/alt.musica/ly/dont-wait-for-me/music/englishHorn.ily",
+		"/Users/elaine/git/scores/alt.musica/ly/dont-wait-for-me/music/bassClarinet.ily",
 		"/Users/elaine/git/scores/alt.musica/ly/dont-wait-for-me/structures/header.ily",
 		"/Users/elaine/git/scores/alt.musica/ly/dont-wait-for-me/buildParts.sh",
 		"/Users/elaine/git/scores/alt.musica/ly/dont-wait-for-me/books/Cello.ily",
@@ -588,19 +588,19 @@
 		"/Users/elaine/git/scores/alt.musica/ly/dont-wait-for-me/books/Violin-I.ily",
 		"/Users/elaine/git/scores/alt.musica/ly/dont-wait-for-me/structures/forms.ily",
 		"/Users/elaine/git/scores/alt.musica/ly/dont-wait-for-me/books/Score-Concert.ily",
-		"/Users/elaine/git/scores/alt.musica/ly/dont-wait-for-me/instruments/viola.ily",
+		"/Users/elaine/git/scores/alt.musica/ly/dont-wait-for-me/music/viola.ily",
 		"/Users/elaine/git/scores/alt.musica/ly/dont-wait-for-me/structures/chords.ily",
 		"/Users/elaine/git/scores/alt.musica/ly/dont-wait-for-me/books/Score-Sound.ily",
 		"/Users/elaine/git/scores/alt.musica/ly/dont-wait-for-me/parts/dont-wait-for-me-Score-Sound.ly",
 		"/Users/elaine/git/scores/strings/ly/babies-gone-down/books/Score-Sound.ily",
-		"/Users/elaine/git/scores/alt.musica/ly/dont-wait-for-me/instruments/violinII.ily",
-		"/Users/elaine/git/scores/alt.musica/ly/dont-wait-for-me/instruments/cello.ily",
-		"/Users/elaine/git/scores/alt.musica/ly/dont-wait-for-me/instruments/violinI.ily",
+		"/Users/elaine/git/scores/alt.musica/ly/dont-wait-for-me/music/violinII.ily",
+		"/Users/elaine/git/scores/alt.musica/ly/dont-wait-for-me/music/cello.ily",
+		"/Users/elaine/git/scores/alt.musica/ly/dont-wait-for-me/music/violinI.ily",
 		"/Users/elaine/git/scores/alt.musica/ly/dont-wait-for-me/books/Score-Transposed.ily",
 		"/Users/elaine/git/scores/alt.musica/ly/dont-wait-for-me/parts/dont-wait-for-me-Score-Concert.ly",
-		"/Users/elaine/git/scores/alt.musica/ly/dont-wait-for-me/instruments/melody.ily",
-		"/Users/elaine/git/scores/alt.musica/ly/dont-wait-for-me/instruments/melody-original.ily",
-		"/Users/elaine/git/scores/alt.musica/ly/dont-wait-for-me/instruments/clave.ily",
+		"/Users/elaine/git/scores/alt.musica/ly/dont-wait-for-me/music/melody.ily",
+		"/Users/elaine/git/scores/alt.musica/ly/dont-wait-for-me/music/melody-original.ily",
+		"/Users/elaine/git/scores/alt.musica/ly/dont-wait-for-me/music/clave.ily",
 		"/Users/elaine/git/scores/alt.musica/ly/dont-wait-for-me/parts/dont-wait-for-me-Score-Transposed.ly",
 		"/Users/elaine/git/scores/alt.musica/ly/dont-wait-for-me/parts/dont-wait-for-me-Violin-I.ly",
 		"/Users/elaine/git/scores/alt.musica/ly/dont-wait-for-me/parts/dont-wait-for-me-Violin-II.ly",
@@ -911,7 +911,7 @@
 			"s1*4 \\break s1*4 \\break s1*4 ",
 			"bluesy-jump",
 			"songCh",
-			"instruments/source/",
+			"music/source/",
 			"bluesy-jump",
 			"\\bar \"||\" \\break",
 			" \\breakLead | s1*4 \\bar \"||\" \\breakLead",

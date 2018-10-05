@@ -81,7 +81,7 @@
 			],
 			[
 				"instr",
-				"instruments"
+				"music"
 			],
 			[
 				"INSTR",
@@ -245,7 +245,7 @@
 			],
 			[
 				"ins",
-				"instrumentsRef"
+				"musicRef"
 			],
 			[
 				"clon",
@@ -329,7 +329,7 @@
 			],
 			[
 				"inst",
-				"instruments"
+				"music"
 			],
 			[
 				"rehear",
@@ -345,11 +345,11 @@
 			],
 			[
 				"instrument",
-				"instrumentsRef"
+				"musicRef"
 			],
 			[
 				"instrum",
-				"instruments"
+				"music"
 			],
 			[
 				"staffGr",
@@ -536,21 +536,21 @@
 		"/Users/elaine/Documents/sheet-music/scores/woodwind-arrangements/ly/dont-wait-for-me/structures/header.ily",
 		"/Users/elaine/Documents/sheet-music/scores/woodwind-arrangements/ly/dont-wait-for-me/parts/dont-wait-for-me-Score-Sound.ly",
 		"/Users/elaine/Documents/sheet-music/scores/woodwind-arrangements/ly/dont-wait-for-me/books/Score-Sound.ily",
-		"/Users/elaine/Documents/sheet-music/scores/woodwind-arrangements/ly/dont-wait-for-me/instruments/clave.ily",
+		"/Users/elaine/Documents/sheet-music/scores/woodwind-arrangements/ly/dont-wait-for-me/music/clave.ily",
 		"/Users/elaine/Documents/sheet-music/scores/woodwind-arrangements/ly/dont-wait-for-me/books/Clave.ily",
-		"/Users/elaine/Documents/sheet-music/scores/woodwind-arrangements/ly/dont-wait-for-me/instruments/bass.ily",
+		"/Users/elaine/Documents/sheet-music/scores/woodwind-arrangements/ly/dont-wait-for-me/music/bass.ily",
 		"/Users/elaine/Documents/sheet-music/scores/woodwind-arrangements/ly/dont-wait-for-me/books/Bass-Clarinet-in-Bb.ily",
 		"/Users/elaine/Documents/sheet-music/scores/woodwind-arrangements/ly/dont-wait-for-me/parts/dont-wait-for-me-Clave.ly",
-		"/Users/elaine/Documents/sheet-music/scores/woodwind-arrangements/ly/dont-wait-for-me/instruments/bassClarinet.ily",
-		"/Users/elaine/Documents/sheet-music/scores/woodwind-arrangements/ly/dusk-in-the-courtyard/instruments/source/clave.ily",
+		"/Users/elaine/Documents/sheet-music/scores/woodwind-arrangements/ly/dont-wait-for-me/music/bassClarinet.ily",
+		"/Users/elaine/Documents/sheet-music/scores/woodwind-arrangements/ly/dusk-in-the-courtyard/music/source/clave.ily",
 		"/Users/elaine/Documents/sheet-music/scores/woodwind-arrangements/ly/dont-wait-for-me/books/Flute.ily",
 		"/Users/elaine/Documents/sheet-music/scores/woodwind-arrangements/ly/dont-wait-for-me/parts/dont-wait-for-me-Flute.ly",
 		"/Users/elaine/Documents/sheet-music/scores/woodwind-arrangements/ly/dont-wait-for-me/parts/dont-wait-for-me-Alto-Flute-in-G.ly",
 		"/Users/elaine/Documents/sheet-music/scores/woodwind-arrangements/ly/dont-wait-for-me/books/Lead-Sheet.ily",
 		"/Users/elaine/Documents/sheet-music/scores/woodwind-arrangements/ly/dont-wait-for-me/structures/chords.ily",
-		"/Users/elaine/Documents/sheet-music/scores/woodwind-arrangements/ly/dont-wait-for-me/instruments/flute.ily",
+		"/Users/elaine/Documents/sheet-music/scores/woodwind-arrangements/ly/dont-wait-for-me/music/flute.ily",
 		"/Users/elaine/Documents/sheet-music/scores/woodwind-arrangements/ly/dont-wait-for-me/structures/forms.ily",
-		"/Users/elaine/Documents/sheet-music/scores/woodwind-arrangements/ly/dont-wait-for-me/instruments/englishHorn.ily",
+		"/Users/elaine/Documents/sheet-music/scores/woodwind-arrangements/ly/dont-wait-for-me/music/englishHorn.ily",
 		"/Users/elaine/Documents/git/lilypond-project-template/ly/TEMPLATE/structures/header.ily",
 		"/Users/elaine/Documents/sheet-music/scores/woodwind-arrangements/ly/dont-wait-for-me/books/Score-Concert.ily",
 		"/Users/elaine/Documents/sheet-music/scores/woodwind-arrangements/ly/dont-wait-for-me/parts/dont-wait-for-me-Bass.ly",
@@ -559,12 +559,12 @@
 		"/Users/elaine/Documents/sheet-music/scores/dont-wait-for-me/dont-wait-for-me.ly",
 		"/Users/elaine/Documents/sheet-music/scores/flaming-libs/flaming-paper.ily",
 		"/Users/elaine/Documents/sheet-music/scores/woodwind-arrangements/ly/dont-wait-for-me/dont-wait-for-me.sublime-project",
-		"/Users/elaine/Documents/sheet-music/scores/woodwind-arrangements/ly/dont-wait-for-me/instruments/melody.ily",
+		"/Users/elaine/Documents/sheet-music/scores/woodwind-arrangements/ly/dont-wait-for-me/music/melody.ily",
 		"/Users/elaine/Documents/sheet-music/scores/woodwind-arrangements/ly/dont-wait-for-me/books/Lead-Sheet-in-F.ily",
 		"/Users/elaine/Documents/sheet-music/scores/woodwind-arrangements/ly/dont-wait-for-me/books/Condensed-Score.ily",
 		"/Users/elaine/Documents/git/lilypond-project-template/bin/cloneLilypondSongTemplate.pl",
 		"/Users/elaine/Documents/git/lilypond-project-template/ly/TEMPLATE/books/SCORE.ily",
-		"/Users/elaine/Documents/sheet-music/scores/woodwind-arrangements/ly/dont-wait-for-me/instruments/melody-original.ily",
+		"/Users/elaine/Documents/sheet-music/scores/woodwind-arrangements/ly/dont-wait-for-me/music/melody-original.ily",
 		"/Users/elaine/Documents/sheet-music/scores/woodwind-arrangements/ly/dont-wait-for-me/structures/chords-original.ily",
 		"/Users/elaine/Documents/sheet-music/scores/woodwind-arrangements/ly/dont-wait-for-me/parts/dont-wait-for-me-Lead-Sheet-original.ly",
 		"/Users/elaine/Documents/sheet-music/scores/woodwind-arrangements/ly/dont-wait-for-me/structures/forms-original.ily",
@@ -598,7 +598,7 @@
 		"/Users/elaine/bin/cloneLilypondSongTemplate-inProgress.sh",
 		"/Users/elaine/bin/extractInstrumentNameFromPart.pl",
 		"/Users/elaine/bin/getPartType.pl",
-		"/Users/elaine/Documents/sheet-music/scores/woodwind-arrangements/ly/TEMPLATE/instruments/source/INSTRUMENT.ily",
+		"/Users/elaine/Documents/sheet-music/scores/woodwind-arrangements/ly/TEMPLATE/music/source/INSTRUMENT.ily",
 		"/Users/elaine/Documents/sites/flaminghakama/bin/createSubscription.php",
 		"/Users/elaine/Documents/sites/flaminghakama/wp/admin/setup-config.php",
 		"/Users/elaine/Documents/sheet-music/scores/woodwind-arrangements/ly/bluesy-jump/parts/bluesy-jump-Rhythm.ly",
@@ -615,18 +615,18 @@
 		"/Users/elaine/Documents/sheet-music/scores/woodwind-arrangements/ly/bluesy-jump/books/Clarinet-in-Bb.ily",
 		"/Users/elaine/Documents/sheet-music/scores/woodwind-arrangements/ly/bluesy-jump/parts/bluesy-jump-Bass-Clarinet-in-Bb.ly",
 		"/Users/elaine/Documents/sheet-music/scores/woodwind-arrangements/ly/bluesy-jump/books/Bass-Clarinet-in-Bb.ily",
-		"/Users/elaine/Documents/sheet-music/scores/woodwind-arrangements/ly/bluesy-jump/instruments/source/flute.ily",
-		"/Users/elaine/Documents/sheet-music/scores/woodwind-arrangements/ly/bluesy-jump/instruments/source/violin.ily",
+		"/Users/elaine/Documents/sheet-music/scores/woodwind-arrangements/ly/bluesy-jump/music/source/flute.ily",
+		"/Users/elaine/Documents/sheet-music/scores/woodwind-arrangements/ly/bluesy-jump/music/source/violin.ily",
 		"/Users/elaine/Documents/sheet-music/scores/woodwind-arrangements/ly/bluesy-jump/books/Score-Concert.ily",
 		"/Users/elaine/Documents/sheet-music/scores/woodwind-arrangements/ly/bluesy-jump/books/Score-Transposed.ily",
 		"/Users/elaine/Documents/sheet-music/scores/woodwind-arrangements/ly/bluesy-jump/parts/bluesy-jump-Score-Transposed.ly",
 		"/Users/elaine/Documents/sheet-music/scores/woodwind-arrangements/ly/bluesy-jump/parts/bluesy-jump-Score-Concert.ly",
-		"/Users/elaine/Documents/sheet-music/scores/woodwind-arrangements/ly/bluesy-jump/instruments/source/clarinet.ily",
+		"/Users/elaine/Documents/sheet-music/scores/woodwind-arrangements/ly/bluesy-jump/music/source/clarinet.ily",
 		"/Users/elaine/Documents/sheet-music/scores/woodwind-arrangements/ly/bluesy-jump/parts/bluesy-jump-Clarinet-in-Bb.ly",
 		"/Users/elaine/Documents/sheet-music/scores/woodwind-arrangements/ly/bluesy-jump/parts/bluesy-jump-English-Horn-in-F.ly",
 		"/Users/elaine/Documents/sheet-music/scores/woodwind-arrangements/ly/dusk-in-the-courtyard/structures/forms.ily",
 		"/Users/elaine/Documents/sheet-music/scores/woodwind-arrangements/ly/bluesy-jump/books/englishHorn.ily",
-		"/Users/elaine/Documents/sheet-music/scores/woodwind-arrangements/ly/bluesy-jump/instruments/source/englishHorn.ily",
+		"/Users/elaine/Documents/sheet-music/scores/woodwind-arrangements/ly/bluesy-jump/music/source/englishHorn.ily",
 		"/Users/elaine/Documents/sheet-music/scores/woodwind-arrangements/ly/bluesy-jump/books/Flute.ily",
 		"/Users/elaine/Documents/sheet-music/scores/woodwind-arrangements/ly/dusk-in-the-courtyard/structures/header.ily",
 		"/Users/elaine/Documents/sheet-music/scores/woodwind-arrangements/ly/dusk-in-the-courtyard/books/scoreTransposed.ily",
@@ -649,7 +649,7 @@
 		"/Users/elaine/Documents/sheet-music/scores/woodwind-arrangements/ly/octagon-arbiter/parts/octagon-arbiter-Rhythm.ly",
 		"/Users/elaine/Documents/sheet-music/scores/woodwind-arrangements/ly/bluesy-jump/books/Bass-Clarinet.ily",
 		"/Users/elaine/Documents/sheet-music/scores/woodwind-arrangements/ly/bluesy-jump/books/English-Horn.ily",
-		"/Users/elaine/Documents/sheet-music/scores/woodwind-arrangements/ly/octagon-arbiter/instruments/source/melody.ily",
+		"/Users/elaine/Documents/sheet-music/scores/woodwind-arrangements/ly/octagon-arbiter/music/source/melody.ily",
 		"/Users/elaine/Documents/sheet-music/scores/woodwind-arrangements/ly/octagon-arbiter/parts/octagon-arbiter-Flute.ly",
 		"/Users/elaine/Documents/sites/flaminghakama/announcements/jun15.txt"
 	],
@@ -744,7 +744,7 @@
 			"s1*12 ",
 			"SONG",
 			"headCh",
-			"instruments/",
+			"music/",
 			"SONG",
 			"\\bar \"||\"",
 			"pageBreak",
@@ -871,7 +871,7 @@
 			"s1*4 \\break s1*4 \\break s1*4 ",
 			"bluesy-jump",
 			"songCh",
-			"instruments/source/",
+			"music/source/",
 			"bluesy-jump",
 			"\\bar \"||\" \\break",
 			" \\breakLead | s1*4 \\bar \"||\" \\breakLead",
