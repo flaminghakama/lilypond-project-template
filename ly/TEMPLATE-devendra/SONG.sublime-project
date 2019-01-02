@@ -1,0 +1,67 @@
+{
+    "folders":
+    [
+        {
+            "path": ".",
+            "name": "Song",
+            "file_exclude_patterns": ["*workspace", "*ideas*"],
+            "folder_exclude_patterns": ["books", "instruments", "parts", "structures", "music", "staffgroups", "staves"]
+        },
+        {
+            "path": "../../flaming-libs",
+            "name": "Libraries",
+            "folder_exclude_patterns": ["none"]
+        },
+        {
+            "path": "structures",
+            "name": "Structures",
+            "folder_exclude_patterns": ["none"]
+        },
+        {
+            "path": "music",
+            "name": "Music",
+            "folder_exclude_patterns": ["none"]
+        },
+        {
+            "path": "staves",
+            "name": "Staves",
+            "folder_exclude_patterns": ["none"]
+        },
+        {
+            "path": "staffgroups",
+            "name": "Staff Groups",
+            "folder_exclude_patterns": ["none"]
+        },
+        {
+            "path": "books",
+            "name": "Books",
+            "folder_exclude_patterns": ["none"]
+        },
+        {
+            "path": "parts",
+            "name": "Parts",
+            "folder_exclude_patterns": ["none"]
+        },
+        {
+            "path": "../../pdf",
+            "name": "PDF",
+            "file_exclude_patterns": ["none"]
+        },
+        {
+            "path": "../../bin",
+            "name": "Scripts",
+            "file_exclude_patterns": ["none"]
+        }
+    ],
+    "settings":
+    {
+        "tab_size": 4
+    },
+    "build_systems":
+    [
+        {
+            "name": "List",
+            "cmd": ["ls"]
+        }
+    ]
+}
