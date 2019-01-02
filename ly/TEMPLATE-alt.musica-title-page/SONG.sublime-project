@@ -5,7 +5,7 @@
             "path": ".",
             "name": "Song",
             "file_exclude_patterns": ["*workspace", "*ideas*"],
-            "folder_exclude_patterns": ["books", "instruments", "parts", "structures", "music", "staffgroups", "staves"]
+            "folder_exclude_patterns": ["books", "music", "parts", "structures", "music", "staffgroups", "staves"]
         },
         {
             "path": "../../flaming-libs",

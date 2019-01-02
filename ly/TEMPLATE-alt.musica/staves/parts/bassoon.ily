@@ -1,19 +1,15 @@
-        \new ChordNames \transpose c c { \chordsFlute }
+        \new ChordNames \transpose c c { \chordsPart }
         \new RhythmicStaff \with {
-            \override VerticalAxisGroup.staff-staff-spacing.basic-distance = #1
+            \override VerticalAxisGroup.staff-staff-spacing.basic-distance = #0.3
         } {
             \beatPatternPart
         }
-        \new Staff = "flute" { 
+        \new Staff = "bassoon" { 
             \include "ly/rising/staves/parts/staff-defaults.ily"
             \override DynamicLineSpanner #'staff-padding = #3.0
-            \clef treble
+            \clef bass
             \transpose c c { 
                 \autoPageBreaksOff
-                \fluteGlobal 
+                \bassoonGlobal 
             }
         }
-
-
-
-

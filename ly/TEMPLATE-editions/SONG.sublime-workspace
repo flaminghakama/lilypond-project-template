@@ -521,9 +521,14 @@
 	[
 	],
 	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
 	"command_palette":
 	{
 		"height": 0.0,
+		"last_filter": "",
 		"selected_items":
 		[
 		],
@@ -531,7 +536,10 @@
 	},
 	"console":
 	{
-		"height": 0.0
+		"height": 0.0,
+		"history":
+		[
+		]
 	},
 	"distraction_free":
 	{
@@ -542,8 +550,19 @@
 		"side_bar_visible": false,
 		"status_bar_visible": false
 	},
+	"expanded_folders":
+	[
+		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-editions",
+		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-editions/structures",
+		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-editions/music",
+		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-editions/books",
+		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-editions/parts",
+		"/Users/elaine/git/lilypond-project-template/pdf"
+	],
 	"file_history":
 	[
+		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-editions/SONG.sublime-project",
+		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-editions/parts/PART.ly",
 		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-editions/books/SCORE.ily",
 		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-editions/books/BOOK.ily",
 		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-editions/books/MIDI.ily",
@@ -669,13 +688,11 @@
 		"/Users/elaine/Documents/git/lilypond-project-template/ly/TEMPLATE/structures/chords.ily",
 		"/Users/elaine/Documents/git/lilypond-project-template/ly/TEMPLATE/structures/forms.ily",
 		"/Users/elaine/Documents/git/lilypond-project-template/ly/TEMPLATE/structures/header.ily",
-		"/Users/elaine/Documents/git/lilypond-project-template/ly/TEMPLATE/structures/lyrics.ily",
-		"/Users/elaine/Documents/sheet-music/scores/piano-trio/ly/kickin-the-can/books/Lead.ily",
-		"/Users/elaine/Documents/sheet-music/scores/piano-trio/ly/kickin-the-can/parts/kickin-the-can-Lead.ly"
+		"/Users/elaine/Documents/git/lilypond-project-template/ly/TEMPLATE/structures/lyrics.ily"
 	],
 	"find":
 	{
-		"height": 35.0
+		"height": 27.0
 	},
 	"find_in_files":
 	{
@@ -703,15 +720,15 @@
 			"composer",
 			"cello",
 			"\" {",
-			"	new file:   ",
-			" 	new file:   ",
+			"\tnew file:   ",
+			" \tnew file:   ",
 			"convertInstrumentNameToVariable",
-			"	new file:   ",
-			"	",
-			"	new file:   ",
-			" 	new file:   ",
-			"	deleted:    ",
-			"	new file:   ",
+			"\tnew file:   ",
+			"\t",
+			"\tnew file:   ",
+			" \tnew file:   ",
+			"\tdeleted:    ",
+			"\tnew file:   ",
 			"\\set Staff.shortInstrumentName = #\"\"\n                        \\accidentalStyle modern-voice-cautionary",
 			"                        \\accidentalStyle modern-voice-cautionary\n",
 			"OneTime Score",
@@ -970,7 +987,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 0.0
+		"height": 27.0
 	},
 	"input":
 	{
@@ -999,14 +1016,21 @@
 		]
 	},
 	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "SONG.sublime-project",
 	"replace":
 	{
-		"height": 64.0
+		"height": 50.0
 	},
 	"save_all_on_build": true,
 	"select_file":
 	{
 		"height": 0.0,
+		"last_filter": "",
 		"selected_items":
 		[
 		],
@@ -1015,15 +1039,32 @@
 	"select_project":
 	{
 		"height": 0.0,
+		"last_filter": "",
 		"selected_items":
 		[
 		],
 		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
 	},
 	"show_minimap": true,
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
 	"side_bar_width": 401.0,
-	"status_bar_visible": true
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
 }
