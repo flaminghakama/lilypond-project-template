@@ -6,10 +6,4 @@ INSTRUMENTCoda = \relative c' {
 
 }
 
-INSTRUMENTGlobalSong = \globalSong {
-    \INSTRUMENTSong
-}
-
-INSTRUMENTGlobalCoda = \globalCoda {
-    \INSTRUMENTCoda
-}
+INSTRUMENT = { \INSTRUMENTSong \INSTRUMENTCoda }
