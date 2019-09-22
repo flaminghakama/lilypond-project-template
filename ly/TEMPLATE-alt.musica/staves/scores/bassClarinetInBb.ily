@@ -7,7 +7,9 @@
                 }
             }
             \set Staff.shortInstrumentName = #"B.Cl."
-            \accidentalStyle modern-voice-cautionary
+            \include "ly/rising/staves/scores/staff-defaults.ily"
             \clef treble
-            \transpose bf, c { \bassClarinetGlobal }
+            \transpose bf,, c { 
+                \bassClarinetGlobal 
+            }
         }

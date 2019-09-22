@@ -2,7 +2,9 @@
         \new Staff = "oboe" \with { \magnifyStaff #4/7 } {
             \set Staff.instrumentName = "Oboe"
             \set Staff.shortInstrumentName = #"Ob."
-            \accidentalStyle modern-voice-cautionary
+            \include "ly/rising/staves/scores/staff-defaults.ily"
             \clef treble
-            \transpose c c { \oboeGlobal }
+            \transpose c c { 
+            	\oboeGlobal 
+            }
         }

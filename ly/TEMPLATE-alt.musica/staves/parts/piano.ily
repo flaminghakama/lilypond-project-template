@@ -4,10 +4,7 @@
             shortInstrumentName = ""
         }
         <<
-            \compressFullBarRests
-            \override MultiMeasureRest.expand-limit = #1
-            \override DynamicLineSpanner #'staff-padding = #3.0
-            \accidentalStyle modern-voice-cautionary
+            \include "ly/rising/staves/parts/staff-defaults.ily"
             \new Staff = "upper" <<
                 \clef treble
                 \new Voice = "first" \pianoVoiceOne

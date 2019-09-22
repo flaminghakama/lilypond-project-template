@@ -5,7 +5,7 @@
             magnifyStaff = #4/7
         }
         <<
-            \accidentalStyle modern-voice-cautionary
+            \include "ly/rising/staves/scores/staff-defaults.ily"
             \new Staff = "upper" <<
                 \clef treble
                 \new Voice = "first" \pianoVoiceOne

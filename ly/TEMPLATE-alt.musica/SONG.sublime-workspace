@@ -513,9 +513,14 @@
 	[
 	],
 	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
 	"command_palette":
 	{
 		"height": 0.0,
+		"last_filter": "",
 		"selected_items":
 		[
 		],
@@ -523,7 +528,10 @@
 	},
 	"console":
 	{
-		"height": 0.0
+		"height": 0.0,
+		"history":
+		[
+		]
 	},
 	"distraction_free":
 	{
@@ -534,15 +542,28 @@
 		"side_bar_visible": false,
 		"status_bar_visible": false
 	},
+	"expanded_folders":
+	[
+		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-alt.musica/structures",
+		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-alt.musica/staves",
+		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-alt.musica/staves/sound"
+	],
 	"file_history":
 	[
-		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-alt.musica/books/BOOK.ily",
-		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-alt.musica/structures/forms.ily",
-		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-alt.musica/music/INSTRUMENT.ily",
-		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-alt.musica/books/SCORE.ily",
-		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-alt.musica/structures/header.ily",
-		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-alt.musica/books/MIDI.ily",
-		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-alt.musica/staves/scores/altoFlute.ily",
+		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-alt.musica/staves/scores/viola.ily",
+		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-alt.musica/staves/scores/violinI.ily",
+		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-alt.musica/staves/scores/voice.ily",
+		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-alt.musica/staves/sound/bassClarinet.ily",
+		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-alt.musica/staves/sound/clarinet.ily",
+		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-alt.musica/staves/sound/clave.ily",
+		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-alt.musica/staves/sound/englishHorn.ily",
+		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-alt.musica/staves/sound/flute.ily",
+		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-alt.musica/staves/sound/oboe.ily",
+		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-alt.musica/staves/sound/piano.ily",
+		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-alt.musica/staves/sound/viola.ily",
+		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-alt.musica/staves/sound/violinI.ily",
+		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-alt.musica/staves/sound/violinII.ily",
+		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-alt.musica/staves/sound/voice.ily",
 		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-alt.musica/staves/scores/altoFluteInG.ily",
 		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-alt.musica/staves/scores/bass.ily",
 		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-alt.musica/staves/scores/bassClarinet.ily",
@@ -551,31 +572,14 @@
 		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-alt.musica/staves/scores/clarinet.ily",
 		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-alt.musica/staves/scores/clarinetInA.ily",
 		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-alt.musica/staves/scores/clarinetInBb.ily",
-		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-alt.musica/staves/scores/clave.ily",
 		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-alt.musica/staves/scores/englishHorn.ily",
 		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-alt.musica/staves/scores/englishHornInF.ily",
 		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-alt.musica/staves/scores/flute.ily",
 		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-alt.musica/staves/scores/oboe.ily",
 		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-alt.musica/staves/scores/piano.ily",
-		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-alt.musica/staves/scores/viola.ily",
-		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-alt.musica/staves/scores/violinI.ily",
-		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-alt.musica/staves/scores/violinII.ily",
-		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-alt.musica/staves/scores/voice.ily",
-		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-alt.musica/parts/PART.ly",
-		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-alt.musica/staves/sound/altoFlute.ily",
-		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-alt.musica/staves/sound/bass.ily",
-		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-alt.musica/staves/sound/bassClarinet.ily",
-		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-alt.musica/staves/sound/cello.ily",
-		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-alt.musica/staves/sound/clave.ily",
-		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-alt.musica/structures/lyrics.ily",
-		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-alt.musica/staves/parts/altoFluteInG.ily",
-		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-alt.musica/staves/parts/bass.ily",
-		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-alt.musica/staves/parts/bassClarinetInBb.ily",
-		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-alt.musica/staves/parts/cello.ily",
-		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-alt.musica/staves/parts/clarinetInA.ily",
+		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-alt.musica/staves/scores/altoFlute.ily",
+		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-alt.musica/staves/scores/staff-defaults.ily",
 		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-alt.musica/staves/parts/clave.ily",
-		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-alt.musica/staves/parts/englishHornInF.ily",
-		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-alt.musica/staves/parts/flute.ily",
 		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-alt.musica/staves/parts/oboe.ily",
 		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-alt.musica/staves/parts/piano.ily",
 		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-alt.musica/staves/parts/piccolo.ily",
@@ -583,6 +587,28 @@
 		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-alt.musica/staves/parts/violinI.ily",
 		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-alt.musica/staves/parts/violinII.ily",
 		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-alt.musica/staves/parts/voice.ily",
+		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-alt.musica/staves/parts/englishHornInF.ily",
+		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-alt.musica/staves/parts/flute.ily",
+		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-alt.musica/staves/parts/bassClarinetInBb.ily",
+		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-alt.musica/staves/parts/bass.ily",
+		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-alt.musica/staves/parts/bassoon.ily",
+		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-alt.musica/staves/parts/cello.ily",
+		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-alt.musica/staves/parts/clarinetInA.ily",
+		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-alt.musica/staves/parts/altoFluteInG.ily",
+		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-alt.musica/staves/parts/staff-defaults.ily",
+		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-alt.musica/books/BOOK.ily",
+		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-alt.musica/structures/forms.ily",
+		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-alt.musica/music/INSTRUMENT.ily",
+		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-alt.musica/books/SCORE.ily",
+		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-alt.musica/structures/header.ily",
+		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-alt.musica/books/MIDI.ily",
+		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-alt.musica/staves/scores/clave.ily",
+		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-alt.musica/staves/scores/violinII.ily",
+		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-alt.musica/parts/PART.ly",
+		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-alt.musica/staves/sound/altoFlute.ily",
+		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-alt.musica/staves/sound/bass.ily",
+		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-alt.musica/staves/sound/cello.ily",
+		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-alt.musica/structures/lyrics.ily",
 		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-alt.musica/staves/CHOIR.ily",
 		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-alt.musica/staves/RHYTHM.ily",
 		"/Users/elaine/git/lilypond-project-template/ly/TEMPLATE-alt.musica/staves/SCORE.ily",
@@ -651,23 +677,11 @@
 		"/Users/elaine/Documents/sheet-music/scores/woodwind-arrangements/ly/dont-wait-for-me/parts/dont-wait-for-me-Lead-Sheet-in-F.ly",
 		"/Users/elaine/Documents/sheet-music/scores/woodwind-arrangements/ly/dont-wait-for-me/books/Rhythm.ily",
 		"/Users/elaine/Documents/sheet-music/scores/dont-wait-for-me/dont-wait-for-me-duo.ly",
-		"/Users/elaine/Documents/sheet-music/scores/woodwind-arrangements/ly/dont-wait-for-me/parts/dont-wait-for-me-Condensed-Score.ly",
-		"/Users/elaine/Documents/sheet-music/scores/woodwind-arrangements/ly/dont-wait-for-me/parts/dont-wait-for-me-English-Horn-in-F.ly",
-		"/Users/elaine/Documents/sheet-music/scores/woodwind-arrangements/ly/dont-wait-for-me/parts/dont-wait-for-me-Rhythm.ly",
-		"/Users/elaine/Documents/sheet-music/scores/woodwind-arrangements/ly/dont-wait-for-me/parts/dont-wait-for-me-Violin.ly",
-		"/Users/elaine/Documents/sheet-music/scores/woodwind-arrangements/ly/dont-wait-for-me/parts/dont-wait-for-me-Voice.ly",
-		"/Users/elaine/Documents/sites/flaminghakama/bin/process-mail.pl",
-		"/Users/elaine/Documents/sites/flaminghakama/bin/find-person.pl",
-		"/Users/elaine/Documents/sites/davidelainealt/wp/theme/Total-child/functions.php",
-		"/Users/elaine/Documents/sites/davidelainealt/wp/theme/Total-child/style.css",
-		"/Users/elaine/Documents/sites/davidelainealt/wp/theme/Total-child/theme-settings.txt",
-		"/Users/elaine/Documents/sites/davidelainealt/wp/theme/Total-child/csslist",
-		"/Users/elaine/Documents/business/alt musica/2016-dates",
-		"/Users/elaine/Documents/business/Matrix/day08-notes.txt"
+		"/Users/elaine/Documents/sheet-music/scores/woodwind-arrangements/ly/dont-wait-for-me/parts/dont-wait-for-me-Condensed-Score.ly"
 	],
 	"find":
 	{
-		"height": 35.0
+		"height": 24.0
 	},
 	"find_in_files":
 	{
@@ -700,7 +714,7 @@
 			"self-immolation",
 			"OneTime MIDI\n                        SegmentZero\n                        SegmentA\n                        SegmentB\n                        SegmentC\n                        SegmentD\n                        SegmentE\n                        SegmentF\n                        SegmentG\n                        SegmentH\n                        SegmentI\n                        SegmentJ\n                        SegmentK\n                        SegmentL\n                        SegmentM\n                        SegmentN\n                        SegmentO\n                        SegmentP\n                        SegmentQ\n                        SegmentR\n                        SegmentS\n                        SegmentT",
 			"  ",
-			"	",
+			"\t",
 			".com",
 			"melody",
 			"chordsSolosII",
@@ -961,7 +975,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 0.0
+		"height": 24.0
 	},
 	"input":
 	{
@@ -990,14 +1004,21 @@
 		]
 	},
 	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "SONG.sublime-project",
 	"replace":
 	{
-		"height": 64.0
+		"height": 44.0
 	},
 	"save_all_on_build": true,
 	"select_file":
 	{
 		"height": 0.0,
+		"last_filter": "",
 		"selected_items":
 		[
 		],
@@ -1006,15 +1027,32 @@
 	"select_project":
 	{
 		"height": 0.0,
+		"last_filter": "",
 		"selected_items":
 		[
 		],
 		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
 	},
 	"show_minimap": true,
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
 	"side_bar_width": 245.0,
-	"status_bar_visible": true
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
 }

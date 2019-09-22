@@ -7,7 +7,7 @@
                 }
             }
             \set Staff.shortInstrumentName = #"A.Fl."
-            \accidentalStyle modern-voice-cautionary
+            \include "ly/rising/staves/scores/staff-defaults.ily"
             \clef treble
             \transpose g, c { \altoFluteGlobal }
         }

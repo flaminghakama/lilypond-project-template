@@ -2,7 +2,9 @@
         \new Staff = "cello" \with { \magnifyStaff #4/7 } {
             \set Staff.instrumentName = "'Cello"
             \set Staff.shortInstrumentName = #"'C."
-            \accidentalStyle modern-voice-cautionary
+            \include "ly/rising/staves/scores/staff-defaults.ily"
             \clef bass
-            \transpose c c { \celloGlobal }
+            \transpose c c { 
+            	\celloGlobal 
+            }
         }

@@ -7,7 +7,9 @@
                 }
             }
             \set Staff.shortInstrumentName = #"E.h."
-            \accidentalStyle modern-voice-cautionary
+            \include "ly/rising/staves/scores/staff-defaults.ily"
             \clef treble
-            \transpose f, c { \englishHornGlobal }
+            \transpose f, c { 
+                \englishHornGlobal 
+            }
         }
