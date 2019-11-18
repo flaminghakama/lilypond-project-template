@@ -2,21 +2,23 @@
 \include "english.ly"
 \include "articulate.ly"
 
-titleLeft = "Left "
-titleRight = " Right"
+titleLeft = "Octagon"
+titleRight = "Warrior"
+titleFull = "Octagon Warrior"
 instrumentName = ""
-composerName = "D. Elaine Alt"
+composerName = "Elaine Paul"
 
 \include "../flaming-libs/flaming-markup.ily"
 \include "../flaming-libs/flaming-dynamics.ily"
 \include "../flaming-libs/flaming-paper.ily"
+\include "../flaming-libs/instrument-names.ily"
 
 \header {
     source = ""
     style = ""
-    copyright = \markup { \tiny "copyright © 2017 D. Elaine Alt" } 
+    copyright = \markup { \tiny "copyright © 2015 - 2019 Elaine Paul" } 
     lastupdated = ""
-    title = \markup { \italic \fontsize #4 \bold { \titleLeft \titleRight }  }
+    title = \markup { \italic \fontsize #4 \bold { \titleFull }  }
     poet = ""
     composer = \markup \italic \composerName
     tagline = ""
@@ -24,8 +26,8 @@ composerName = "D. Elaine Alt"
 
 \paper {
 
-  top-margin = #14
-  right-margin = #17
+  top-margin = #2
+  right-margin = #14
 
   % First page spacing after header
   markup-system-spacing.padding = #2
@@ -34,7 +36,10 @@ composerName = "D. Elaine Alt"
   top-system-spacing.minimum-distance = #18
 
   % Spacing in between systems
-  system-system-spacing.basic-distance = #24
+  system-system-spacing.basic-distance = #18
+
+  % Space after score, before the next score
+  score-system-spacing.minimum-distance = #13
 
   page-breaking = #ly:minimal-breaking
 
@@ -42,9 +47,10 @@ composerName = "D. Elaine Alt"
   ragged-last-bottom = ##t
 
   #(define fonts
-    (make-pango-font-tree "Hardwood" 
+    (make-pango-font-tree "Marker Felt" 
                           "Highlander ITC TT" 
                           "LilyJAZZText"
                            (/ myStaffSize 20)))
 }
 \include "../flaming-libs/flaming-fonts.ily"
+

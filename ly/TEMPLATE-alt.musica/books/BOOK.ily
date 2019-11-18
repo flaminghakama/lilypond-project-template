@@ -20,17 +20,18 @@
     \score {
         \keepWithTag #'(Part PDF
             InstrumentTAGNAME
-            SegmentAI
-            SegmentAII 
-            SegmentAIII 
-            SegmentAIV
-            SegmentBI
-            SegmentBII
-            SegmentBIII
-            SegmentBSolo
-            SegmentBIReprise 
-            SegmentBIIReprise
-            SegmentBIIIReprise
+            SegmentVerseI
+            SegmentChorusI
+            SegmentVerseII
+            SegmentChorusII
+            SegmentVerseIII
+            SegmentChorusIII
+            SegmentBridgeI
+            SegmentVerseSolo
+            SegmentChorusSolo
+            SegmentBridgeSolo
+            SegmentVerseIV
+            SegmentChorusIV
             SegmentCoda
         ) <<
             \include "ly/SONG/staves/parts/PART.ily"

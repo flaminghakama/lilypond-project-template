@@ -22,7 +22,8 @@
     \score {
         \keepWithTag #'(Score PDF
             Flute
-            Clarinet
+            EnglishHorn
+            BassClarinet
             Bassoon
             Voice
             Drums
@@ -31,20 +32,22 @@
             Viola
             Cello
             Bass
-            SegmentAI
-            SegmentAII 
-            SegmentAIII 
-            SegmentAIV
-            SegmentBI
-            SegmentBII
-            SegmentBIIISegmentBSolo
-            SegmentBIReprise 
-            SegmentBIIReprise
-            SegmentBIIIReprise
+            SegmentVerseI
+            SegmentChorusI
+            SegmentVerseII
+            SegmentChorusII
+            SegmentVerseIII
+            SegmentChorusIII
+            SegmentBridgeI
+            SegmentVerseSolo
+            SegmentChorusSolo
+            SegmentBridgeSolo
+            SegmentVerseIV
+            SegmentChorusIV
             SegmentCoda
         ) <<
             \include "ly/SONG/staffgroups/concert/Woodwinds.ily"
-            \include "ly/SONG/staffgroups/concert/Choir.ily"
+            \include "ly/SONG/staffgroups/concert/Voices.ily"
             \include "ly/SONG/staffgroups/concert/Percussion.ily"
             \include "ly/SONG/staffgroups/concert/Strings.ily"
         >>

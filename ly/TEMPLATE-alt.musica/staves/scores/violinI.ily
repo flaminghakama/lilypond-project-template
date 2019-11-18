@@ -4,7 +4,7 @@
             \set Staff.shortInstrumentName = #"VI."
             \include "ly/rising/staves/scores/staff-defaults.ily"
             \clef treble
-            transpose c c { 
+            \transpose c c { 
             	\violinIGlobal 
             }
         }
